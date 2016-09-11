@@ -12,9 +12,8 @@ class PropertiesFactory {
             input = new FileInputStream(filePath)
             // load a properties file
             prop.load(input)
-            println "this is null"
-
-            // get the property value and print it out
+            println prop
+                // get the property value and print it out
 //            System.out.println(prop.getProperty("database"))
 //            System.out.println(prop.getProperty("dbuser"))
 //            System.out.println(prop.getProperty("dbpassword"))
