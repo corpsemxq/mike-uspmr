@@ -2,6 +2,7 @@ package mike.uspmr
 
 class PageController {
 
+    Properties homeProp
     def index() {
 
     }
@@ -20,6 +21,9 @@ class PageController {
         services.'Trash outs6' = 'Here is info of Trash outs        services.\'Lock ups\' = \'Here is info of Lock ups\''
         services.'Trash outs7' = 'Here is info of Trash outs        services.\'Lock ups\' = \'Here is info of Lock ups\''
         services.'Trash outs8' = 'Here is info of Trash outs        services.\'Lock ups\' = \'Here is info of Lock ups\''
-        render(view: '/pmrIndex', model: [test: "test", services : services])
+
+        println homeProp.getProperty("description")
+        println "123"
+        render(view: '/pmrIndex', model: [test: "test", services : services, info : homeProp.getProperty("description")])
     }
 }

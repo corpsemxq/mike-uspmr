@@ -1,8 +1,10 @@
-class PropertiesUtil {
+package factory
+
+class PropertiesFactory {
 
     def grailsApplication
 
-    public Properties getHomePageProperties() {
+    Properties getHomePageProperties() {
         Properties prop = new Properties()
         InputStream input = null
         try {
@@ -10,6 +12,8 @@ class PropertiesUtil {
             input = new FileInputStream(filePath)
             // load a properties file
             prop.load(input)
+            println "this is null"
+
             // get the property value and print it out
 //            System.out.println(prop.getProperty("database"))
 //            System.out.println(prop.getProperty("dbuser"))
@@ -25,6 +29,7 @@ class PropertiesUtil {
                     e.printStackTrace()
                 }
             }
+            return prop
         }
 
     }

@@ -41,7 +41,7 @@
                 <div class="home-wrapper">
                     <p class="text-muted">Creative Landing Page Template</p>
 
-                    <h1>Build your dream home with trusted service</h1>
+                    <h1>${info}</h1>
                     <a href="#" class="btn btn-yellow">Get Started</a>
                 </div>
             </div>
