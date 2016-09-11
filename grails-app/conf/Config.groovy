@@ -88,10 +88,18 @@ grails.hibernate.osiv.readonly = false
 environments {
     development {
         grails.logging.jul.usebridge = true
+        staticProp {
+            String homeDir = System.getProperty('user.home')
+            homePropLocation = "${homeDir}/prop/homeProp.properties"
+        }
     }
     production {
         grails.logging.jul.usebridge = false
         // TODO: grails.serverURL = "http://www.changeme.com"
+        staticProp {
+            String homeDir = System.getProperty('user.home')
+            homePropLocation = "${homeDir}/prop/homeProp.properties"
+        }
     }
 }
 
