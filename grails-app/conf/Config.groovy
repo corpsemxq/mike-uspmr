@@ -92,6 +92,20 @@ environments {
             String homeDir = System.getProperty('user.home')
             homePropLocation = "${homeDir}/prop/homeProp.properties"
         }
+
+        mailSender {
+            defaultValue {
+                customerServiceEmail = "szczmi01@yahoo.com"
+                noreplyEmail = "noreply@uspmr.com"
+                props = ["mail.smtp.host" : "smtp.mailgun.org",
+                         "mail.smtp.port" : "587",
+                         username : 'postmaster@sandbox785bc02a76344575af85fab5d31e67e3.mailgun.org',
+                         password : '36503001be2eac56ab3039dc4af226c2',
+                         "mail.smtp.auth" : "true",
+                         "mail.smtp.starttls.enable": "true"]
+            }
+        }
+
     }
     production {
         grails.logging.jul.usebridge = false

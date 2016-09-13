@@ -293,21 +293,17 @@
                 <div class="row">
                     <!-- Contact form -->
                     <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-                        <form role="form" name="ajax-form" id="ajax-form"
-                              action="https://formsubmit.io/send/coderthemes@gmail.com" method="post"
-                              class="contact-form ">
-
+                        <g:form controller="mailSend" action="contactEmailSend">
                             <div class="form-group col-sm-12">
-                                <input class="form-control" id="name2" name="name" placeholder="Your name" type="text"
-                                       value="">
+                                <g:textField class="form-control" id="name2" name="name" placeholder="Your name" type="text"
+                                       value=""/>
 
                                 <div class="error" id="err-name" style="display: none;">Please enter name</div>
                             </div>
                             <!-- /Form-name -->
 
                             <div class="form-group col-sm-12">
-                                <input class="form-control" id="email2" name="email" type="text"
-                                       placeholder="Your email" value="">
+                                <g:textField class="form-control" id="email2" name="email" type="text" placeholder="Your email" value=""/>
 
                                 <div class="error" id="err-emailvld"
                                      style="display: none;">E-mail is not a valid format</div>
@@ -315,8 +311,7 @@
                             <!-- /Form-email -->
 
                             <div class="form-group col-xs-12">
-                                <textarea class="form-control" id="message2" name="message" rows="5"
-                                          placeholder="Message"></textarea>
+                            <g:textArea class="form-control" id="message2" name="message" rows="5" placeholder="Message"/>
 
                                 <div class="error" id="err-message" style="display: none;">Please enter message</div>
                             </div>
@@ -334,12 +329,12 @@
                                     <div class="error" id="err-state"></div>
 
                                     <div class="text-center">
-                                        <button type="submit" class="btn btn-dark" id="send">Submit</button>
+                                        <g:actionSubmit value="Submit" action="contactEmailSend" class="btn btn-dark"/>
                                     </div>
                                 </div> <!-- /col -->
                             </div> <!-- /row -->
 
-                        </form> <!-- /form -->
+                        </g:form> <!-- /form -->
                     </div> <!-- end col -->
                 </div>
             </div> <!-- end Col -->
