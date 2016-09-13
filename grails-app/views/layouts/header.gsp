@@ -17,7 +17,7 @@
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#home" class="scroll">Home</a></li>
                 <li><a href="#services" class="scroll">Services</a></li>
-                <li><a href="#form" class="scroll">Fill application</a></li>
+                <li><a href="${createLink(controller: "page", action: "applicationPage")}" class="scroll">Fill application</a></li>
                 <li><a href="#contact" class="scroll">Contact us</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->

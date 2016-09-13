@@ -26,4 +26,9 @@ class PageController {
         println "123"
         render(view: '/pmrIndex', model: [test: "test", services : services, info : homeProp.getProperty("description")])
     }
+
+
+    def applicationPage() {
+        render(view: '/applicationForm', model: [test: "test"])
+    }
 }
