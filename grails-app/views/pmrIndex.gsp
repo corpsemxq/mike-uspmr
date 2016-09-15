@@ -39,9 +39,9 @@
         <div class="row">
             <div class="col-md-8">
                 <div class="home-wrapper">
-                    <p class="text-muted">Creative Landing Page Template</p>
+                    <h2 class="text-muted">Creative Landing Page Template</h2>
 
-                    <h1>${info}</h1>
+                    <p>${homeConfig.home.aboutus}</p>
                     <a href="#" class="btn btn-yellow">Get Started</a>
                 </div>
             </div>

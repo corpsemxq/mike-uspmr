@@ -90,12 +90,12 @@ environments {
         grails.logging.jul.usebridge = true
         staticProp {
             String homeDir = System.getProperty('user.home')
-            homePropLocation = "${homeDir}/prop/homeProp.properties"
+            homePropLocation = "${homeDir}/prop/homeConfig.groovy"
         }
 
         mailSender {
             defaultValue {
-                customerServiceEmail = "szczmi01@yahoo.com"
+                customerServiceEmail = "maoxingqiang0824@gmail.com"
                 noreplyEmail = "noreply@uspmr.com"
                 props = ["mail.smtp.host" : "smtp.mailgun.org",
                          "mail.smtp.port" : "587",

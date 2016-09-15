@@ -1,11 +1,11 @@
-import factory.PropertiesFactory
+import factory.ConfigFactory
 
 // Place your Spring DSL code here
 beans = {
-    propertiesFactory(PropertiesFactory) {
+    configFactory(ConfigFactory) {
         grailsApplication = ref("grailsApplication")
     }
-    homeProp(propertiesFactory: "getHomePageProperties") {}
+    homeConfig(configFactory: "getHomePageConfig") {}
 //    objectMapperFactory(ObjectMapperFactory)
 //    objectMapper(objectMapperFactory: "getObjectMapper")
 }

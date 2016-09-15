@@ -2,7 +2,7 @@ package mike.uspmr
 
 class PageController {
 
-    Properties homeProp
+    ConfigObject homeConfig
     def index() {
 
     }
@@ -22,9 +22,9 @@ class PageController {
         services.'Trash outs7' = 'Here is info of Trash outs        services.\'Lock ups\' = \'Here is info of Lock ups\''
         services.'Trash outs8' = 'Here is info of Trash outs        services.\'Lock ups\' = \'Here is info of Lock ups\''
 
-        println homeProp.getProperty("description")
+        println  homeConfig?.home?.aboutus
         println "123"
-        render(view: '/pmrIndex', model: [test: "test", services : services, info : homeProp.getProperty("description")])
+        render(view: '/pmrIndex', model: [test: "test", services : services, homeConfig : homeConfig])
     }
 
 
