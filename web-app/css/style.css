@@ -200,7 +200,7 @@ a{
 .title {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 700;
-  margin-top: 0px;
+  margin-top: 8%;
 }
 .title-alt {
   color: #767D8E;
@@ -473,7 +473,7 @@ iframe {
 }
 
 .home-alt p {
-  color: #eee !important;
+  color: #ffffff; !important;
 }
 
 .home-alt h1 {
@@ -482,7 +482,12 @@ iframe {
   margin-bottom: 40px;
   line-height: 54px;
 }
-
+.home-alt h2 {
+  color: #ffffff;
+  font-size: 48px;
+  margin-bottom: 40px;
+  line-height: 54px;
+}
 
 
 /* FUN FACTS / Testimonials Box */
@@ -1180,7 +1185,7 @@ textarea.form-control {
 
 /* Home Construction */
 .home-construction {
-  background: url("../images/bg-construction.jpg") center;
+  background: url("../images/bg-construction.jpg") ;
   background-size: cover;
 }
 .feature-icon-const i{

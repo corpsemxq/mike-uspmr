@@ -40,7 +40,6 @@
             <div class="col-md-8">
                 <div class="home-wrapper">
                     <h2 class="text-muted">Creative Landing Page Template</h2>
-
                     <p>${homeConfig.home.aboutus}</p>
                     <a href="#" class="btn btn-yellow">Get Started</a>
                 </div>
@@ -58,7 +57,8 @@
                 <div class="col-sm-4">
                     <div class="features-box text-center">
                         <div class="feature-icon-const">
-                            <i class="flaticon-construction-tool-vehicle-with-crane-lifting-materials"></i>
+                            %{--<i class="flaticon-construction-tool-vehicle-with-crane-lifting-materials"></i>--}%
+                            <img src="images/homeBack.jpg" style="width: 200px; height: 150px;" >
                         </div>
 
                         <h3>${service.key}</h3>
