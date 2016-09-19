@@ -199,35 +199,35 @@
 
                 <div class="form-group">
                     <label class="control-label">Policy exp date:</label>
-                    <g:datePicker style="width: 70%" class="form-control" name="insuranceCompany" id="insuranceCompany"/>
+                    <g:datePicker class="form-control" style="width: 70%" precision="day" years="${2016..2200}" value="${new Date()}" name="insuranceCompany" id="insuranceCompany"/>
                 </div>
 
                 <br/>
 
                 <h5>Coverage Type:</h5>
                 <div class="form-group">
-                    <div class="form-group col-sm-4">
+                    <div class="col-sm-4">
                         <label class="control-label">
                             <g:checkBox checked="false" name="generalLiability" id="Checkbox1" value="General Liability"/> General Liability
                         </label>
                     </div>
-                    <div class="form-group col-sm-4">
+                    <div class="col-sm-4">
                         <label class="control-label">
                             <g:checkBox checked="false" name="workerSComp" id="Checkbox2" value="Worker's Comp"/> Worker's Comp
                         </label>
                     </div>
-                    <div class="form-group col-sm-4">
+                    <div class="col-sm-4">
                         <label class="control-label">
                             <g:checkBox checked="false" name="errorsAndOmissions" id="Checkbox3" value="Errors and Omissions"/> Errors and Omissions
                         </label>
                     </div>
 
-                    <div class="form-group col-sm-4">
+                    <div class="col-sm-4">
                         <label class="control-label">
                             <g:checkBox checked="false" name="commercialAutoPolicy" id="Checkbox5" value="Commercial Auto Policy"/> Commercial Auto Policy
                         </label>
                     </div>
-                    <div class="form-group col-sm-4">
+                    <div class="col-sm-4">
                         <label class="control-label">
                             <g:checkBox checked="false" name="Other" id="Checkbox4" value="Other"/> Other
                         </label>
@@ -271,7 +271,7 @@
 
                 <div class="form-group">
                     <label class="control-label">Email : </label>
-                    <g:textField  class="form-control" id="email2" name="email" type="text"
+                    <g:textField style="width: 70%" class="form-control" id="email2" name="email" type="text"
                            placeholder="Email" value=""/>
 
                     <div class="error" id="err-emailvld"
@@ -279,12 +279,53 @@
                 </div>
 
 
+                <br/>
+                <br/>
+
+                <h4 class="text-left">Please list up to three references:</h4>
+%{--reference 1--}%
+                <div class="form-group">
+                <g:textField style="width: 70%" name="referenceName1" class="form-control" id="referenceName1"  placeholder="Name" type="text"
+                           value=""/>
+                    <div class="error" id="err-name3" style="display: none;">Please enter Name</div>
+                </div>
+                <div class="form-group ">
+                <g:textField style="width: 70%" name="referenceCompanyName1" class="form-control" id="contact-person" placeholder="Contact Person" type="text"
+                           value=""/>
+                    <div class="error" id="err-contactperson" style="display: none;">Please enter Contact Person</div>
+                </div>
+                <br/>
+                <div class="form-group">
+                    <g:textField style="width: 70%" name="referenceName2" class="form-control" id="referenceName1"  placeholder="Name" type="text"
+                                 value=""/>
+                    <div class="error" id="err-name3" style="display: none;">Please enter Name</div>
+                </div>
+                <div class="form-group">
+                    <g:textField style="width: 70%" name="referenceCompanyName2" class="form-control" id="contact-person" placeholder="Contact Person" type="text"
+                                  value=""/>
+                    <div class="error" id="err-contactperson" style="display: none;">Please enter Contact Person</div>
+                </div>
+                <br/>
+                <div class="form-group">
+                    <g:textField style="width: 70%" name="referenceName3" class="form-control" id="referenceName1"  placeholder="Name" type="text"
+                                 value=""/>
+                    <div class="error" id="err-name3" style="display: none;">Please enter Name</div>
+                </div>
+                <div class="form-group">
+                    <g:textField style="width: 70%" name="referenceCompanyName3" class="form-control" id="contact-person" placeholder="Contact Person" type="text"
+                                  value=""/>
+                    <div class="error" id="err-contactperson" style="display: none;">Please enter Contact Person</div>
+                </div>
+
+                <g:actionSubmit class="btn btn-dark" value="Submit your Infomation"/>
+
 
 
             </g:form>
         </div>
     </div>
 </section>
+<br/>
 
 
 %{--<!-- Contact form -->--}%
@@ -295,7 +336,7 @@
 %{--<div class="form-group row col-sm-3">--}%
 
 
-%
+
 %{--<div class="col-sm-2">--}%
 %{--<input type="text" class="form-control" id="Policy-exp-c"--}%
 %{--placeholder="mm/dd/yyyy">--}%
