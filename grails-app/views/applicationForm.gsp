@@ -65,442 +65,490 @@
             %{--Form title--}%
             <h2 class="title">SUB CONTRACTOR APPLCATION FORM</h2>
 
-            %{--Form body--}%
+        %{--Form body--}%
             <g:form role="form" name="ajax-form" id="ajax-form"
-                  action="https://formsubmit.io/send/coderthemes@gmail.com" method="post"
-                  class="form-horizontal contact-form">
+                    action="https://formsubmit.io/send/coderthemes@gmail.com" method="post"
+                    class="form-horizontal contact-form">
 
-                <p class="text-left">What services do you Perform? Please check all that apply.</p>
+                <h4 class="text-left"><mark>What services do you Perform? Please check all that apply.</mark></h4>
 
 
             %{--Check box for vendor service--}%
-                <div class="form-group row">
-
+                <div class="form-group">
 
                     <div class="col-sm-4">
-                        <g:checkBox class="form-check-input" name="inlineCheckbox1" value="Lock Changes" />
-                        <lable>
-                            Lock Changes</lable>
+                        <label class="control-label"><g:checkBox checked="false" name="checkbox.lockchanges"
+                                                                 value="Lock Changes"/> Lock Changes</label>
                     </div>
 
                     <div class="col-sm-4">
-                        <g:checkBox checked="false" class="form-check-input" name="inlineCheckbox1" value="Repair/Rehab" />
-                        <lable>
-                            Repair/Rehab</lable>
+                        <label class="control-label"><g:checkBox checked="false" name="inlineCheckbox2"
+                                                                 value="Lock Changes"/> Repair/Rehab</label>
                     </div>
 
                     <div class="col-sm-4">
-                        <label class="checkbox-inline">
-                            <input type="checkbox" id="inlineCheckbox2" value="Repair/Rehab" class="form-check-input"> Repair/Rehab
-                        </label>
+                        <label class="control-label"><g:checkBox checked="false" name="inlineCheckbox1"
+                                                                 value="Repair/Rehab"/> Electrical</label>
                     </div>
 
                     <div class="col-sm-4">
-                        <label class="checkbox-inline">
-                            <input type="checkbox" id="inlineCheckbox3" value="Electrical" class="form-check-input"> Electrical
-                        </label>
+                        <label class="control-label"><g:checkBox checked="false" name="inlineCheckbox1"
+                                                                 value="Repair/Rehab"/> Board ups</label>
                     </div>
 
                     <div class="col-sm-4">
-                        <label class="checkbox-inline">
-                            <input type="checkbox" id="inlineCheckbox4" value="Board ups" class="form-check-input"> Board ups
-                        </label>
+                        <label class="control-label"><g:checkBox checked="false" name="inlineCheckbox1"
+                                                                 value="Repair/Rehab"/> FHA Conveyance Work</label>
                     </div>
 
                     <div class="col-sm-4">
-                        <label class="checkbox-inline">
-                            <input type="checkbox" id="inlineCheckbox5" class="form-check-input"
-                                   value="FHA Conveyance Work"> FHA Conveyance Work
-                        </label>
+                        <label class="control-label"><g:checkBox checked="false" name="inlineCheckbox1"
+                                                                 value="Repair/Rehab"/> Plumbing</label>
                     </div>
 
                     <div class="col-sm-4">
-                        <label class="checkbox-inline">
-                            <input type="checkbox" id="inlineCheckbox6" value="Plumbing" class="form-check-input"> Plumbing
-                        </label>
+                        <label class="control-label"><g:checkBox checked="false" name="inlineCheckbox1"
+                                                                 value="Repair/Rehab"/> Dry/Wet Winterizations</label>
                     </div>
 
                     <div class="col-sm-4">
-                        <label class="checkbox-inline">
-                            <input type="checkbox" id="inlineCheckbox7" class="form-check-input"
-                                   value="Dry/Wet Winterizations"> Dry/Wet Winterizations
-                        </label>
+                        <label class="control-label"><g:checkBox checked="false" name="inlineCheckbox1"
+                                                                 value="Repair/Rehab"/> Debris Removal</label>
                     </div>
 
                     <div class="col-sm-4">
-                        <label class="checkbox-inline">
-                            <input type="checkbox" id="inlineCheckbox8" class="form-check-input"
-                                   value="Debris Removal"> Debris Removal
-                        </label>
+                        <label class="control-label"><g:checkBox checked="false" name="inlineCheckbox1"
+                                                                 value="Repair/Rehab"/> Plumbing</label>
                     </div>
 
                     <div class="col-sm-4">
-                        <label class="checkbox-inline">
-                            <input type="checkbox" id="inlineCheckbox9" value="HVAC" class="form-check-input"> HVAC
-                        </label>
+                        <label class="control-label"><g:checkBox checked="false" name="inlineCheckbox1"
+                                                                 value="Repair/Rehab"/> HVAC</label>
                     </div>
 
                     <div class="col-sm-4">
-                        <label class="checkbox-inline">
-                            <input type="checkbox" id="inlineCheckbox10" value="Lawn Service" class="form-check-input"> Lawn Service
-                        </label>
+                        <label class="control-label"><g:checkBox checked="false" name="inlineCheckbox1"
+                                                                 value="Repair/Rehab"/> Lawn Service</label>
                     </div>
 
                     <div class="col-sm-4">
-                        <label class="checkbox-inline">
-                            <input type="checkbox" id="inlineCheckbox11" class="form-check-input"
-                                   value="Roof repair/Tarping"> Roof repair/Tarping
-                        </label>
+                        <label class="control-label"><g:checkBox checked="false" name="inlineCheckbox1"
+                                                                 value="Repair/Rehab"/> Roof repair/Tarping</label>
                     </div>
 
                     <div class="col-sm-4">
-                        <label class="checkbox-inline">
-                            <input type="checkbox" id="inlineCheckbox12" value="Construction"class="form-check-input"> Construction
-                        </label>
+                        <label class="control-label"><g:checkBox checked="false" name="inlineCheckbox1"
+                                                                 value="Repair/Rehab"/> Construction</label>
                     </div>
 
                     <div class="col-sm-4">
-                        <label class="checkbox-inline">
-                            <input type="checkbox" id="inlineCheckbox13" value="Eviction"class="form-check-input"> Eviction
-                        </label>
+                        <label class="control-label"><g:checkBox checked="false" name="inlineCheckbox1"
+                                                                 value="Repair/Rehab"/> Eviction</label>
                     </div>
 
                     <div class="col-sm-4">
-                        <label class="checkbox-inline">
-                            <input type="checkbox" id="inlineCheckbox14"
-                                   value="Initial Services"class="form-check-input"> Initial Services
-                        </label>
+                        <label class="control-label"><g:checkBox checked="false" name="inlineCheckbox1"
+                                                                 value="Repair/Rehab"/> Roof repair/Tarping</label>
                     </div>
 
                     <div class="col-sm-4">
-                        <label class="checkbox-inline">
-                            <input type="checkbox" id="inlineCheckbox16"
-                                   value="Pool Services"class="form-check-input"> Pool Services
-                        </label>
+                        <label class="control-label"><g:checkBox checked="false" name="inlineCheckbox1"
+                                                                 value="Repair/Rehab"/> Initial Services</label>
                     </div>
 
                     <div class="col-sm-4">
-                        <label class="checkbox-inline">
-                            <input type="checkbox" id="inlineCheckbox17"
-                                   value="Mold Remediation" class="form-check-input"> Mold Remediation
-                        </label>
+                        <label class="control-label"><g:checkBox checked="false" name="inlineCheckbox1"
+                                                                 value="Repair/Rehab"/> Pool Services</label>
                     </div>
 
+                    <div class="col-sm-4">
+                        <label class="control-label"><g:checkBox checked="false" name="inlineCheckbox1"
+                                                                 value="Repair/Rehab"/> Mold Remediation</label>
+                    </div>
                 </div>
-            <div class="form-group row">
-                <label for="inlineCheckbox18">
-                    Other (Use ',' to seperate) :
-                <textarea  id="inlineCheckbox18"
-                       placeholder="Please provide all the services you do"></textarea> </label>
-            </div>
+
+                <div class="form-group">
+                    <label class="control-label">Other (Use ',' to seperate) :</label><g:textField style="width: 70%" id="inlineCheckbox18"
+                                                                                          name="inlineCheckbox1"
+                                                                                          placeholder="Please provide all the services you do"/>
+                </div>
 
 
+                <br/>
+                <br/>
+
+
+                <h4 class="text-left">How many years of experience you have?</h4>
 
             %{--Number of experience--}%
-            <div class="form-group row">
-                <label for="years-experience">Years of experience : </label>
-                <input style="width: 70%" type="number" id="years-experience"
-                       placeholder="Number of years experience in field">
-            </div>
+                <div class="form-group">
+                    <label class="control-label">Years of experience :</label>
+                    <g:textField style="width: 70%" class="form-control" name="experience" type="number"
+                                 id="years-experience"/>
+                </div>
+
+
+                <br/>
+                <br/>
+
+                <h4 class="text-left">Do you have insurances? If so please list the insurance company and type of coverage that you have.</h4>
+                <div class="form-group">
+                    <label class="control-label">Insurance company :</label>
+                    <g:textField style="width: 70%" class="form-control" name="insuranceCompany" id="insuranceCompany"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label">Policy exp date:</label>
+                    <g:datePicker style="width: 70%" class="form-control" name="insuranceCompany" id="insuranceCompany"/>
+                </div>
+
+                <br/>
+
+                <h5>Coverage Type:</h5>
+                <div class="form-group">
+                    <div class="form-group col-sm-4">
+                        <label class="control-label">
+                            <g:checkBox checked="false" name="generalLiability" id="Checkbox1" value="General Liability"/> General Liability
+                        </label>
+                    </div>
+                    <div class="form-group col-sm-4">
+                        <label class="control-label">
+                            <g:checkBox checked="false" name="workerSComp" id="Checkbox2" value="Worker's Comp"/> Worker's Comp
+                        </label>
+                    </div>
+                    <div class="form-group col-sm-4">
+                        <label class="control-label">
+                            <g:checkBox checked="false" name="errorsAndOmissions" id="Checkbox3" value="Errors and Omissions"/> Errors and Omissions
+                        </label>
+                    </div>
+
+                    <div class="form-group col-sm-4">
+                        <label class="control-label">
+                            <g:checkBox checked="false" name="commercialAutoPolicy" id="Checkbox5" value="Commercial Auto Policy"/> Commercial Auto Policy
+                        </label>
+                    </div>
+                    <div class="form-group col-sm-4">
+                        <label class="control-label">
+                            <g:checkBox checked="false" name="Other" id="Checkbox4" value="Other"/> Other
+                        </label>
+                    </div>
+                </div>
+
+                <br/>
+                <br/>
+
+
+                <h4 class="text-left">Please list the contact information below:</h4>
+                <div class="form-group">
+                    <label class="control-label">Business Name : </label>
+                    <g:textField style="width: 70%" class="form-control" name="businessName" id="businessName"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label">Contact Person Name : </label>
+                    <g:textField style="width: 70%" class="form-control" name="contactPersonName " id="contactPersonName"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label">Business Address (Please include state, city): </label>
+                    <g:textField style="width: 70%" class="form-control" name="businessAddress " id="businessAddress"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label">Zip Code : </label>
+                    <g:textField style="width: 70%" class="form-control" name="businessZipcode " id="businessZipcode"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label">Office Phone Number : </label>
+                    <g:textField style="width: 70%" class="form-control" name="officePhone" id="officePhone"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label">Contact Cell Phone : </label>
+                    <g:textField style="width: 70%" class="form-control" name="contactPhone" id="contactPhone"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label">Email : </label>
+                    <g:textField  class="form-control" id="email2" name="email" type="text"
+                           placeholder="Email" value=""/>
+
+                    <div class="error" id="err-emailvld"
+                         style="display: none;">E-mail is not a valid format</div>
+                </div>
 
 
 
-        </g:form>
+
+            </g:form>
         </div>
     </div>
 </section>
 
-%{--<!----}%
-%{--<section class="section bg-white" id="contact">--}%
-    %{--<div class="container">--}%
-        %{--<div class="row">--}%
-            %{--<div class="col-sm-12">--}%
-
-
-
-                    %{--<!-- Contact form -->--}%
-                    %{--<div class="col-sm-12">--}%
-
-
-
-                            %{--<div class="form-group row col-sm-3">--}%
-
-                                    %{--<label for="years-experience" class="col-xs-2 col-form-label">Number of years experience in field:</label>--}%
-                                    %{--<input type="text" class="form-control" id="years-experience" placeholder="Number of years experience in field">--}%
-                            %{--</div>--}%
-                            %{--<div class="form-group col-sm-12">--}%
-                            %{--<label for="years-experience">Number of years experience in field:</label>--}%
-                            %{--<input type="text" class="form-control" id="years-experience" placeholder="Number of years experience in field">--}%
-                            %{--</div>--}%
-                            %{--<div class="col-sm-12">--}%
-                            %{--<p class="text-left">Insurance coverage:--}%
-                            %{--</p>--}%
-
-                            %{--<p class="text-left">Do you have insurances? If so please list the insurance company and type of coverage that you have.--}%
-                            %{--</p>--}%
-                            %{--</div>--}%
-                            %{--<div class="form-group">--}%
-                                %{--<label for="insurance-company" class="col-sm-2 control-label">Insurance company:</label>--}%
-
-                                %{--<div class="col-sm-2">--}%
-                                    %{--<input type="text" class="form-control" id="insurance-company"--}%
-                                           %{--placeholder="Insurance company">--}%
-                                %{--</div>--}%
-                                %{--<label for="Policy-exp-date" class="col-sm-2 control-label">Policy exp date:</label>--}%
-
-                                %{--<div class="col-sm-2">--}%
-                                    %{--<input type="text" class="form-control" id="Policy-exp-date"--}%
-                                           %{--placeholder="mm/dd/yyyy">--}%
-                                %{--</div>--}%
-                            %{--</div>--}%
-
-                            %{--<p class="text-left">Coverage Type:--}%
-                            %{--</p>--}%
-
-                            %{--<div class="col-sm-6">--}%
-                                %{--<label class="checkbox-inline">--}%
-                                    %{--<input type="checkbox" id="Checkbox1" value="General Liability"> General Liability--}%
-                                %{--</label>--}%
-                            %{--</div>--}%
-
-                            %{--<div class="col-sm-6">--}%
-                                %{--<label class="checkbox-inline">--}%
-                                    %{--<input type="checkbox" id="Checkbox2" value="Worker's Comp"> Worker's Comp--}%
-                                %{--</label>--}%
-                            %{--</div>--}%
-
-                            %{--<div class="col-sm-6">--}%
-                                %{--<label class="checkbox-inline">--}%
-                                    %{--<input type="checkbox" id="Checkbox3"--}%
-                                           %{--value="Errors and Omissions"> Errors and Omissions--}%
-                                %{--</label>--}%
-                            %{--</div>--}%
-
-                            %{--<div class="col-sm-6">--}%
-                                %{--<label class="checkbox-inline">--}%
-                                    %{--<input type="checkbox" id="Checkbox4" value="Other"> Other--}%
-                                %{--</label>--}%
-                            %{--</div>--}%
-
-                            %{--<div class="col-sm-6">--}%
-                                %{--<label class="checkbox-inline">--}%
-                                    %{--<input type="checkbox" id="Checkbox5"--}%
-                                           %{--value="Commercial Auto Policy"> Commercial Auto Policy--}%
-                                %{--</label>--}%
-                            %{--</div>--}%
-
-                            %{--<div class="col-sm-6">--}%
-                                %{--<label class="checkbox-inline">--}%
-                                    %{--<input type="checkbox" id="Checkbox6" value="Other"> Other--}%
-                                %{--</label>--}%
-                            %{--</div>--}%
-
-                            %{--<p class="text-left">Please list the contact information below:--}%
-                            %{--</p>--}%
-
-                            %{--<div class="col-sm-12">--}%
-                                %{--<input class="form-control" id="name2" name="name" placeholder="Business Name"--}%
-                                       %{--type="text"--}%
-                                       %{--value="">--}%
-
-                                %{--<div class="error" id="err-name" style="display: none;">Please enter Business Name</div>--}%
-                            %{--</div>--}%
-
-                            %{--<div class="col-sm-12">--}%
-                                %{--<input class="form-control" id="contactperson" name="contactperson"--}%
-                                       %{--placeholder="Contact Person" type="text"--}%
-                                       %{--value="">--}%
-
-                                %{--<div class="error" id="err-person"--}%
-                                     %{--style="display: none;">Please enter Contact Person</div>--}%
-                            %{--</div>--}%
 
-                            %{--<div class="col-sm-12">--}%
-                                %{--<input class="form-control" id="address" name="address" placeholder="Address"--}%
-                                       %{--type="text"--}%
-                                       %{--value="">--}%
+%{--<!-- Contact form -->--}%
+%{--<div class="col-sm-12">--}%
 
-                                %{--<div class="error" id="err-address" style="display: none;">Please enter Address</div>--}%
-                            %{--</div>--}%
 
-                            %{--<div class="col-sm-12">--}%
-                                %{--<input class="form-control" id="city" name="city" placeholder="City" type="text"--}%
-                                       %{--value="">--}%
+
+%{--<div class="form-group row col-sm-3">--}%
 
-                                %{--<div class="error" id="err-city" style="display: none;">Please enter City</div>--}%
-                            %{--</div>--}%
 
-                            %{--<div class="col-sm-12">--}%
-                                %{--<input class="form-control" id="state" name="state" placeholder="State" type="text"--}%
-                                       %{--value="">--}%
+%
+%{--<div class="col-sm-2">--}%
+%{--<input type="text" class="form-control" id="Policy-exp-c"--}%
+%{--placeholder="mm/dd/yyyy">--}%
+%{--</div>--}%
+%{--</div>--}%
 
-                                %{--<div class="error" id="err-sta" style="display: none;">Please enter State</div>--}%
-                            %{--</div>--}%
+%{--<p class="text-left">Coverage Type:--}%
+%{--</p>--}%
+
+%{--<div class="col-sm-4">--}%
+%{--<label class="checkbox-inline">--}%
+%{--<input type="checkbox" id="Checkbox1" value="General Liability"> General Liability--}%
+%{--</label>--}%
+%{--</div>--}%
 
-                            %{--<div class="col-sm-12">--}%
-                                %{--<input class="form-control" id="zip" name="zip" placeholder="Zip" type="text"--}%
-                                       %{--value="">--}%
+%{--<div class="col-sm-4">--}%
+%{--<label class="checkbox-inline">--}%
+%{--<input type="checkbox" id="Checkbox2" value="Worker's Comp"> Worker's Comp--}%
+%{--</label>--}%
+%{--</div>--}%
+
+%{--<div class="col-sm-4">--}%
+%{--<label class="checkbox-inline">--}%
+%{--<input type="checkbox" id="Checkbox3"--}%
+%{--value="Errors and Omissions"> Errors and Omissions--}%
+%{--</label>--}%
+%{--</div>--}%
+
+%{--<div class="col-sm-4">--}%
+%{--<label class="checkbox-inline">--}%
+%{--<input type="checkbox" id="Checkbox4" value="Other"> Other--}%
+%{--</label>--}%
+%{--</div>--}%
 
-                                %{--<div class="error" id="err-zip" style="display: none;">Please enter Zip</div>--}%
-                            %{--</div>--}%
+%{--<div class="col-sm-4">--}%
+%{--<label class="checkbox-inline">--}%
+%{--<input type="checkbox" id="Checkbox5"--}%
+%{--value="Commercial Auto Policy"> Commercial Auto Policy--}%
+%{--</label>--}%
+%{--</div>--}%
+
+%{--<div class="col-sm-4">--}%
+%{--<label class="checkbox-inline">--}%
+%{--<input type="checkbox" id="Checkbox6" value="Other"> Other--}%
+%{--</label>--}%
+%{--</div>--}%
 
-                            %{--<div class="col-sm-12">--}%
-                                %{--<input class="form-control" id="Office-phone" name="Office-phone"--}%
-                                       %{--placeholder="Office Phone" type="text"--}%
-                                       %{--value="">--}%
+%{--<p class="text-left">Please list the contact information below:--}%
+%{--</p>--}%
 
-                                %{--<div class="error" id="err-Office-phone"--}%
-                                     %{--style="display: none;">Please enter Office Phone</div>--}%
-                            %{--</div>--}%
+%{--<div class="col-sm-12">--}%
+%{--<input class="form-control" id="name2" name="name" placeholder="Business Name"--}%
+%{--type="text"--}%
+%{--value="">--}%
 
-                            %{--<div class="col-sm-12">--}%
-                                %{--<input class="form-control" id="Cell-phone" name="Cell-phone" placeholder="Cell Phone"--}%
-                                       %{--type="text"--}%
-                                       %{--value="">--}%
+%{--<div class="error" id="err-name" style="display: none;">Please enter Business Name</div>--}%
+%{--</div>--}%
 
-                                %{--<div class="error" id="err-Cell-phone"--}%
-                                     %{--style="display: none;">Please enter Cell Phone</div>--}%
-                            %{--</div>--}%
+%{--<div class="col-sm-12">--}%
+%{--<input class="form-control" id="contactperson" name="contactperson"--}%
+%{--placeholder="Contact Person" type="text"--}%
+%{--value="">--}%
 
-                            %{--<div class="col-sm-12">--}%
-                                %{--<input class="form-control" id="email2" name="email" type="text"--}%
-                                       %{--placeholder="Email" value="">--}%
+%{--<div class="error" id="err-person"--}%
+%{--style="display: none;">Please enter Contact Person</div>--}%
+%{--</div>--}%
 
-                                %{--<div class="error" id="err-emailvld"--}%
-                                     %{--style="display: none;">E-mail is not a valid format</div>--}%
-                            %{--</div>--}%
+%{--<div class="col-sm-12">--}%
+%{--<input class="form-control" id="address" name="address" placeholder="Address"--}%
+%{--type="text"--}%
+%{--value="">--}%
+
+%{--<div class="error" id="err-address" style="display: none;">Please enter Address</div>--}%
+%{--</div>--}%
 
-                            %{--<p class="text-left">Please list up to three references:--}%
-                            %{--</p>--}%
+%{--<div class="col-sm-12">--}%
+%{--<input class="form-control" id="city" name="city" placeholder="City" type="text"--}%
+%{--value="">--}%
 
-                            %{--<div class="col-sm-6">--}%
-                                %{--<input class="form-control" id="name3" name="name" placeholder="Name" type="text"--}%
-                                       %{--value="">--}%
+%{--<div class="error" id="err-city" style="display: none;">Please enter City</div>--}%
+%{--</div>--}%
 
-                                %{--<div class="error" id="err-name3" style="display: none;">Please enter Name</div>--}%
-                            %{--</div>--}%
+%{--<div class="col-sm-12">--}%
+%{--<input class="form-control" id="state" name="state" placeholder="State" type="text"--}%
+%{--value="">--}%
 
-                            %{--<div class="col-sm-6">--}%
-                                %{--<input class="form-control" id="contact-person" name="contact-person"--}%
-                                       %{--placeholder="Contact Person" type="text"--}%
-                                       %{--value="">--}%
+%{--<div class="error" id="err-sta" style="display: none;">Please enter State</div>--}%
+%{--</div>--}%
+
+%{--<div class="col-sm-12">--}%
+%{--<input class="form-control" id="zip" name="zip" placeholder="Zip" type="text"--}%
+%{--value="">--}%
+
+%{--<div class="error" id="err-zip" style="display: none;">Please enter Zip</div>--}%
+%{--</div>--}%
+
+%{--<div class="col-sm-12">--}%
+%{--<input class="form-control" id="Office-phone" name="Office-phone"--}%
+%{--placeholder="Office Phone" type="text"--}%
+%{--value="">--}%
+
+%{--<div class="error" id="err-Office-phone"--}%
+%{--style="display: none;">Please enter Office Phone</div>--}%
+%{--</div>--}%
+
+%{--<div class="col-sm-12">--}%
+%{--<input class="form-control" id="Cell-phone" name="Cell-phone" placeholder="Cell Phone"--}%
+%{--type="text"--}%
+%{--value="">--}%
 
-                                %{--<div class="error" id="err-contactperson"--}%
-                                     %{--style="display: none;">Please enter Contact Person</div>--}%
-                            %{--</div>--}%
+%{--<div class="error" id="err-Cell-phone"--}%
+%{--style="display: none;">Please enter Cell Phone</div>--}%
+%{--</div>--}%
 
-                            %{--<div class="col-sm-6">--}%
-                                %{--<input class="form-control" id="phone" name="phone" placeholder="Phone" type="text"--}%
-                                       %{--value="">--}%
+%{--<div class="col-sm-12">--}%
+%{--<input class="form-control" id="email2" name="email" type="text"--}%
+%{--placeholder="Email" value="">--}%
 
-                                %{--<div class="error" id="err-phone" style="display: none;">Please enter Phone</div>--}%
-                            %{--</div>--}%
+%{--<div class="error" id="err-emailvld"--}%
+%{--style="display: none;">E-mail is not a valid format</div>--}%
+%{--</div>--}%
 
-                            %{--<div class="col-sm-6">--}%
-                                %{--<input class="form-control" id="company-name" name="company-name"--}%
-                                       %{--placeholder="Company Name" type="text"--}%
-                                       %{--value="">--}%
+%{--<p class="text-left">Please list up to three references:--}%
+%{--</p>--}%
 
-                                %{--<div class="error" id="err-company-name"--}%
-                                     %{--style="display: none;">Please enter Company Name</div>--}%
-                            %{--</div>--}%
+%{--<div class="col-sm-4">--}%
+%{--<input class="form-control" id="name3" name="name" placeholder="Name" type="text"--}%
+%{--value="">--}%
 
-                            %{--<div class="col-sm-6">--}%
-                                %{--<input class="form-control" id="name4" name="name" placeholder="Name" type="text"--}%
-                                       %{--value="">--}%
+%{--<div class="error" id="err-name3" style="display: none;">Please enter Name</div>--}%
+%{--</div>--}%
 
-                                %{--<div class="error" id="err-name4" style="display: none;">Please enter Name</div>--}%
-                            %{--</div>--}%
+%{--<div class="col-sm-4">--}%
+%{--<input class="form-control" id="contact-person" name="contact-person"--}%
+%{--placeholder="Contact Person" type="text"--}%
+%{--value="">--}%
 
-                            %{--<div class="col-sm-6">--}%
-                                %{--<input class="form-control" id="contact-person2" name="contact-person"--}%
-                                       %{--placeholder="Contact Person" type="text"--}%
-                                       %{--value="">--}%
+%{--<div class="error" id="err-contactperson"--}%
+%{--style="display: none;">Please enter Contact Person</div>--}%
+%{--</div>--}%
 
-                                %{--<div class="error" id="err-contactperson2"--}%
-                                     %{--style="display: none;">Please enter Contact Person</div>--}%
-                            %{--</div>--}%
+%{--<div class="col-sm-4">--}%
+%{--<input class="form-control" id="phone" name="phone" placeholder="Phone" type="text"--}%
+%{--value="">--}%
 
-                            %{--<div class="col-sm-6">--}%
-                                %{--<input class="form-control" id="phone2" name="phone" placeholder="Phone" type="text"--}%
-                                       %{--value="">--}%
+%{--<div class="error" id="err-phone" style="display: none;">Please enter Phone</div>--}%
+%{--</div>--}%
 
-                                %{--<div class="error" id="err-phone2" style="display: none;">Please enter Phone</div>--}%
-                            %{--</div>--}%
+%{--<div class="col-sm-4">--}%
+%{--<input class="form-control" id="company-name" name="company-name"--}%
+%{--placeholder="Company Name" type="text"--}%
+%{--value="">--}%
 
-                            %{--<div class="col-sm-6">--}%
-                                %{--<input class="form-control" id="company-name2" name="company-name"--}%
-                                       %{--placeholder="Company Name" type="text"--}%
-                                       %{--value="">--}%
+%{--<div class="error" id="err-company-name"--}%
+%{--style="display: none;">Please enter Company Name</div>--}%
+%{--</div>--}%
 
-                                %{--<div class="error" id="err-company-name2"--}%
-                                     %{--style="display: none;">Please enter Company Name</div>--}%
-                            %{--</div>--}%
+%{--<div class="col-sm-4">--}%
+%{--<input class="form-control" id="name4" name="name" placeholder="Name" type="text"--}%
+%{--value="">--}%
 
-                            %{--<div class="col-sm-6">--}%
-                                %{--<input class="form-control" id="name5" name="name" placeholder="Name" type="text"--}%
-                                       %{--value="">--}%
+%{--<div class="error" id="err-name4" style="display: none;">Please enter Name</div>--}%
+%{--</div>--}%
 
-                                %{--<div class="error" id="err-name5" style="display: none;">Please enter Name</div>--}%
-                            %{--</div>--}%
+%{--<div class="col-sm-4">--}%
+%{--<input class="form-control" id="contact-person2" name="contact-person"--}%
+%{--placeholder="Contact Person" type="text"--}%
+%{--value="">--}%
 
-                            %{--<div class="col-sm-6">--}%
-                                %{--<input class="form-control" id="contact-person3" name="contact-person"--}%
-                                       %{--placeholder="Contact Person" type="text"--}%
-                                       %{--value="">--}%
+%{--<div class="error" id="err-contactperson2"--}%
+%{--style="display: none;">Please enter Contact Person</div>--}%
+%{--</div>--}%
 
-                                %{--<div class="error" id="err-contactperson3"--}%
-                                     %{--style="display: none;">Please enter Contact Person</div>--}%
-                            %{--</div>--}%
+%{--<div class="col-sm-4">--}%
+%{--<input class="form-control" id="phone2" name="phone" placeholder="Phone" type="text"--}%
+%{--value="">--}%
 
-                            %{--<div class="col-sm-6">--}%
-                                %{--<input class="form-control" id="phone3" name="phone" placeholder="Phone" type="text"--}%
-                                       %{--value="">--}%
+%{--<div class="error" id="err-phone2" style="display: none;">Please enter Phone</div>--}%
+%{--</div>--}%
 
-                                %{--<div class="error" id="err-phone3" style="display: none;">Please enter Phone</div>--}%
-                            %{--</div>--}%
+%{--<div class="col-sm-4">--}%
+%{--<input class="form-control" id="company-name2" name="company-name"--}%
+%{--placeholder="Company Name" type="text"--}%
+%{--value="">--}%
 
-                            %{--<div class="col-sm-6">--}%
-                                %{--<input class="form-control" id="company-name3" name="company-name"--}%
-                                       %{--placeholder="Company Name" type="text"--}%
-                                       %{--value="">--}%
+%{--<div class="error" id="err-company-name2"--}%
+%{--style="display: none;">Please enter Company Name</div>--}%
+%{--</div>--}%
 
-                                %{--<div class="error" id="err-company-name3"--}%
-                                     %{--style="display: none;">Please enter Company Name</div>--}%
-                            %{--</div>--}%
+%{--<div class="col-sm-4">--}%
+%{--<input class="form-control" id="name5" name="name" placeholder="Name" type="text"--}%
+%{--value="">--}%
 
-                            %{--<!-- /Form-email -->--}%
+%{--<div class="error" id="err-name5" style="display: none;">Please enter Name</div>--}%
+%{--</div>--}%
 
-                            %{--<div class="col-xs-12">--}%
-                            %{--<textarea class="form-control" id="message2" name="message" rows="5"--}%
-                            %{--placeholder="Message"></textarea>--}%
+%{--<div class="col-sm-4">--}%
+%{--<input class="form-control" id="contact-person3" name="contact-person"--}%
+%{--placeholder="Contact Person" type="text"--}%
+%{--value="">--}%
 
-                            %{--<div class="error" id="err-message" style="display: none;">Please enter message</div>--}%
-                            %{--</div>--}%
-                            %{--<!-- /Form Msg -->--}%
+%{--<div class="error" id="err-contactperson3"--}%
+%{--style="display: none;">Please enter Contact Person</div>--}%
+%{--</div>--}%
 
-                            %{--<div class="row">--}%
-                                %{--<div class="col-xs-12">--}%
-                                    %{--<div id="ajaxsuccess" class="text-success">E-mail was successfully sent.</div>--}%
+%{--<div class="col-sm-4">--}%
+%{--<input class="form-control" id="phone3" name="phone" placeholder="Phone" type="text"--}%
+%{--value="">--}%
 
-                                    %{--<div class="error text-center" id="err-form"--}%
-                                         %{--style="display: none;">There was a problem validating the form please check!</div>--}%
+%{--<div class="error" id="err-phone3" style="display: none;">Please enter Phone</div>--}%
+%{--</div>--}%
 
-                                    %{--<div class="error" id="err-timedout">The connection to the server timed out!</div>--}%
+%{--<div class="col-sm-4">--}%
+%{--<input class="form-control" id="company-name3" name="company-name"--}%
+%{--placeholder="Company Name" type="text"--}%
+%{--value="">--}%
 
-                                    %{--<div class="error" id="err-state"></div>--}%
+%{--<div class="error" id="err-company-name3"--}%
+%{--style="display: none;">Please enter Company Name</div>--}%
+%{--</div>--}%
 
-                                    %{--<div class="text-center">--}%
-                                        %{--<button type="submit" class="btn btn-dark" id="send">Submit</button>--}%
-                                    %{--</div>--}%
-                                %{--</div> <!-- /col -->--}%
-                            %{--</div> <!-- /row -->--}%
+%{--<!-- /Form-email -->--}%
 
-                        %{--</form> <!-- /form -->--}%
-                    %{--</div> <!-- end col -->--}%
-                %{--</div>--}%
-            %{--</div> <!-- end Col -->--}%
-        %{--</div>--}%
+%{--<div class="col-xs-12">--}%
+%{--<textarea class="form-control" id="message2" name="message" rows="5"--}%
+%{--placeholder="Message"></textarea>--}%
+
+%{--<div class="error" id="err-message" style="display: none;">Please enter message</div>--}%
+%{--</div>--}%
+%{--<!-- /Form Msg -->--}%
+
+%{--<div class="row">--}%
+%{--<div class="col-xs-12">--}%
+%{--<div id="ajaxsuccess" class="text-success">E-mail was successfully sent.</div>--}%
+
+%{--<div class="error text-center" id="err-form"--}%
+%{--style="display: none;">There was a problem validating the form please check!</div>--}%
+
+%{--<div class="error" id="err-timedout">The connection to the server timed out!</div>--}%
+
+%{--<div class="error" id="err-state"></div>--}%
+
+%{--<div class="text-center">--}%
+%{--<button type="submit" class="btn btn-dark" id="send">Submit</button>--}%
+%{--</div>--}%
+%{--</div> <!-- /col -->--}%
+%{--</div> <!-- /row -->--}%
+
+%{--</form> <!-- /form -->--}%
+%{--</div> <!-- end col -->--}%
+%{--</div>--}%
+%{--</div> <!-- end Col -->--}%
+%{--</div>--}%
 
 %{--</section>--}%
 
