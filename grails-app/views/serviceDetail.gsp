@@ -58,7 +58,12 @@
 </nav>
 
 <section class="section">
-    <h2></h2>
+    <h2 class="text-center">${category}</h2>
+
+    <br/>
+    <br/>
+    <br/>
+
 
     <div class="container">
             <g:each in="${services}" var="service">
