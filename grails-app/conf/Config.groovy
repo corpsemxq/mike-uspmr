@@ -97,12 +97,10 @@ environments {
             defaultValue {
                 customerServiceEmail = "maoxingqiang0824@gmail.com"
                 noreplyEmail = "noreply@uspmr.com"
-                props = ["mail.smtp.host" : "smtp.mailgun.org",
-                         "mail.smtp.port" : "587",
-                         username : 'postmaster@sandbox785bc02a76344575af85fab5d31e67e3.mailgun.org',
-                         password : '36503001be2eac56ab3039dc4af226c2',
-                         "mail.smtp.auth" : "true",
-                         "mail.smtp.starttls.enable": "true"]
+                props = [
+                        "mail.smtp.host":"localhost",
+                        "mail.smtp.port": "1025",
+                ]
             }
         }
 
@@ -113,6 +111,19 @@ environments {
         staticProp {
             String homeDir = System.getProperty('user.home')
             homePropLocation = "${homeDir}/prop/homeProp.properties"
+        }
+
+        mailSender {
+            defaultValue {
+                customerServiceEmail = "maoxingqiang0824@gmail.com"
+                noreplyEmail = "noreply@uspmr.com"
+                props = ["mail.smtp.host" : "smtp.mailgun.org",
+                         "mail.smtp.port" : "587",
+                         username : 'postmaster@sandbox785bc02a76344575af85fab5d31e67e3.mailgun.org',
+                         password : '36503001be2eac56ab3039dc4af226c2',
+                         "mail.smtp.auth" : "true",
+                         "mail.smtp.starttls.enable": "true"]
+            }
         }
     }
 }

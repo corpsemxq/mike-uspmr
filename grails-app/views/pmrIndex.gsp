@@ -39,7 +39,7 @@
         <div class="row">
             <div class="col-md-8">
                 <div class="home-wrapper">
-                    <h2 class="text-muted">Creative Landing Page Template</h2>
+                    <h2 class="text-muted">${homeConfig.home.title}</h2>
                     <p>${homeConfig.home.aboutus}</p>
                     <a href="#" class="btn btn-yellow">Get Started</a>
                 </div>
@@ -52,18 +52,16 @@
 <section class="section" id="services">
     <div class="container">
         <div class="row">
-            <g:each in="${services}" var="service">
+            <g:each in="${homeConfig?.home?.service?.firstLevelCategory}" var="category">
 
-                <div class="col-sm-4">
+                <div class="col-sm-6">
                     <div class="features-box text-center">
                         <div class="feature-icon-const">
                             %{--<i class="flaticon-construction-tool-vehicle-with-crane-lifting-materials"></i>--}%
-                            <img src="images/homeBack.jpg" style="width: 200px; height: 150px;" >
+                            <a href="${createLink(controller: "page", action: "servicePage", params: [category: category.key])}"><img src="${category?.value}" style="width: 200px; height: 150px;" ></a>
                         </div>
 
-                        <h3>${service.key}</h3>
-
-                        <p class="text-muted">service.value</p>
+                        <a href="${createLink(controller: "page", action: "servicePage", params: [category: category.key])}"><h3>${category?.key}</h3></a>
                     </div>
                 </div>
             </g:each>

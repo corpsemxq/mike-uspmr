@@ -178,7 +178,7 @@
                 <br/>
 
 
-                <h4 class="text-left">How many years of experience you have?</h4>
+                <h4 class="text-left"><mark>How many years of experience you have?</mark></h4>
 
             %{--Number of experience--}%
                 <div class="form-group">
@@ -191,7 +191,7 @@
                 <br/>
                 <br/>
 
-                <h4 class="text-left">Do you have insurances? If so please list the insurance company and type of coverage that you have.</h4>
+                <h4 class="text-left"><mark>Do you have insurances? If so please list the insurance company and type of coverage that you have.</mark></h4>
                 <div class="form-group">
                     <label class="control-label">Insurance company :</label>
                     <g:textField style="width: 70%" class="form-control" name="insuranceCompany" id="insuranceCompany"/>
@@ -204,7 +204,7 @@
 
                 <br/>
 
-                <h5>Coverage Type:</h5>
+                <p>Coverage Type:</p>
                 <div class="form-group">
                     <div class="col-sm-4">
                         <label class="control-label">
@@ -238,7 +238,7 @@
                 <br/>
 
 
-                <h4 class="text-left">Please list the contact information below:</h4>
+                <h4 class="text-left"><mark>Please list the contact information below:</mark></h4>
                 <div class="form-group">
                     <label class="control-label">Business Name : </label>
                     <g:textField style="width: 70%" class="form-control" name="businessName" id="businessName"/>
@@ -282,7 +282,7 @@
                 <br/>
                 <br/>
 
-                <h4 class="text-left">Please list up to three references:</h4>
+                <h4 class="text-left"><mark>Please list up to three references:</mark></h4>
 %{--reference 1--}%
                 <div class="form-group">
                 <g:textField style="width: 70%" name="referenceName1" class="form-control" id="referenceName1"  placeholder="Name" type="text"

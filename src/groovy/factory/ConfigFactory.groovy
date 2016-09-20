@@ -13,7 +13,7 @@ class ConfigFactory {
         } catch (IOException ex) {
             ex.printStackTrace()
             if (!prop) {
-                prop = new ConfigSlurper("development").parse(new File("/Users/xingqiangmao/workspace/mike-uspmr/grails-app/conf/homeConfig.groovy")?.toURI()?.toURL())
+                prop = new ConfigSlurper("development").parse(new File("${System.getProperty("user.dir")}/grails-app/conf/homeConfig.groovy")?.toURI()?.toURL())
             }
         } finally {
             return prop

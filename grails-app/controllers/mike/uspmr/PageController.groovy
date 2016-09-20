@@ -24,11 +24,23 @@ class PageController {
 
         println  homeConfig?.home?.aboutus
         println "123"
-        render(view: '/pmrIndex', model: [test: "test", services : services, homeConfig : homeConfig])
+        render(view: '/pmrIndex', model: [test: "test", homeConfig : homeConfig])
     }
 
 
     def applicationPage() {
         render(view: '/applicationForm', model: [test: "test"])
+    }
+
+    def servicePage(String category) {
+        if (category in homeConfig.home.service.firstLevelCategory.keySet()) {
+            log.info "Choosing $category services."
+            render(view: '/serviceDetail', model:
+                    [test: "test", services : homeConfig.home.service.secondLevelCategory."${category.replace(" ","").toLowerCase()}", homeConfig : homeConfig])
+        } else {
+            render(view: '/pmrIndex', model: [test: "test", homeConfig : homeConfig])
+
+        }
+
     }
 }
