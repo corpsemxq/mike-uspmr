@@ -36,7 +36,7 @@ class PageController {
         if (category in homeConfig.home.service.firstLevelCategory.keySet()) {
             log.info "Choosing $category services."
             render(view: '/serviceDetail', model:
-                    [test: "test", services : homeConfig.home.service.secondLevelCategory."${category.replace(" ","").toLowerCase()}", homeConfig : homeConfig])
+                    [test: "test", services : homeConfig.home.service.secondLevelCategory."${category.replace(" ","").toLowerCase()}", homeConfig : homeConfig, category : category])
         } else {
             render(view: '/pmrIndex', model: [test: "test", homeConfig : homeConfig])
 

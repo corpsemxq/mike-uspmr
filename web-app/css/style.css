@@ -1421,4 +1421,9 @@ textarea.form-control {
   #count-down .hours_dash {
     border-right: none;
   }
+
+  blockquote {
+    color: #696969;
+    font: .95em Georgia, "Times New Roman", Times, serif;
+  }
 }

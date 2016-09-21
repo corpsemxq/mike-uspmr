@@ -58,22 +58,30 @@
 </nav>
 
 <section class="section">
+    <h2 class="text-center">${category}</h2>
+
+    <br/>
+    <br/>
+    <br/>
+
 
     <div class="container">
-        <div class="row">
             <g:each in="${services}" var="service">
-
-                <div class="col-sm-10">
-                    <div class="features-box text-center">
+                    <div class="col-sm-3 text-left">
                         <h3>${service?.key}</h3>
-                        <p>${service?.value}</p>
                     </div>
-                </div>
+                    <div class="col-sm-8 features-box text-left">
+                        <blockquote style="background-color: #ededf5">
+                            <p>${service?.value}</p>
+                        </blockquote>
+                    </div>
                 <br/>
                 <br/>
                 <br/>
+                <ul class="nav nav-list">
+                    <li class="divider"></li>
+                </ul>
             </g:each>
-        </div>
     </div>
 </section>
 </body>
