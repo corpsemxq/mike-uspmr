@@ -95,7 +95,7 @@ environments {
 
         mailSender {
             defaultValue {
-                customerServiceEmail = "maoxingqiang0824@gmail.com"
+                customerServiceEmail = "info@USPMR.com"
                 noreplyEmail = "noreply@uspmr.com"
                 props = [
                         "mail.smtp.host":"localhost",

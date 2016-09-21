@@ -63,7 +63,7 @@
 
         <div class="container">
             %{--Form title--}%
-            <h2 class="title">SUB CONTRACTOR APPLCATION FORM</h2>
+            <h2 class="title">Vendor Application Form</h2>
 
         %{--Form body--}%
             <g:form role="form" name="ajax-form" id="ajax-form"

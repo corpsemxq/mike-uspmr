@@ -130,7 +130,7 @@ repairs are performed by qualified vendors that have the necessary equipment and
 }
 
 contact {
-    email = "uspmr@hotmal.com"
+    email = "info@USPMR.com"
     phone = "(201)201-2001"
     address = "123 washington street, Hoboken, NJ, 07030"
 }
