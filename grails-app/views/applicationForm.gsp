@@ -283,7 +283,7 @@
                 <div class="form-group ">
                 <g:textField style="width: 70%" name="reference1.companyName" class="form-control" id="reference1.companyName" placeholder="Company Name" type="text"
                            value=""/>
-                    <div class="error" id="err-contactperson" style="display: none;">Company Name</div> 
+                    <div class="error" id="err-contactperson" style="display: none;">Company Name</div>
                 </div>
                 <br/>
                 <div class="form-group">
