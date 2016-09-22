@@ -3,7 +3,7 @@ home {
     title = "USPMR"
 
 
-    aboutus = '''United States Property Management &amp; Rehabilitation (USPMR) is a property preservation and rehabilitation servicer
+    aboutus = '''United States Property Management & Rehabilitation (USPMR) is a property preservation and rehabilitation servicer
 
 established to manage residual inventory as a result of the nation’s largest housing crisis in history.  We are tasked with
 

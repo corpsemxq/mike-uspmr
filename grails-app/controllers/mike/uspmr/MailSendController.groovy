@@ -2,7 +2,7 @@ package mike.uspmr
 
 class MailSendController {
 
-//    static allowedMethods = [contactEmailSend: "POST"]
+//    static allowedMethods = [applicationSend: "POST"]
 
     static responseFormats = ['json', 'html']
     static namespace = 'v1'
@@ -20,11 +20,14 @@ class MailSendController {
 
 
     def contactEmailSend () {
-        println "sbnsdasasdsd"
-        println params.name
-        println params.email
-        println params.message
         mailSendService.sendEmailFromContactUs(params.name, params.email, params.message)
         redirect(controller: "page", action: "homePage")
+    }
+
+    def applicationSend(){
+            println "sb"
+        println params.vendorSercices
+        redirect(controller: "page", action: "homePage")
+
     }
 }

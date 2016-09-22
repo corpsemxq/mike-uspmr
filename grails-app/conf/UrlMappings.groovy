@@ -7,9 +7,9 @@ class UrlMappings {
             }
         }
 
-        "/mailSend/contactEmailSend"(controller: "mailSend",action:"contactEmailSend", namespace: "v1") {
+        "/mailSend/contactEmailSend"(controller: "mailSend",action:"contactEmailSend", namespace: "v1") {}
 
-        }
+        "/mailSend/applicationSend"(controller: "mailSend",action:"applicationSend", namespace: "v1") {}
 
 
         "/"(controller: "page", action:  "homePage")

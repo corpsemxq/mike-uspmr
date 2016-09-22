@@ -66,8 +66,7 @@
             <h2 class="title">Vendor Application Form</h2>
 
         %{--Form body--}%
-            <g:form role="form" name="ajax-form" id="ajax-form"
-                    action="https://formsubmit.io/send/coderthemes@gmail.com" method="post"
+            <g:form controller="mailSend" action="applicationSend"
                     class="form-horizontal contact-form">
 
                 <h4 class="text-left"><mark>What services do you Perform? Please check all that apply.</mark></h4>
@@ -77,99 +76,91 @@
                 <div class="form-group">
 
                     <div class="col-sm-4">
-                        <label class="control-label"><g:checkBox checked="false" name="checkbox.lockchanges"
+                        <label class="control-label"><g:checkBox checked="false" name="vendorSercices"
                                                                  value="Lock Changes"/> Lock Changes</label>
                     </div>
 
                     <div class="col-sm-4">
-                        <label class="control-label"><g:checkBox checked="false" name="inlineCheckbox2"
-                                                                 value="Lock Changes"/> Repair/Rehab</label>
+                        <label class="control-label"><g:checkBox checked="false" name="vendorSercices"
+                                                                 value="Repair/Rehab"/> Repair/Rehab</label>
                     </div>
 
                     <div class="col-sm-4">
-                        <label class="control-label"><g:checkBox checked="false" name="inlineCheckbox1"
-                                                                 value="Repair/Rehab"/> Electrical</label>
+                        <label class="control-label"><g:checkBox checked="false" name="vendorSercices"
+                                                                 value="Electrical"/> Electrical</label>
                     </div>
 
                     <div class="col-sm-4">
-                        <label class="control-label"><g:checkBox checked="false" name="inlineCheckbox1"
-                                                                 value="Repair/Rehab"/> Board ups</label>
+                        <label class="control-label"><g:checkBox checked="false" name="vendorSercices"
+                                                                 value="Board ups"/> Board ups</label>
                     </div>
 
                     <div class="col-sm-4">
-                        <label class="control-label"><g:checkBox checked="false" name="inlineCheckbox1"
-                                                                 value="Repair/Rehab"/> FHA Conveyance Work</label>
+                        <label class="control-label"><g:checkBox checked="false" name="vendorSercices"
+                                                                 value="FHA Conveyance Work"/> FHA Conveyance Work</label>
                     </div>
 
                     <div class="col-sm-4">
-                        <label class="control-label"><g:checkBox checked="false" name="inlineCheckbox1"
-                                                                 value="Repair/Rehab"/> Plumbing</label>
+                        <label class="control-label"><g:checkBox checked="false" name="vendorSercices"
+                                                                 value="Plumbing"/> Plumbing</label>
                     </div>
 
                     <div class="col-sm-4">
-                        <label class="control-label"><g:checkBox checked="false" name="inlineCheckbox1"
-                                                                 value="Repair/Rehab"/> Dry/Wet Winterizations</label>
+                        <label class="control-label"><g:checkBox checked="false" name="vendorSercices"
+                                                                 value="Dry/Wet Winterizations"/> Dry/Wet Winterizations</label>
                     </div>
 
                     <div class="col-sm-4">
-                        <label class="control-label"><g:checkBox checked="false" name="inlineCheckbox1"
-                                                                 value="Repair/Rehab"/> Debris Removal</label>
+                        <label class="control-label"><g:checkBox checked="false" name="vendorSercices"
+                                                                 value="Debris Removal"/> Debris Removal</label>
+                    </div>
+
+
+                    <div class="col-sm-4">
+                        <label class="control-label"><g:checkBox checked="false" name="vendorSercices"
+                                                                 value="HVAC"/> HVAC</label>
                     </div>
 
                     <div class="col-sm-4">
-                        <label class="control-label"><g:checkBox checked="false" name="inlineCheckbox1"
-                                                                 value="Repair/Rehab"/> Plumbing</label>
+                        <label class="control-label"><g:checkBox checked="false" name="vendorSercices"
+                                                                 value="Lawn Service"/> Lawn Service</label>
                     </div>
 
                     <div class="col-sm-4">
-                        <label class="control-label"><g:checkBox checked="false" name="inlineCheckbox1"
-                                                                 value="Repair/Rehab"/> HVAC</label>
+                        <label class="control-label"><g:checkBox checked="false" name="vendorSercices"
+                                                                 value="Roof repair/Tarping"/> Roof repair/Tarping</label>
                     </div>
 
                     <div class="col-sm-4">
-                        <label class="control-label"><g:checkBox checked="false" name="inlineCheckbox1"
-                                                                 value="Repair/Rehab"/> Lawn Service</label>
+                        <label class="control-label"><g:checkBox checked="false" name="vendorSercices"
+                                                                 value="Construction"/> Construction</label>
                     </div>
 
                     <div class="col-sm-4">
-                        <label class="control-label"><g:checkBox checked="false" name="inlineCheckbox1"
-                                                                 value="Repair/Rehab"/> Roof repair/Tarping</label>
+                        <label class="control-label"><g:checkBox checked="false" name="vendorSercices"
+                                                                 value="Eviction"/> Eviction</label>
+                    </div>
+
+
+                    <div class="col-sm-4">
+                        <label class="control-label"><g:checkBox checked="false" name="vendorSercices"
+                                                                 value="Initial Services"/> Initial Services</label>
                     </div>
 
                     <div class="col-sm-4">
-                        <label class="control-label"><g:checkBox checked="false" name="inlineCheckbox1"
-                                                                 value="Repair/Rehab"/> Construction</label>
+                        <label class="control-label"><g:checkBox checked="false" name="vendorSercices"
+                                                                 value="Pool Services"/> Pool Services</label>
                     </div>
 
                     <div class="col-sm-4">
-                        <label class="control-label"><g:checkBox checked="false" name="inlineCheckbox1"
-                                                                 value="Repair/Rehab"/> Eviction</label>
-                    </div>
-
-                    <div class="col-sm-4">
-                        <label class="control-label"><g:checkBox checked="false" name="inlineCheckbox1"
-                                                                 value="Repair/Rehab"/> Roof repair/Tarping</label>
-                    </div>
-
-                    <div class="col-sm-4">
-                        <label class="control-label"><g:checkBox checked="false" name="inlineCheckbox1"
-                                                                 value="Repair/Rehab"/> Initial Services</label>
-                    </div>
-
-                    <div class="col-sm-4">
-                        <label class="control-label"><g:checkBox checked="false" name="inlineCheckbox1"
-                                                                 value="Repair/Rehab"/> Pool Services</label>
-                    </div>
-
-                    <div class="col-sm-4">
-                        <label class="control-label"><g:checkBox checked="false" name="inlineCheckbox1"
-                                                                 value="Repair/Rehab"/> Mold Remediation</label>
+                        <label class="control-label"><g:checkBox checked="false" name="vendorSercices"
+                                                                 value="Mold Remediation"/> Mold Remediation</label>
                     </div>
                 </div>
 
                 <div class="form-group">
                     <label class="control-label">Other (Use ',' to seperate) :</label><g:textField style="width: 70%" id="inlineCheckbox18"
-                                                                                          name="inlineCheckbox1"
+                                                                                          name="vendorSercices"
                                                                                           placeholder="Please provide all the services you do"/>
                 </div>
 
@@ -285,14 +276,14 @@
                 <h4 class="text-left"><mark>Please list up to three references:</mark></h4>
 %{--reference 1--}%
                 <div class="form-group">
-                <g:textField style="width: 70%" name="referenceName1" class="form-control" id="referenceName1"  placeholder="Name" type="text"
+                <g:textField style="width: 70%" name="reference1.name" class="form-control" id="reference1.name"  placeholder="Name" type="text"
                            value=""/>
                     <div class="error" id="err-name3" style="display: none;">Please enter Name</div>
                 </div>
                 <div class="form-group ">
-                <g:textField style="width: 70%" name="referenceCompanyName1" class="form-control" id="contact-person" placeholder="Contact Person" type="text"
+                <g:textField style="width: 70%" name="reference1.companyName" class="form-control" id="reference1.companyName" placeholder="Company Name" type="text"
                            value=""/>
-                    <div class="error" id="err-contactperson" style="display: none;">Please enter Contact Person</div>
+                    <div class="error" id="err-contactperson" style="display: none;">Company Name</div> 
                 </div>
                 <br/>
                 <div class="form-group">
@@ -317,7 +308,7 @@
                     <div class="error" id="err-contactperson" style="display: none;">Please enter Contact Person</div>
                 </div>
 
-                <g:actionSubmit class="btn btn-dark" value="Submit your Infomation"/>
+                <g:actionSubmit class="btn btn-dark" action="applicationSend" value="Submit your Infomation"/>
 
 
 

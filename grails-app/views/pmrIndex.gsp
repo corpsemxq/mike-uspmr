@@ -281,12 +281,14 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class=" text-center">
-                    <h2 class="title">Get In Touch</h2>
+                    <h2 class="title">Questions & Feedback</h2>
 
-                    <p class="title-alt">Looks beautiful &amp; ultra-sharp on Retina Screen Displays. Retina Icons, Fonts &amp; all <br> others graphics are optimized.
-                    </p>
+                    %{--<p class="title-alt">Looks beautiful &amp; ultra-sharp on Retina Screen Displays. Retina Icons, Fonts &amp; all <br> others graphics are optimized.--}%
+                    %{--</p>--}%
+
                 </div>
-
+                <br/>
+                <br/>
 
                 <div class="row">
                     <!-- Contact form -->
@@ -325,6 +327,8 @@
                                     <div class="error" id="err-timedout">The connection to the server timed out!</div>
 
                                     <div class="error" id="err-state"></div>
+                                    <br/>
+                                    <br/>
 
                                     <div class="text-center">
                                         <g:actionSubmit value="Submit" action="contactEmailSend" class="btn btn-dark"/>
