@@ -98,8 +98,13 @@ environments {
                 customerServiceEmail = "info@USPMR.com"
                 noreplyEmail = "noreply@uspmr.com"
                 props = [
-                        "mail.smtp.host":"localhost",
-                        "mail.smtp.port": "1025",
+                        "mail.smtp.host":"smtp.office365.com",
+                        "mail.smtp.port": "587",
+//                        "username" : "admin@NETORGFT2251579.onmicrosoft.com",
+                        "username" : "info@uspmr.com",
+                        "password" : "Empire2016!",
+                        "mail.smtp.auth" : "true",
+                        "mail.smtp.starttls.enable": "true"
                 ]
             }
         }
