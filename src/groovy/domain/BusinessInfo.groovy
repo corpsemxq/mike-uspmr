@@ -7,6 +7,8 @@ class BusinessInfo {
 
     String businessName
 
+    String contactPerson
+
     String businessAddress
 
     String businessCity

@@ -174,7 +174,7 @@
             %{--Number of experience--}%
                 <div class="form-group">
                     <label class="control-label">Years of experience :</label>
-                    <g:textField style="width: 70%" class="form-control" name="experience" type="number"
+                    <g:textField style="width: 70%" class="form-control" name="yrsOfExperience" type="number"
                                  id="years-experience"/>
                 </div>
 
@@ -185,12 +185,12 @@
                 <h4 class="text-left"><mark>Do you have insurances? If so please list the insurance company and type of coverage that you have.</mark></h4>
                 <div class="form-group">
                     <label class="control-label">Insurance company :</label>
-                    <g:textField style="width: 70%" class="form-control" name="insuranceCompany" id="insuranceCompany"/>
+                    <g:textField style="width: 70%" class="form-control" name="insuranceDetail.insuranceCompany" id="insuranceCompany"/>
                 </div>
 
                 <div class="form-group">
                     <label class="control-label">Policy exp date:</label>
-                    <g:datePicker class="form-control" style="width: 70%" precision="day" years="${2016..2200}" value="${new Date()}" name="insuranceCompany" id="insuranceCompany"/>
+                    <g:datePicker class="form-control" style="width: 70%" precision="day" years="${2016..2200}" value="${new Date()}" name="insuranceDetail.expireDate" id="insuranceCompany"/>
                 </div>
 
                 <br/>
@@ -199,28 +199,28 @@
                 <div class="form-group">
                     <div class="col-sm-4">
                         <label class="control-label">
-                            <g:checkBox checked="false" name="generalLiability" id="Checkbox1" value="General Liability"/> General Liability
+                            <g:checkBox checked="false" name="insuranceDetail.coverageArea" id="Checkbox1" value="General Liability"/> General Liability
                         </label>
                     </div>
                     <div class="col-sm-4">
                         <label class="control-label">
-                            <g:checkBox checked="false" name="workerSComp" id="Checkbox2" value="Worker's Comp"/> Worker's Comp
+                            <g:checkBox checked="false" name="insuranceDetail.coverageArea" id="Checkbox2" value="Worker's Comp"/> Worker's Comp
                         </label>
                     </div>
                     <div class="col-sm-4">
                         <label class="control-label">
-                            <g:checkBox checked="false" name="errorsAndOmissions" id="Checkbox3" value="Errors and Omissions"/> Errors and Omissions
+                            <g:checkBox checked="false" name="insuranceDetail.coverageArea" id="Checkbox3" value="Errors and Omissions"/> Errors and Omissions
                         </label>
                     </div>
 
                     <div class="col-sm-4">
                         <label class="control-label">
-                            <g:checkBox checked="false" name="commercialAutoPolicy" id="Checkbox5" value="Commercial Auto Policy"/> Commercial Auto Policy
+                            <g:checkBox checked="false" name="insuranceDetail.coverageArea" id="Checkbox5" value="Commercial Auto Policy"/> Commercial Auto Policy
                         </label>
                     </div>
                     <div class="col-sm-4">
                         <label class="control-label">
-                            <g:checkBox checked="false" name="Other" id="Checkbox4" value="Other"/> Other
+                            <g:checkBox checked="false" name="insuranceDetail.coverageArea" id="Checkbox4" value="Other"/> Other
                         </label>
                     </div>
                 </div>
@@ -232,37 +232,47 @@
                 <h4 class="text-left"><mark>Please list the contact information below:</mark></h4>
                 <div class="form-group">
                     <label class="control-label">Business Name : </label>
-                    <g:textField style="width: 70%" class="form-control" name="businessName" id="businessName"/>
+                    <g:textField style="width: 70%" class="form-control" name="businessInfo.businessName" id="businessName"/>
                 </div>
 
                 <div class="form-group">
                     <label class="control-label">Contact Person Name : </label>
-                    <g:textField style="width: 70%" class="form-control" name="contactPersonName " id="contactPersonName"/>
+                    <g:textField style="width: 70%" class="form-control" name="businessInfo.contactPerson" id="contactPersonName"/>
                 </div>
 
                 <div class="form-group">
-                    <label class="control-label">Business Address (Please include state, city): </label>
-                    <g:textField style="width: 70%" class="form-control" name="businessAddress " id="businessAddress"/>
+                    <label class="control-label">Business Address : </label>
+                    <g:textField style="width: 70%" class="form-control" name="businessInfo.businessAddress " id="businessAddress"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label">Business City : </label>
+                    <g:textField style="width: 70%" class="form-control" name="businessInfo.businessCity " id="businessCity"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label">Business State : </label>
+                    <g:textField style="width: 70%" class="form-control" name="businessInfo.businessState " id="businessState"/>
                 </div>
 
                 <div class="form-group">
                     <label class="control-label">Zip Code : </label>
-                    <g:textField style="width: 70%" class="form-control" name="businessZipcode " id="businessZipcode"/>
+                    <g:textField style="width: 70%" class="form-control" name="businessInfo.businessZip " id="businessZipcode"/>
                 </div>
 
                 <div class="form-group">
                     <label class="control-label">Office Phone Number : </label>
-                    <g:textField style="width: 70%" class="form-control" name="officePhone" id="officePhone"/>
+                    <g:textField style="width: 70%" class="form-control" name="businessInfo.businessPhone" id="officePhone"/>
                 </div>
 
                 <div class="form-group">
                     <label class="control-label">Contact Cell Phone : </label>
-                    <g:textField style="width: 70%" class="form-control" name="contactPhone" id="contactPhone"/>
+                    <g:textField style="width: 70%" class="form-control" name="businessInfo.contactPhone" id="contactPhone"/>
                 </div>
 
                 <div class="form-group">
                     <label class="control-label">Email : </label>
-                    <g:textField style="width: 70%" class="form-control" id="email2" name="email" type="text"
+                    <g:textField style="width: 70%" class="form-control" id="email2" name="businessInfo.contactEmail" type="text"
                            placeholder="Email" value=""/>
 
                     <div class="error" id="err-emailvld"
@@ -275,6 +285,8 @@
 
                 <h4 class="text-left"><mark>Please list up to three references:</mark></h4>
 %{--reference 1--}%
+                <p>Reference 1</p>
+
                 <div class="form-group">
                 <g:textField style="width: 70%" name="reference1.name" class="form-control" id="reference1.name"  placeholder="Name" type="text"
                            value=""/>
@@ -285,308 +297,60 @@
                            value=""/>
                     <div class="error" id="err-contactperson" style="display: none;">Company Name</div>
                 </div>
-                <br/>
+                <div class="form-group ">
+                    <g:textField style="width: 70%" name="reference1.phoneNumber" class="form-control" id="reference1.companyName" placeholder="Contact Number" type="text"
+                                 value=""/>
+                    <div class="error" id="err-contactperson" style="display: none;">Contact Number</div>
+                </div>
+
+            %{--reference 2--}%
+                <p>Reference 2</p>
+
                 <div class="form-group">
-                    <g:textField style="width: 70%" name="referenceName2" class="form-control" id="referenceName1"  placeholder="Name" type="text"
+                    <g:textField style="width: 70%" name="reference2.name" class="form-control" id="reference2.name"  placeholder="Name" type="text"
                                  value=""/>
                     <div class="error" id="err-name3" style="display: none;">Please enter Name</div>
                 </div>
-                <div class="form-group">
-                    <g:textField style="width: 70%" name="referenceCompanyName2" class="form-control" id="contact-person" placeholder="Contact Person" type="text"
-                                  value=""/>
-                    <div class="error" id="err-contactperson" style="display: none;">Please enter Contact Person</div>
+                <div class="form-group ">
+                    <g:textField style="width: 70%" name="reference2.companyName" class="form-control" id="reference2.companyName" placeholder="Company Name" type="text"
+                                 value=""/>
+                    <div class="error" id="err-contactperson" style="display: none;">Company Name</div>
                 </div>
-                <br/>
+                <div class="form-group ">
+                    <g:textField style="width: 70%" name="reference2.phoneNumber" class="form-control" id="reference2.companyName" placeholder="Contact Number" type="text"
+                                 value=""/>
+                    <div class="error" id="err-contactperson" style="display: none;">Contact Number</div>
+                </div>
+
+
+
+            %{--reference 3--}%
+                <p>Reference 3</p>
+
                 <div class="form-group">
-                    <g:textField style="width: 70%" name="referenceName3" class="form-control" id="referenceName1"  placeholder="Name" type="text"
+                    <g:textField style="width: 70%" name="reference3.name" class="form-control" id="reference3.name"  placeholder="Name" type="text"
                                  value=""/>
                     <div class="error" id="err-name3" style="display: none;">Please enter Name</div>
                 </div>
-                <div class="form-group">
-                    <g:textField style="width: 70%" name="referenceCompanyName3" class="form-control" id="contact-person" placeholder="Contact Person" type="text"
-                                  value=""/>
-                    <div class="error" id="err-contactperson" style="display: none;">Please enter Contact Person</div>
+                <div class="form-group ">
+                    <g:textField style="width: 70%" name="reference3.companyName" class="form-control" id="reference3.companyName" placeholder="Company Name" type="text"
+                                 value=""/>
+                    <div class="error" id="err-contactperson" style="display: none;">Company Name</div>
                 </div>
+                <div class="form-group ">
+                    <g:textField style="width: 70%" name="reference3.phoneNumber" class="form-control" id="reference3.companyName" placeholder="Contact Number" type="text"
+                                 value=""/>
+                    <div class="error" id="err-contactperson" style="display: none;">Contact Number</div>
+                </div>
+                <br/>
 
                 <g:actionSubmit class="btn btn-dark" action="applicationSend" value="Submit your Infomation"/>
-
-
 
             </g:form>
         </div>
     </div>
 </section>
 <br/>
-
-
-%{--<!-- Contact form -->--}%
-%{--<div class="col-sm-12">--}%
-
-
-
-%{--<div class="form-group row col-sm-3">--}%
-
-
-
-%{--<div class="col-sm-2">--}%
-%{--<input type="text" class="form-control" id="Policy-exp-c"--}%
-%{--placeholder="mm/dd/yyyy">--}%
-%{--</div>--}%
-%{--</div>--}%
-
-%{--<p class="text-left">Coverage Type:--}%
-%{--</p>--}%
-
-%{--<div class="col-sm-4">--}%
-%{--<label class="checkbox-inline">--}%
-%{--<input type="checkbox" id="Checkbox1" value="General Liability"> General Liability--}%
-%{--</label>--}%
-%{--</div>--}%
-
-%{--<div class="col-sm-4">--}%
-%{--<label class="checkbox-inline">--}%
-%{--<input type="checkbox" id="Checkbox2" value="Worker's Comp"> Worker's Comp--}%
-%{--</label>--}%
-%{--</div>--}%
-
-%{--<div class="col-sm-4">--}%
-%{--<label class="checkbox-inline">--}%
-%{--<input type="checkbox" id="Checkbox3"--}%
-%{--value="Errors and Omissions"> Errors and Omissions--}%
-%{--</label>--}%
-%{--</div>--}%
-
-%{--<div class="col-sm-4">--}%
-%{--<label class="checkbox-inline">--}%
-%{--<input type="checkbox" id="Checkbox4" value="Other"> Other--}%
-%{--</label>--}%
-%{--</div>--}%
-
-%{--<div class="col-sm-4">--}%
-%{--<label class="checkbox-inline">--}%
-%{--<input type="checkbox" id="Checkbox5"--}%
-%{--value="Commercial Auto Policy"> Commercial Auto Policy--}%
-%{--</label>--}%
-%{--</div>--}%
-
-%{--<div class="col-sm-4">--}%
-%{--<label class="checkbox-inline">--}%
-%{--<input type="checkbox" id="Checkbox6" value="Other"> Other--}%
-%{--</label>--}%
-%{--</div>--}%
-
-%{--<p class="text-left">Please list the contact information below:--}%
-%{--</p>--}%
-
-%{--<div class="col-sm-12">--}%
-%{--<input class="form-control" id="name2" name="name" placeholder="Business Name"--}%
-%{--type="text"--}%
-%{--value="">--}%
-
-%{--<div class="error" id="err-name" style="display: none;">Please enter Business Name</div>--}%
-%{--</div>--}%
-
-%{--<div class="col-sm-12">--}%
-%{--<input class="form-control" id="contactperson" name="contactperson"--}%
-%{--placeholder="Contact Person" type="text"--}%
-%{--value="">--}%
-
-%{--<div class="error" id="err-person"--}%
-%{--style="display: none;">Please enter Contact Person</div>--}%
-%{--</div>--}%
-
-%{--<div class="col-sm-12">--}%
-%{--<input class="form-control" id="address" name="address" placeholder="Address"--}%
-%{--type="text"--}%
-%{--value="">--}%
-
-%{--<div class="error" id="err-address" style="display: none;">Please enter Address</div>--}%
-%{--</div>--}%
-
-%{--<div class="col-sm-12">--}%
-%{--<input class="form-control" id="city" name="city" placeholder="City" type="text"--}%
-%{--value="">--}%
-
-%{--<div class="error" id="err-city" style="display: none;">Please enter City</div>--}%
-%{--</div>--}%
-
-%{--<div class="col-sm-12">--}%
-%{--<input class="form-control" id="state" name="state" placeholder="State" type="text"--}%
-%{--value="">--}%
-
-%{--<div class="error" id="err-sta" style="display: none;">Please enter State</div>--}%
-%{--</div>--}%
-
-%{--<div class="col-sm-12">--}%
-%{--<input class="form-control" id="zip" name="zip" placeholder="Zip" type="text"--}%
-%{--value="">--}%
-
-%{--<div class="error" id="err-zip" style="display: none;">Please enter Zip</div>--}%
-%{--</div>--}%
-
-%{--<div class="col-sm-12">--}%
-%{--<input class="form-control" id="Office-phone" name="Office-phone"--}%
-%{--placeholder="Office Phone" type="text"--}%
-%{--value="">--}%
-
-%{--<div class="error" id="err-Office-phone"--}%
-%{--style="display: none;">Please enter Office Phone</div>--}%
-%{--</div>--}%
-
-%{--<div class="col-sm-12">--}%
-%{--<input class="form-control" id="Cell-phone" name="Cell-phone" placeholder="Cell Phone"--}%
-%{--type="text"--}%
-%{--value="">--}%
-
-%{--<div class="error" id="err-Cell-phone"--}%
-%{--style="display: none;">Please enter Cell Phone</div>--}%
-%{--</div>--}%
-
-%{--<div class="col-sm-12">--}%
-%{--<input class="form-control" id="email2" name="email" type="text"--}%
-%{--placeholder="Email" value="">--}%
-
-%{--<div class="error" id="err-emailvld"--}%
-%{--style="display: none;">E-mail is not a valid format</div>--}%
-%{--</div>--}%
-
-%{--<p class="text-left">Please list up to three references:--}%
-%{--</p>--}%
-
-%{--<div class="col-sm-4">--}%
-%{--<input class="form-control" id="name3" name="name" placeholder="Name" type="text"--}%
-%{--value="">--}%
-
-%{--<div class="error" id="err-name3" style="display: none;">Please enter Name</div>--}%
-%{--</div>--}%
-
-%{--<div class="col-sm-4">--}%
-%{--<input class="form-control" id="contact-person" name="contact-person"--}%
-%{--placeholder="Contact Person" type="text"--}%
-%{--value="">--}%
-
-%{--<div class="error" id="err-contactperson"--}%
-%{--style="display: none;">Please enter Contact Person</div>--}%
-%{--</div>--}%
-
-%{--<div class="col-sm-4">--}%
-%{--<input class="form-control" id="phone" name="phone" placeholder="Phone" type="text"--}%
-%{--value="">--}%
-
-%{--<div class="error" id="err-phone" style="display: none;">Please enter Phone</div>--}%
-%{--</div>--}%
-
-%{--<div class="col-sm-4">--}%
-%{--<input class="form-control" id="company-name" name="company-name"--}%
-%{--placeholder="Company Name" type="text"--}%
-%{--value="">--}%
-
-%{--<div class="error" id="err-company-name"--}%
-%{--style="display: none;">Please enter Company Name</div>--}%
-%{--</div>--}%
-
-%{--<div class="col-sm-4">--}%
-%{--<input class="form-control" id="name4" name="name" placeholder="Name" type="text"--}%
-%{--value="">--}%
-
-%{--<div class="error" id="err-name4" style="display: none;">Please enter Name</div>--}%
-%{--</div>--}%
-
-%{--<div class="col-sm-4">--}%
-%{--<input class="form-control" id="contact-person2" name="contact-person"--}%
-%{--placeholder="Contact Person" type="text"--}%
-%{--value="">--}%
-
-%{--<div class="error" id="err-contactperson2"--}%
-%{--style="display: none;">Please enter Contact Person</div>--}%
-%{--</div>--}%
-
-%{--<div class="col-sm-4">--}%
-%{--<input class="form-control" id="phone2" name="phone" placeholder="Phone" type="text"--}%
-%{--value="">--}%
-
-%{--<div class="error" id="err-phone2" style="display: none;">Please enter Phone</div>--}%
-%{--</div>--}%
-
-%{--<div class="col-sm-4">--}%
-%{--<input class="form-control" id="company-name2" name="company-name"--}%
-%{--placeholder="Company Name" type="text"--}%
-%{--value="">--}%
-
-%{--<div class="error" id="err-company-name2"--}%
-%{--style="display: none;">Please enter Company Name</div>--}%
-%{--</div>--}%
-
-%{--<div class="col-sm-4">--}%
-%{--<input class="form-control" id="name5" name="name" placeholder="Name" type="text"--}%
-%{--value="">--}%
-
-%{--<div class="error" id="err-name5" style="display: none;">Please enter Name</div>--}%
-%{--</div>--}%
-
-%{--<div class="col-sm-4">--}%
-%{--<input class="form-control" id="contact-person3" name="contact-person"--}%
-%{--placeholder="Contact Person" type="text"--}%
-%{--value="">--}%
-
-%{--<div class="error" id="err-contactperson3"--}%
-%{--style="display: none;">Please enter Contact Person</div>--}%
-%{--</div>--}%
-
-%{--<div class="col-sm-4">--}%
-%{--<input class="form-control" id="phone3" name="phone" placeholder="Phone" type="text"--}%
-%{--value="">--}%
-
-%{--<div class="error" id="err-phone3" style="display: none;">Please enter Phone</div>--}%
-%{--</div>--}%
-
-%{--<div class="col-sm-4">--}%
-%{--<input class="form-control" id="company-name3" name="company-name"--}%
-%{--placeholder="Company Name" type="text"--}%
-%{--value="">--}%
-
-%{--<div class="error" id="err-company-name3"--}%
-%{--style="display: none;">Please enter Company Name</div>--}%
-%{--</div>--}%
-
-%{--<!-- /Form-email -->--}%
-
-%{--<div class="col-xs-12">--}%
-%{--<textarea class="form-control" id="message2" name="message" rows="5"--}%
-%{--placeholder="Message"></textarea>--}%
-
-%{--<div class="error" id="err-message" style="display: none;">Please enter message</div>--}%
-%{--</div>--}%
-%{--<!-- /Form Msg -->--}%
-
-%{--<div class="row">--}%
-%{--<div class="col-xs-12">--}%
-%{--<div id="ajaxsuccess" class="text-success">E-mail was successfully sent.</div>--}%
-
-%{--<div class="error text-center" id="err-form"--}%
-%{--style="display: none;">There was a problem validating the form please check!</div>--}%
-
-%{--<div class="error" id="err-timedout">The connection to the server timed out!</div>--}%
-
-%{--<div class="error" id="err-state"></div>--}%
-
-%{--<div class="text-center">--}%
-%{--<button type="submit" class="btn btn-dark" id="send">Submit</button>--}%
-%{--</div>--}%
-%{--</div> <!-- /col -->--}%
-%{--</div> <!-- /row -->--}%
-
-%{--</form> <!-- /form -->--}%
-%{--</div> <!-- end col -->--}%
-%{--</div>--}%
-%{--</div> <!-- end Col -->--}%
-%{--</div>--}%
-
-%{--</section>--}%
-
-
-
-
 
 <g:applyLayout name="footer"/>
 

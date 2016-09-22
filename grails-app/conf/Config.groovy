@@ -102,7 +102,7 @@ environments {
                         "mail.smtp.port": "587",
 //                        "username" : "admin@NETORGFT2251579.onmicrosoft.com",
                         "username" : "info@uspmr.com",
-                        "password" : "Empire2016!",
+                        "password" : '''Empire2016$''',
                         "mail.smtp.auth" : "true",
                         "mail.smtp.starttls.enable": "true"
                 ]
@@ -112,7 +112,6 @@ environments {
     }
     production {
         grails.logging.jul.usebridge = false
-        // TODO: grails.serverURL = "http://www.changeme.com"
         staticProp {
             String homeDir = System.getProperty('user.home')
             homePropLocation = "${homeDir}/prop/homeProp.properties"
@@ -120,14 +119,17 @@ environments {
 
         mailSender {
             defaultValue {
-                customerServiceEmail = "maoxingqiang0824@gmail.com"
+                customerServiceEmail = "info@USPMR.com"
                 noreplyEmail = "noreply@uspmr.com"
-                props = ["mail.smtp.host" : "smtp.mailgun.org",
-                         "mail.smtp.port" : "587",
-                         username : 'postmaster@sandbox785bc02a76344575af85fab5d31e67e3.mailgun.org',
-                         password : '36503001be2eac56ab3039dc4af226c2',
-                         "mail.smtp.auth" : "true",
-                         "mail.smtp.starttls.enable": "true"]
+                props = [
+                        "mail.smtp.host":"smtp.office365.com",
+                        "mail.smtp.port": "587",
+                        //                        "username" : "admin@NETORGFT2251579.onmicrosoft.com",
+                        "username" : "info@uspmr.com",
+                        "password" : '''Empire2016$''',
+                        "mail.smtp.auth" : "true",
+                        "mail.smtp.starttls.enable": "true"
+                ]
             }
         }
     }

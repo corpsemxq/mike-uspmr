@@ -1,5 +1,7 @@
 package mike.uspmr
 
+import domain.VendorApplication
+
 class MailSendController {
 
 //    static allowedMethods = [applicationSend: "POST"]
@@ -26,7 +28,9 @@ class MailSendController {
 
     def applicationSend(){
             println "sb"
-        println params.vendorSercices
+        def application = new VendorApplication(params)
+
+        println application.getClass()
         redirect(controller: "page", action: "homePage")
 
     }

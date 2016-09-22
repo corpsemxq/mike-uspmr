@@ -9,7 +9,7 @@ class VendorApplication {
 
     List<String> vendorSercices = []
 
-    Integer yrsOfExperience
+    def yrsOfExperience
 
     InsuranceDetail insuranceDetail
 
