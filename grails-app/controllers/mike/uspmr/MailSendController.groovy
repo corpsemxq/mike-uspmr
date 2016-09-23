@@ -1,5 +1,6 @@
 package mike.uspmr
 
+import com.fasterxml.jackson.databind.ObjectMapper
 import domain.VendorApplication
 
 class MailSendController {
@@ -10,6 +11,7 @@ class MailSendController {
     static namespace = 'v1'
     def beforeInterceptor = [action: this.&filter]
     MailSendService mailSendService
+    ObjectMapper objectMapper = new ObjectMapper()
 
 
     private filter() {
@@ -29,8 +31,9 @@ class MailSendController {
     def applicationSend(){
             println "sb"
         def application = new VendorApplication(params)
-
+        objectMapper.readValue
         println application.getClass()
+        println application
         redirect(controller: "page", action: "homePage")
 
     }

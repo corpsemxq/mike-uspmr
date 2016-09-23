@@ -51,6 +51,7 @@ grails.project.dependency.resolution = {
         // runtime 'mysql:mysql-connector-java:5.1.29'
         // runtime 'org.postgresql:postgresql:9.3-1101-jdbc41'
         compile 'javax.mail:mail:1.4.7'
+        compile 'com.fasterxml.jackson.core:jackson-databind:2.8.0'
 
         test "org.grails:grails-datastore-test-support:1.0.2-grails-2.4"
     }

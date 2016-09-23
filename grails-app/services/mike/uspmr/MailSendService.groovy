@@ -24,7 +24,7 @@ class MailSendService {
         mailBody.subject = "This is the contact email from $name ($email) at ${new Date()}"
         mailBody.toAddress = grailsApplication.config.mailSender.defaultValue.customerServiceEmail
         mailBody.fromAddress = grailsApplication.config.mailSender.defaultValue.customerServiceEmail
-        mailConfig["mail.smtp.from"] = email
+        mailConfig["mail.smtp.from"] = grailsApplication.config.mailSender.defaultValue.customerServiceEmail
         mailBody.body = message
         javaMailService.sendTextEmail(mailConfig, mailBody)
 
