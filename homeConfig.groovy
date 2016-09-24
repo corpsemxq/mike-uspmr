@@ -17,8 +17,8 @@ vendors.'''
 
     service {
         firstLevelCategory = [
-                "Property Preservation Services" :"images/homeBack.jpg",
-                "Rehabilitation Services" : "images/homeBack.jpg"
+                "Property Preservation Services" :"images/1_service_test.jpg",
+                "Rehabilitation Services" : "images/1_service_test.jpg"
         ]
 
         secondLevelCategory {

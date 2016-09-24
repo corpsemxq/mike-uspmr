@@ -1,7 +1,6 @@
 package mike.uspmr
 
 import mike.uspmr.factory.ConfigFactory
-import org.springframework.beans.factory.annotation.Autowired
 
 class PageController {
 
@@ -15,8 +14,6 @@ class PageController {
 
     def homePage() {
         def homeConfig =  grailsApplication.config
-        println  homeConfig?.home?.aboutus
-        println "123"
         render(view: '/pmrIndex', model: [test: "test", homeConfig : homeConfig ])
     }
 

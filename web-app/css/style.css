@@ -1185,7 +1185,7 @@ textarea.form-control {
 
 /* Home Construction */
 .home-construction {
-  background: url("../images/bg-construction.jpg") ;
+  background: url("https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/homeImgTest.jpg") ;
   background-size: cover;
 }
 .feature-icon-const i{

@@ -90,17 +90,18 @@ grails.hibernate.osiv.readonly = false
 environments {
     development {
         grails.logging.jul.usebridge = true
+        String homeDir = System.getProperty('user.home')
         staticProp {
-            String homeDir = System.getProperty('user.home')
             homePropLocation = "${homeDir}/prop/homeConfig.groovy"
         }
+        applicationFileLocation = "${homeDir}/applicationForm"
 
         mailSender {
             defaultValue {
                 customerServiceEmail = "info@USPMR.com"
                 noreplyEmail = "noreply@uspmr.com"
                 props = [
-                        "mail.smtp.host":"smtp.office365.com",
+                        "mail.smtp.host": "smtp.office365.com",
                         "mail.smtp.port": "587",
 //                        "username" : "admin@NETORGFT2251579.onmicrosoft.com",
                         "username" : "info@uspmr.com",
@@ -114,10 +115,11 @@ environments {
     }
     production {
         grails.logging.jul.usebridge = false
+        String homeDir = System.getProperty('user.home')
         staticProp {
-            String homeDir = System.getProperty('user.home')
             homePropLocation = "${homeDir}/prop/homeProp.properties"
         }
+        applicationFileLocation = "${homeDir}/applicationForm"
 
         mailSender {
             defaultValue {
@@ -187,8 +189,8 @@ vendors.'''
 
     service {
         firstLevelCategory = [
-                "Property Preservation Services" :"images/homeBack.jpg",
-                "Rehabilitation Services" : "images/homeBack.jpg"
+                "Property Preservation Services" :"https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/1_service_test.jpg",
+                "Rehabilitation Services" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/1_service_test.jpg"
         ]
 
         secondLevelCategory {

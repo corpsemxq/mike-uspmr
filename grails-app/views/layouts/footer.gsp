@@ -46,16 +46,13 @@
     <div class="footer-one-alt">
         <div class="container">
             <div class="row">
-                <div class="col-sm-5">
-                    <p class="m-b-0 font-13 copyright">© 2016 Metrico. Design by Coderthemes </p>
-                </div>
                 <div class="col-sm-7">
                     <ul class="list-inline footer-social-one m-b-0 pull-right">
-                        <li><a href="#"><i class="pe-so-facebook"></i></a></li>
-                        <li><a href="#"><i class="pe-so-twitter"></i></a></li>
-                        <li><a href="#"><i class="pe-so-linkedin"></i></a></li>
-                        <li><a href="#"><i class="pe-so-google-plus"></i></a></li>
-                        <li><a href="#"><i class="pe-so-skype"></i></a></li>
+                        %{--<li><a href="#"><i class="pe-so-facebook"></i></a></li>--}%
+                        %{--<li><a href="#"><i class="pe-so-twitter"></i></a></li>--}%
+                        %{--<li><a href="#"><i class="pe-so-linkedin"></i></a></li>--}%
+                        %{--<li><a href="#"><i class="pe-so-google-plus"></i></a></li>--}%
+                        %{--<li><a href="#"><i class="pe-so-skype"></i></a></li>--}%
                     </ul>
                 </div>
             </div>

@@ -51,6 +51,13 @@
 
 <section class="section" id="services">
     <div class="container">
+
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h2 class="title">Our Services</h2>
+            </div>
+        </div>
+
         <div class="row">
             <g:each in="${homeConfig?.home?.service?.firstLevelCategory}" var="category">
 
@@ -65,151 +72,88 @@
                     </div>
                 </div>
             </g:each>
-
-        %{--<div class="col-sm-4">--}%
-        %{--<div class="features-box text-center">--}%
-        %{--<div class="feature-icon-const">--}%
-        %{--<i class="flaticon-constructor-with-hat-and-a-gear"></i>--}%
-        %{--</div>--}%
-
-        %{--<h3>Dedicated Support</h3>--}%
-
-        %{--<p class="text-muted">We put a lot of effort in design, as it’s the most important ingredient of successful website.Sed ut perspiciatis unde omnis iste natus error sit.</p>--}%
-        %{--</div>--}%
-        %{--</div>--}%
-
-        %{--<div class="col-sm-4">--}%
-        %{--<div class="features-box text-center">--}%
-        %{--<div class="feature-icon-const">--}%
-        %{--<i class="flaticon-bricks-wall-and-demolition-ball"></i>--}%
-        %{--</div>--}%
-
-        %{--<h3>Digital Design</h3>--}%
-
-        %{--<p class="text-muted">We put a lot of effort in design, as it’s the most important ingredient of successful website.Sed ut perspiciatis unde omnis iste natus error sit.</p>--}%
-        %{--</div>--}%
-        %{--</div>--}%
-        %{--</div>--}%
-
-
-        %{--<div class="row home-const-services">--}%
-        %{--<div class="col-sm-4">--}%
-        %{--<div class="features-box text-center">--}%
-        %{--<div class="feature-icon-const">--}%
-        %{--<i class="flaticon-construction-vehicle-for-concrete-transportation"></i>--}%
-        %{--</div>--}%
-
-        %{--<h3>Crane Solutions</h3>--}%
-
-        %{--<p class="text-muted">We put a lot of effort in design, as it’s the most important ingredient of successful website.Sed ut perspiciatis unde omnis iste natus error sit.</p>--}%
-        %{--</div>--}%
-        %{--</div>--}%
-
-        %{--<div class="col-sm-4">--}%
-        %{--<div class="features-box text-center">--}%
-        %{--<div class="feature-icon-const">--}%
-        %{--<i class="flaticon-drill-tool-to-make-holes"></i>--}%
-        %{--</div>--}%
-
-        %{--<h3>Dedicated Support</h3>--}%
-
-        %{--<p class="text-muted">We put a lot of effort in design, as it’s the most important ingredient of successful website.Sed ut perspiciatis unde omnis iste natus error sit.</p>--}%
-        %{--</div>--}%
-        %{--</div>--}%
-
-        %{--<div class="col-sm-4">--}%
-        %{--<div class="features-box text-center">--}%
-        %{--<div class="feature-icon-const">--}%
-        %{--<i class="flaticon-worker-of-construction-working-with-a-shovel-beside-material-pile"></i>--}%
-        %{--</div>--}%
-
-        %{--<h3>Digital Design</h3>--}%
-
-        %{--<p class="text-muted">We put a lot of effort in design, as it’s the most important ingredient of successful website.Sed ut perspiciatis unde omnis iste natus error sit.</p>--}%
-        %{--</div>--}%
-        %{--</div>--}%
         </div>
 
     </div>
 </section>
 
 
-<section class="section bg-white padding-b-0" id="form">
-    <div class="container">
+%{--<section class="section bg-white padding-b-0" id="form">--}%
+    %{--<div class="container">--}%
 
-        <div class="row">
-            <div class="col-sm-12 text-center">
-                <h2 class="title">Featured Projects</h2>
+        %{--<div class="row">--}%
+            %{--<div class="col-sm-12 text-center">--}%
+                %{--<h2 class="title">Featured Projects</h2>--}%
 
-                <p class="title-alt">Looks beautiful & ultra-sharp on Retina Screen Displays. Retina Icons, Fonts & all <br/> others graphics are optimized.
-                </p>
-            </div>
-        </div>
-
-
-        <div class="row">
-            <div class="col-md-4">
-                <div class="gal-detail thumb text-center">
-                    <img src="images/works/construction/1.jpg" class="thumb-img" alt="work-thumbnail">
-                    <h4><a href="#">Creative Agency</a></h4>
-
-                    <p><b>Web Design</b></p>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="gal-detail thumb text-center">
-                    <img src="images/works/construction/2.jpg" class="thumb-img" alt="work-thumbnail">
-                    <h4><a href="#">Sale Cards</a></h4>
-
-                    <p><b>Web Design</b></p>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="gal-detail thumb text-center">
-                    <img src="images/works/construction/3.jpg" class="thumb-img" alt="work-thumbnail">
-                    <h4><a href="#">Play Optics</a></h4>
-
-                    <p><b>Web Design</b></p>
-                </div>
-            </div>
-
-        </div>
+                %{--<p class="title-alt">Looks beautiful & ultra-sharp on Retina Screen Displays. Retina Icons, Fonts & all <br/> others graphics are optimized.--}%
+                %{--</p>--}%
+            %{--</div>--}%
+        %{--</div>--}%
 
 
-        <div class="row">
-            <div class="col-md-4">
-                <div class="gal-detail thumb text-center">
-                    <img src="images/works/construction/4.jpg" class="thumb-img" alt="work-thumbnail">
-                    <h4><a href="#">Creative Agency</a></h4>
+        %{--<div class="row">--}%
+            %{--<div class="col-md-4">--}%
+                %{--<div class="gal-detail thumb text-center">--}%
+                    %{--<img src="images/works/construction/1.jpg" class="thumb-img" alt="work-thumbnail">--}%
+                    %{--<h4><a href="#">Creative Agency</a></h4>--}%
 
-                    <p><b>Web Design</b></p>
-                </div>
-            </div>
+                    %{--<p><b>Web Design</b></p>--}%
+                %{--</div>--}%
+            %{--</div>--}%
 
-            <div class="col-md-4">
-                <div class="gal-detail thumb text-center">
-                    <img src="images/works/construction/5.jpg" class="thumb-img" alt="work-thumbnail">
-                    <h4><a href="#">Sale Cards</a></h4>
+            %{--<div class="col-md-4">--}%
+                %{--<div class="gal-detail thumb text-center">--}%
+                    %{--<img src="images/works/construction/2.jpg" class="thumb-img" alt="work-thumbnail">--}%
+                    %{--<h4><a href="#">Sale Cards</a></h4>--}%
 
-                    <p><b>Web Design</b></p>
-                </div>
-            </div>
+                    %{--<p><b>Web Design</b></p>--}%
+                %{--</div>--}%
+            %{--</div>--}%
 
-            <div class="col-md-4">
-                <div class="gal-detail thumb text-center">
-                    <img src="images/works/construction/6.jpg" class="thumb-img" alt="work-thumbnail">
-                    <h4><a href="#">Play Optics</a></h4>
+            %{--<div class="col-md-4">--}%
+                %{--<div class="gal-detail thumb text-center">--}%
+                    %{--<img src="images/works/construction/3.jpg" class="thumb-img" alt="work-thumbnail">--}%
+                    %{--<h4><a href="#">Play Optics</a></h4>--}%
 
-                    <p><b>Web Design</b></p>
-                </div>
-            </div>
+                    %{--<p><b>Web Design</b></p>--}%
+                %{--</div>--}%
+            %{--</div>--}%
 
-        </div>
+        %{--</div>--}%
 
-    </div>
-</section>
+
+        %{--<div class="row">--}%
+            %{--<div class="col-md-4">--}%
+                %{--<div class="gal-detail thumb text-center">--}%
+                    %{--<img src="images/works/construction/4.jpg" class="thumb-img" alt="work-thumbnail">--}%
+                    %{--<h4><a href="#">Creative Agency</a></h4>--}%
+
+                    %{--<p><b>Web Design</b></p>--}%
+                %{--</div>--}%
+            %{--</div>--}%
+
+            %{--<div class="col-md-4">--}%
+                %{--<div class="gal-detail thumb text-center">--}%
+                    %{--<img src="images/works/construction/5.jpg" class="thumb-img" alt="work-thumbnail">--}%
+                    %{--<h4><a href="#">Sale Cards</a></h4>--}%
+
+                    %{--<p><b>Web Design</b></p>--}%
+                %{--</div>--}%
+            %{--</div>--}%
+
+            %{--<div class="col-md-4">--}%
+                %{--<div class="gal-detail thumb text-center">--}%
+                    %{--<img src="images/works/construction/6.jpg" class="thumb-img" alt="work-thumbnail">--}%
+                    %{--<h4><a href="#">Play Optics</a></h4>--}%
+
+                    %{--<p><b>Web Design</b></p>--}%
+                %{--</div>--}%
+            %{--</div>--}%
+
+        %{--</div>--}%
+
+    %{--</div>--}%
+%{--</section>--}%
 
 
 %{--<section class="section bg-white" id="team">--}%

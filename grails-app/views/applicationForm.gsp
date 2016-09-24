@@ -233,31 +233,33 @@
                 <div class="form-group">
                     <label class="control-label">Business Name : </label>
                     <g:textField style="width: 70%" class="form-control" name="businessInfo.businessName" id="businessName"/>
+                    <div class="error" id="err-name" style="display: none;">Please enter Business Name</div>
                 </div>
 
                 <div class="form-group">
                     <label class="control-label">Contact Person Name : </label>
                     <g:textField style="width: 70%" class="form-control" name="businessInfo.contactPerson" id="contactPersonName"/>
+                    <div class="error" id="err-name" style="display: none;">Please enter contact name</div>
                 </div>
 
                 <div class="form-group">
                     <label class="control-label">Business Address : </label>
-                    <g:textField style="width: 70%" class="form-control" name="businessInfo.businessAddress " id="businessAddress"/>
+                    <g:textField style="width: 70%" class="form-control" name="businessInfo.businessAddress" id="businessAddress"/>
                 </div>
 
                 <div class="form-group">
                     <label class="control-label">Business City : </label>
-                    <g:textField style="width: 70%" class="form-control" name="businessInfo.businessCity " id="businessCity"/>
+                    <g:textField style="width: 70%" class="form-control" name="businessInfo.businessCity" id="businessCity"/>
                 </div>
 
                 <div class="form-group">
                     <label class="control-label">Business State : </label>
-                    <g:textField style="width: 70%" class="form-control" name="businessInfo.businessState " id="businessState"/>
+                    <g:textField style="width: 70%" class="form-control" name="businessInfo.businessState" id="businessState"/>
                 </div>
 
                 <div class="form-group">
                     <label class="control-label">Zip Code : </label>
-                    <g:textField style="width: 70%" class="form-control" name="businessInfo.businessZip " id="businessZipcode"/>
+                    <g:textField style="width: 70%" class="form-control" name="businessInfo.businessZip" id="businessZipcode"/>
                 </div>
 
                 <div class="form-group">
@@ -268,6 +270,7 @@
                 <div class="form-group">
                     <label class="control-label">Contact Cell Phone : </label>
                     <g:textField style="width: 70%" class="form-control" name="businessInfo.contactPhone" id="contactPhone"/>
+                    <div class="error" id="err-name" style="display: none;">Please enter contact cell Phone</div>
                 </div>
 
                 <div class="form-group">
