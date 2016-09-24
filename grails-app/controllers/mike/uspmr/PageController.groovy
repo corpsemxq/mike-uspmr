@@ -35,4 +35,10 @@ class PageController {
         }
 
     }
+
+
+    def acknowledgePage() {
+        def homeConfig =  grailsApplication.config
+        render(view: '/acknowledgePage', model: [test: "test", homeConfig : homeConfig])
+    }
 }

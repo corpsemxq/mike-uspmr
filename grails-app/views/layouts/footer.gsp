@@ -30,7 +30,7 @@
 
             <div class="col-md-4">
                 <div>
-                    <h5>Contact us</h5>
+                    <h5>Contact Info</h5>
                     <ul class="list-unstyled">
                         <li><strong class="font-secondary font-14">Address:</strong> ${homeConfig?.contact?.address}</li>
                         <li><strong class="font-secondary font-14">Phone:</strong> ${homeConfig?.contact?.phone} </li>

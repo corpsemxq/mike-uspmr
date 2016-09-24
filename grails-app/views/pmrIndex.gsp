@@ -275,7 +275,7 @@
                                     <br/>
 
                                     <div class="text-center">
-                                        <g:actionSubmit value="Submit" action="contactEmailSend" class="btn btn-dark"/>
+                                        <g:actionSubmit id="send" value="Submit" action="contactEmailSend" class="btn btn-dark"/>
                                     </div>
                                 </div> <!-- /col -->
                             </div> <!-- /row -->

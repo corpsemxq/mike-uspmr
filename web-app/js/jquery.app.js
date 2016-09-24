@@ -114,35 +114,36 @@ jQuery(function ($) {
                 var data_string = $('#ajax-form').serialize(); // Collect data from form
 
                 var $this = this;
-                $.ajax({
-                    type: "POST",
-                    url: $this.$contactForm.attr('action'),
-                    data: data_string,
-                    timeout: 6000,
-                    cache: false,
-                    crossDomain: false,
-                    error: function(request,error) {
-                        if (error == "timeout") {
-                            $this.$errorTimeout.slideDown('slow');
-                        }
-                        else {
-                            $this.$errorState.slideDown('slow');
-                            $this.$errorState.html('An error occurred: ' + error + '');
-                        }
-                    },
-                    success: function() {
-                        $this.$confirmMessage.show(500);
-                        $this.$confirmMessage.delay(4000);
-                        $this.$confirmMessage.animate({
-                            height: 'toggle'  
-                            }, 500, function() {
-                        });    
-                        
-                        $this.$contactFormName.val('');
-                        $this.$contactFormEmail.val('');
-                        $this.$contactFormMessage.val('');
-                    }
-                });
+                return true
+                //$.ajax({
+                //    type: "POST",
+                //    url: $this.$contactForm.attr('action'),
+                //    data: data_string,
+                //    timeout: 6000,
+                //    cache: false,
+                //    crossDomain: false,
+                //    error: function(request,error) {
+                //        if (error == "timeout") {
+                //            $this.$errorTimeout.slideDown('slow');
+                //        }
+                //        else {
+                //            $this.$errorState.slideDown('slow');
+                //            $this.$errorState.html('An error occurred: ' + error + '');
+                //        }
+                //    },
+                //    success: function() {
+                //        $this.$confirmMessage.show(500);
+                //        $this.$confirmMessage.delay(4000);
+                //        $this.$confirmMessage.animate({
+                //            height: 'toggle'
+                //            }, 500, function() {
+                //        });
+                //
+                //        $this.$contactFormName.val('');
+                //        $this.$contactFormEmail.val('');
+                //        $this.$contactFormMessage.val('');
+                //    }
+                //});
             }
             return false;
         },

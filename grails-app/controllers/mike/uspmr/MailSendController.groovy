@@ -25,10 +25,11 @@ class MailSendController {
 
 
     def contactEmailSend () {
+        println "hahah"
+        log.info "Comming to contact email send"
         mailSendService.sendEmailFromContactUs(params.name, params.email, params.message)
         flash.message = "Submit successfully!"
-        Thread.sleep(1000)
-        redirect(controller: "page", action: "homePage")
+        redirect(controller: "page", action: "acknowledgePage")
     }
 
     def applicationSend(){
@@ -39,7 +40,7 @@ class MailSendController {
             flash.message = "Submit successfully!"
             Map mailConfig = [:]
             mailConfig.mailConfig = grailsApplication.config.mailSender.defaultValue.props
-            mailConfig.toAddress = grailsApplication.config.mailSender.defaultValue.customerServiceEmail
+            mailConfig.toAddress = grailsApplication.config.mailSender.defaultValue.receviceMessageEmail
             mailConfig.fromAddress = grailsApplication.config.mailSender.defaultValue.customerServiceEmail
             mailConfig.replyto = application.businessInfo.contactEmail
             mailConfig.file = file
