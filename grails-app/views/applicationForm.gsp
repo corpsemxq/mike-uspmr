@@ -174,7 +174,7 @@
             %{--Number of experience--}%
                 <div class="form-group">
                     <label class="control-label">Years of experience :</label>
-                    <g:textField style="width: 70%" class="form-control" name="yrsOfExperience" type="number"
+                    <g:textField style="width: 70%" class="form-control" name="yrsOfExperience"
                                  id="years-experience"/>
                 </div>
 
@@ -343,7 +343,6 @@
                     <g:textField style="width: 70%" name="reference3.phoneNumber" class="form-control" id="reference3.companyName" placeholder="Contact Number" type="text"
                                  value=""/>
                 </div>
-                <br/>
 
 
                 <div class="row">
@@ -365,6 +364,8 @@
                     </div> <!-- /col -->
                 </div> <!-- /row -->
 
+                <br/>
+                <br/>
 
 
             </g:form>

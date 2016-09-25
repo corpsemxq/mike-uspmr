@@ -10,7 +10,6 @@ class MailSendController {
     static namespace = 'v1'
     def beforeInterceptor = [action: this.&filter]
     MailSendService mailSendService
-    ObjectMapper objectMapper = new ObjectMapper()
     ApplicationService applicationService
     FileGenerateService fileGenerateService
 
@@ -25,19 +24,24 @@ class MailSendController {
 
 
     def contactEmailSend () {
-        println "hahah"
-        log.info "Comming to contact email send"
-        mailSendService.sendEmailFromContactUs(params.name, params.email, params.message)
-        flash.message = "Submit successfully!"
+        log.info "Getting contact us email from uspmr.com"
+
+        try {
+            mailSendService.sendEmailFromContactUs(params.name, params.email, params.message)
+            flash.message = "The contact email sent successfully! Going back to home page! " + "\n" +
+                    "(If can not redirect in 10 seconds, please click 'Back to home page' on the right top)"
+        } catch (Exception ex) {
+            log.error "Contact Email sent failed, the error is ${ex.message}"
+            flash.error = "Some internal error occured. Please contact with ${grailsApplication.config.mailSender.defaultValue.customerServiceEmail}"
+        }
         redirect(controller: "page", action: "acknowledgePage")
     }
 
     def applicationSend(){
-        Boolean emailSendFlag = false
+        log.info "Getting application from uspmr.com"
         def application = applicationService.mappingTheApplicationForm(params as Map)
         def file = fileGenerateService.generateExcelRecord(application)
         if (file) {
-            flash.message = "Submit successfully!"
             Map mailConfig = [:]
             mailConfig.mailConfig = grailsApplication.config.mailSender.defaultValue.props
             mailConfig.toAddress = grailsApplication.config.mailSender.defaultValue.receviceMessageEmail
@@ -46,10 +50,16 @@ class MailSendController {
             mailConfig.file = file
             mailConfig.mailSubject = "${application.businessInfo.contactPerson}, ${application.businessInfo.businessName}, ${application.businessInfo.contactEmail}, ${new Date()}"
             mailConfig.mailText = "This is the application from Name:${application.businessInfo.contactPerson}, Business: ${application.businessInfo.businessName}, please check the attach file"
-            mailSendService.sendEmailFromApplication(mailConfig)
+            try {
+                mailSendService.sendEmailFromApplication(mailConfig)
+                flash.message = "The application sent successfully! Going back to home page! " + "\n" +
+                        "(If can not redirect in 10 seconds, please click 'Back to home page' on the right top)"            } catch (Exception ex){
+                log.error "Application Email sent failed, the error is ${ex.message}"
+                flash.error = "Some internal email server error occured. Please try again later or contact with ${grailsApplication.config.mailSender.defaultValue.customerServiceEmail} to fill the applicatioin"
+            }
         } else {
-            flash.message = "Submit failed"
+            flash.error = "Some internal error occured. Please contact with ${grailsApplication.config.mailSender.defaultValue.customerServiceEmail} to fill the applicatioin"
         }
-        redirect(controller: "page", action: "homePage")
+        redirect(controller: "page", action: "acknowledgePage")
     }
 }

@@ -36,7 +36,6 @@ class FileGenerateService {
             os = new FileOutputStream(localFile)
             writeBook = new XSSFWorkbook()
             Sheet mySheet = writeBook.createSheet("application")
-            int rowNum = mySheet.getLastRowNum()
             writeDataToXlsx(mySheet, "vendorSercices", "What services do you Perform", application)
             writeDataToXlsx(mySheet, "", "InsuranceDetail", application)
             writeDataToXlsx(mySheet, "insuranceDetail.insuranceCompany", "insuranceCompany", application)
@@ -108,9 +107,9 @@ class FileGenerateService {
                     objArr[2] = result
                 }
             }
-            println objArr
             Row writeRow = sheet.createRow(rowNum)
             writeToRow(objArr, writeRow)
+            log.info "Finish the file generate."
             return true
         } catch (Exception ex) {
             log.info "Getting exception when write data xlsx. Message is :$ex.stackTrace"
