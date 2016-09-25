@@ -232,14 +232,14 @@
                 <h4 class="text-left"><mark>Please list the contact information below:</mark></h4>
                 <div class="form-group">
                     <label class="control-label">Business Name : </label>
-                    <g:textField style="width: 70%" class="form-control" name="businessInfo.businessName" id="businessName"/>
-                    <div class="error" id="err-name" style="display: none;">Please enter Business Name</div>
+                    <g:textField style="width: 70%" class="form-control" name="businessInfo.businessName" id="applicationBusinessName"/>
+                    <div class="error" id="err-applicationBusinessName" style="display: none;">Please enter Business Name</div>
                 </div>
 
                 <div class="form-group">
                     <label class="control-label">Contact Person Name : </label>
-                    <g:textField style="width: 70%" class="form-control" name="businessInfo.contactPerson" id="contactPersonName"/>
-                    <div class="error" id="err-name" style="display: none;">Please enter contact name</div>
+                    <g:textField style="width: 70%" class="form-control" name="businessInfo.contactPerson" id="applicationName"/>
+                    <div class="error" id="err-applicationName" style="display: none;">Please enter contact person name</div>
                 </div>
 
                 <div class="form-group">
@@ -269,16 +269,16 @@
 
                 <div class="form-group">
                     <label class="control-label">Contact Cell Phone : </label>
-                    <g:textField style="width: 70%" class="form-control" name="businessInfo.contactPhone" id="contactPhone"/>
-                    <div class="error" id="err-name" style="display: none;">Please enter contact cell Phone</div>
+                    <g:textField style="width: 70%" class="form-control" name="businessInfo.contactPhone" id="applicationCellNumber"/>
+                    <div class="error" id="err-applicationCellNumber" style="display: none;">Please enter contact cell Phone</div>
                 </div>
 
                 <div class="form-group">
                     <label class="control-label">Email : </label>
-                    <g:textField style="width: 70%" class="form-control" id="email2" name="businessInfo.contactEmail" type="text"
+                    <g:textField style="width: 70%" class="form-control" id="applicationEmail" name="businessInfo.contactEmail" type="text"
                            placeholder="Email" value=""/>
 
-                    <div class="error" id="err-emailvld"
+                    <div class="error" id="err-applicationEmail"
                          style="display: none;">E-mail is not a valid format</div>
                 </div>
 
@@ -291,19 +291,18 @@
                 <p>Reference 1</p>
 
                 <div class="form-group">
-                <g:textField style="width: 70%" name="reference1.name" class="form-control" id="reference1.name"  placeholder="Name" type="text"
+                <g:textField style="width: 70%" name="reference1.name" class="form-control" id="applicationReferName"  placeholder="Name" type="text"
                            value=""/>
-                    <div class="error" id="err-name3" style="display: none;">Please enter Name</div>
+                    <div class="error" id="err-applicationReferName" style="display: none;">Please enter at least one reference name</div>
                 </div>
                 <div class="form-group ">
-                <g:textField style="width: 70%" name="reference1.companyName" class="form-control" id="reference1.companyName" placeholder="Company Name" type="text"
+                <g:textField style="width: 70%" name="reference1.companyName" class="form-control" id="applicationReferCompanyName" placeholder="Company Name" type="text"
                            value=""/>
-                    <div class="error" id="err-contactperson" style="display: none;">Company Name</div>
+                    <div class="error" id="err-applicationReferCompanyName" style="display: none;">Please enter at least one company name</div>
                 </div>
                 <div class="form-group ">
                     <g:textField style="width: 70%" name="reference1.phoneNumber" class="form-control" id="reference1.companyName" placeholder="Contact Number" type="text"
                                  value=""/>
-                    <div class="error" id="err-contactperson" style="display: none;">Contact Number</div>
                 </div>
 
             %{--reference 2--}%
@@ -343,11 +342,30 @@
                 <div class="form-group ">
                     <g:textField style="width: 70%" name="reference3.phoneNumber" class="form-control" id="reference3.companyName" placeholder="Contact Number" type="text"
                                  value=""/>
-                    <div class="error" id="err-contactperson" style="display: none;">Contact Number</div>
                 </div>
                 <br/>
 
-                <g:actionSubmit class="btn btn-dark" action="applicationSend" value="Submit your Infomation"/>
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div id="contactSuccess" style="display: none;" class="text-success">The applicant was successfully sent.</div>
+
+                        <div class="error text-center" id="err-applicationForm"
+                             style="display: none;">There was a problem validating the application form please check!</div>
+
+                        <div class="contactError" style="display: none;" id="err-applicationTimeout">The connection to the server timed out!</div>
+
+                        <div class="contactError" id="err-applicationState"></div>
+                        <br/>
+                        <br/>
+
+                        <div class="text-center">
+                            <g:actionSubmit class="btn btn-dark" action="applicationSend" value="Submit Your Information" id="applicationSend"/>
+                        </div>
+                    </div> <!-- /col -->
+                </div> <!-- /row -->
+
+
 
             </g:form>
         </div>

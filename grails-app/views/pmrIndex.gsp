@@ -41,7 +41,7 @@
                 <div class="home-wrapper">
                     <h2 class="text-muted">${homeConfig.home.title}</h2>
                     <p>${homeConfig.home.aboutus}</p>
-                    <a href="#" class="btn btn-yellow">Get Started</a>
+                    <a href="#services" class="scroll btn btn-yellow">Get Started</a>
                 </div>
             </div>
         </div>
@@ -239,43 +239,43 @@
                     <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
                         <g:form controller="mailSend" action="contactEmailSend">
                             <div class="form-group col-sm-12">
-                                <g:textField class="form-control" id="name2" name="name" placeholder="Your name" type="text"
+                                <g:textField class="form-control" id="contactName" name="name" placeholder="Your name" type="text"
                                        value=""/>
 
-                                <div class="error" id="err-name" style="display: none;">Please enter name</div>
+                                <div class="contactError error" id="err-contactName" style="display: none;">Please enter name</div>
                             </div>
                             <!-- /Form-name -->
 
                             <div class="form-group col-sm-12">
-                                <g:textField class="form-control" id="email2" name="email" type="text" placeholder="Your email" value=""/>
+                                <g:textField class="form-control" id="contactEmail" name="email" type="text" placeholder="Your email" value=""/>
 
-                                <div class="error" id="err-emailvld"
+                                <div class="contactError error" id="err-contactEmailvld"
                                      style="display: none;">E-mail is not a valid format</div>
                             </div>
                             <!-- /Form-email -->
 
                             <div class="form-group col-xs-12">
-                            <g:textArea class="form-control" id="message2" name="message" rows="5" placeholder="Message"/>
+                            <g:textArea class="form-control" id="contactMessage" name="message" rows="5" placeholder="Message"/>
 
-                                <div class="error" id="err-message" style="display: none;">Please enter message</div>
+                                <div class="contactError error" id="err-contactMessage" style="display: none;">Please enter message</div>
                             </div>
                             <!-- /Form Msg -->
 
                             <div class="row">
                                 <div class="col-xs-12">
-                                    <div id="ajaxsuccess" class="text-success">E-mail was successfully sent.</div>
+                                    <div id="contactSuccess" style="display: none;" class="text-success">E-mail was successfully sent.</div>
 
-                                    <div class="error text-center" id="err-form"
+                                    <div class="error text-center" id="err-contactForm"
                                          style="display: none;">There was a problem validating the form please check!</div>
 
-                                    <div class="error" id="err-timedout">The connection to the server timed out!</div>
+                                    <div class="contactError" id="err-contactTimeout" style="display: none;">The connection to the server timed out!</div>
 
-                                    <div class="error" id="err-state"></div>
+                                    <div class="contactError" id="err-contactState"></div>
                                     <br/>
                                     <br/>
 
                                     <div class="text-center">
-                                        <g:actionSubmit id="send" value="Submit" action="contactEmailSend" class="btn btn-dark"/>
+                                        <g:actionSubmit id="contactSend" value="Submit" action="contactEmailSend" class="btn btn-dark"/>
                                     </div>
                                 </div> <!-- /col -->
                             </div> <!-- /row -->
