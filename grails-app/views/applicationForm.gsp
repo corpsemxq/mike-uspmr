@@ -69,7 +69,7 @@
             <g:form controller="mailSend" action="applicationSend"
                     class="form-horizontal contact-form">
 
-                <h4 class="text-left"><mark>What services do you Perform? Please check all that apply.</mark></h4>
+                <h4 class="text-left"><mark>What services do you Perform?</mark></h4>
 
 
             %{--Check box for vendor service--}%
@@ -182,7 +182,7 @@
                 <br/>
                 <br/>
 
-                <h4 class="text-left"><mark>Do you have insurances? If so please list the insurance company and type of coverage that you have.</mark></h4>
+                <h4 class="text-left"><mark>Insurance Detail : </mark></h4>
                 <div class="form-group">
                     <label class="control-label">Insurance company :</label>
                     <g:textField style="width: 70%" class="form-control" name="insuranceDetail.insuranceCompany" id="insuranceCompany"/>
