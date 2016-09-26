@@ -80,6 +80,8 @@
                     <g:each in="${services}" var="service">
 
                         <div class="tab-pane" id="${service?.key?.replace(" ","")?.replace('/', '')}">
+                            <br/>
+
                             <div class="col-sm-12 col-sm-offset-3">
                                 <img class="img-rounded" width="50%" src="${servicePic."${service?.key}"}">
                             </div>
