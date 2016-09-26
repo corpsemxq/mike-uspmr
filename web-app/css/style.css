@@ -198,7 +198,8 @@ a{
 }
 
 .title {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Cinzel', serif;
+  /*font-family: 'Josefin Sans', sans-serif;*/
   font-weight: 700;
   margin-top: 8%;
 }
@@ -308,7 +309,8 @@ iframe {
 	font-size: 16px;
 	color: #182433;
 	letter-spacing: 0.03em;
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Cinzel', serif;
+	/*font-family: 'Josefin Sans', sans-serif;*/
 }
 
 .navbar-default .navbar-nav>li>a:hover,.navbar-custom-dark.navbar-default .navbar-nav>li>a {
@@ -439,7 +441,8 @@ iframe {
 .home-wrapper p {
   font-size: 15px;
   letter-spacing: 2px;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Cinzel', serif;
+  /*font-family: 'Josefin Sans', sans-serif;*/
   font-weight: 700;
   color: #787787;
 }
@@ -534,7 +537,7 @@ iframe {
 
 .features-box h3{
 	font-size: 20px;
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Cinzel', serif;
 	font-weight: 700;
 }
 

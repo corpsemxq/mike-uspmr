@@ -208,11 +208,11 @@ vendors.'''
                     "Winterization" :
                             """Winterizing a vacant home is a process that prepares the plumbing infrastructure for temperature extremes. There are
 
-two types of winterizations, dry and wet which are both equally important. &quot;Wet wints&quot; are done when there is a steam
+two types of winterizations, dry and wet which are both equally important. Wet wints are done when there is a steam
 
 boiler or radiant heat with a hot water boiler present at the property. When there is a dry heating system present such as
 
-a furnaces or vents with forced hot air, that is categorized as &quot;Dry Wints&quot;. The process is usually done in preparation of
+a furnaces or vents with forced hot air, that is categorized as Dry Wints. The process is usually done in preparation of
 
 the winter season so that the pipes do not freeze over. The process begins upon inspecting the homes plumbing and
 
@@ -220,14 +220,14 @@ water system. This includes blowing out the water in the water heater, draining 
 
 tubs and toilets.""",
 
-                    "De-Winterization-" :
+                    "DeWinterization" :
                             """De winterizing a property is a process that actually reverses the winterization process by reactivating the plumbing
 
 infrastructure in order to inspect for leaks. Appliances such as dishwashers, refrigerators, washing machines and water
 
 heaters are reconnected to the water supply to confirm that the property is protected from water damage.""",
 
-                    "Mold Remediation-" :
+                    "Mold Remediation" :
                             """Mold development in a property can cause negative health effects and significant damage to a property if left untreated.
 
 Mold develops when there is evidence of water from the plumbing system or a roof as well as poor ventilation. Mold can
@@ -317,9 +317,9 @@ repairs are performed by qualified vendors that have the necessary equipment and
                     "Eviction" :"https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/1_service_test.jpg",
                     "Snow Removal" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/1_service_test.jpg",
                     "Lawn Services" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/1_service_test.jpg",
-                    "De-Winterization-" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/1_service_test.jpg",
+                    "DeWinterization" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/1_service_test.jpg",
                     "Winterization" :"https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/1_service_test.jpg",
-                    "Mold Remediation-" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/1_service_test.jpg",
+                    "Mold Remediation" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/1_service_test.jpg",
                     "FHA Conveyance" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/1_service_test.jpg",
                     "Lock ups" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/1_service_test.jpg",
                     "Trash outs" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/1_service_test.jpg",

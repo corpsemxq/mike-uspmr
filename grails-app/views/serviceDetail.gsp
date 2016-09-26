@@ -13,6 +13,7 @@
     <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
 
     <!-- Bootstrap core CSS -->
     <link href="${resource(dir: 'css', file: 'bootstrap.min.css')}" rel="stylesheet">
@@ -70,7 +71,7 @@
             <div class="tabbable tabs-left">
                 <ul class="nav nav-tabs">
             <g:each in="${services}" var="service">
-                <li><a href="#${service?.key?.replace(" ","")}" data-toggle="tab">${service?.key}</a></li>
+                <li><a href="#${service?.key?.replace(" ","")?.replace('/', '')}" data-toggle="tab">${service?.key}</a></li>
             </g:each>
             </ul>
 
@@ -78,7 +79,7 @@
 
                     <g:each in="${services}" var="service">
 
-                        <div class="tab-pane" id="${service?.key?.replace(" ","")}">
+                        <div class="tab-pane" id="${service?.key?.replace(" ","")?.replace('/', '')}">
                             <div class="col-sm-12 col-sm-offset-3">
                                 <img class="img-rounded" width="50%" src="${servicePic."${service?.key}"}">
                             </div>
