@@ -933,6 +933,8 @@ textarea.form-control {
   color: #9ba1ac;
   padding-top: 60px;
   padding-bottom: 0px;
+  z-index: 2000;
+
 }
 
 .footer-one h5{
@@ -1425,5 +1427,10 @@ textarea.form-control {
   blockquote {
     color: #696969;
     font: .95em Georgia, "Times New Roman", Times, serif;
+    margin:0 auto;
+    width:auto;
+    display:table
   }
+
+
 }

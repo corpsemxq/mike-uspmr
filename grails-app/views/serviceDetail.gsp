@@ -57,36 +57,76 @@
     </div><!-- /.container-fluid -->
 </nav>
 
+
+
+
 <section class="section">
     <h2 class="text-center">${category}</h2>
-
-    <br/>
-    <br/>
     <br/>
 
 
     <div class="container">
+        <div class="row">
+            <div class="tabbable tabs-left">
+                <ul class="nav nav-tabs">
             <g:each in="${services}" var="service">
-                    <div class="col-sm-3 text-left">
-                        <h3>${service?.key}</h3>
-                    </div>
-                    <div class="col-sm-8 features-box text-left">
-                        <blockquote style="background-color: #ededf5">
-                            <p>${service?.value}</p>
-                        </blockquote>
-                    </div>
-                <br/>
-                <br/>
-                <br/>
-                <ul class="nav nav-list">
-                    <li class="divider"></li>
-                </ul>
+                <li><a href="#${service?.key?.replace(" ","")}" data-toggle="tab">${service?.key}</a></li>
             </g:each>
+            </ul>
+
+                <div class="tab-content">
+
+                    <g:each in="${services}" var="service">
+
+                        <div class="tab-pane" id="${service?.key?.replace(" ","")}">
+                            <div class="col-sm-12 col-sm-offset-3">
+                                <img class="img-rounded" width="50%" src="${servicePic."${service?.key}"}">
+                            </div>
+                            <br/>
+
+                            <div class="col-sm-4 col-sm-offset-5">
+                                <h3>${service?.key}</h3>
+                            </div>
+                            <br/>
+
+
+
+                            <div class="col-sm-10 col-sm-offset-1">
+                                <blockquote style="background-color: #ededf5">
+                                    <p>${service?.value}</p>
+                                </blockquote>
+                            </div>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <ul class="nav nav-list">
+                                <li class="divider"></li>
+                            </ul>
+                        </div>
+
+                    </g:each>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
-</body>
+
+
 
 <g:applyLayout name="footer"/>
+
+</body>
+
 
 
 

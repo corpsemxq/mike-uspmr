@@ -220,7 +220,7 @@ water system. This includes blowing out the water in the water heater, draining 
 
 tubs and toilets.""",
 
-                    "De- Winterization-" :
+                    "De-Winterization-" :
                             """De winterizing a property is a process that actually reverses the winterization process by reactivating the plumbing
 
 infrastructure in order to inspect for leaks. Appliances such as dishwashers, refrigerators, washing machines and water
@@ -301,6 +301,29 @@ repairs are performed by qualified vendors that have the necessary equipment and
                     "Plumbing" : """""",
                     "HVAC" : """""",
                     "Construction" : """""",
+            ]
+
+
+            picSrcMap = [
+
+                    "Electrical" : """""",
+                    "Plumbing" : """""",
+                    "HVAC" : """""",
+                    "Construction" : """""",
+
+
+                    "Roof Repair/Tarping" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/1_service_test.jpg",
+                    "Pool services" :"https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/1_service_test.jpg",
+                    "Eviction" :"https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/1_service_test.jpg",
+                    "Snow Removal" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/1_service_test.jpg",
+                    "Lawn Services" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/1_service_test.jpg",
+                    "De-Winterization-" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/1_service_test.jpg",
+                    "Winterization" :"https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/1_service_test.jpg",
+                    "Mold Remediation-" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/1_service_test.jpg",
+                    "FHA Conveyance" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/1_service_test.jpg",
+                    "Lock ups" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/1_service_test.jpg",
+                    "Trash outs" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/1_service_test.jpg",
+                    "Inspections" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/1_service_test.jpg"
             ]
 
 
