@@ -99,7 +99,7 @@ environments {
         mailSender {
             defaultValue {
                 customerServiceEmail = "info@USPMR.com"
-                receviceMessageEmail = "maoxingqiang0824@gmail.com"
+                receviceMessageEmail = "szczmi01@yahoo.com"
                 noreplyEmail = "noreply@uspmr.com"
                 props = [
                         "mail.smtp.host": "smtp.office365.com",
@@ -125,7 +125,7 @@ environments {
         mailSender {
             defaultValue {
                 customerServiceEmail = "info@USPMR.com"
-                noreplyEmail = "noreply@uspmr.com"
+                noreplyEmail = "szczmi01@yahoo.com"
                 props = [
                         "mail.smtp.host":"smtp.office365.com",
                         "mail.smtp.port": "587",
