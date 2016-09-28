@@ -3,12 +3,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Responsive bootstrap landing template">
+    <meta name="description" content="USPMR Home Page">
     <meta name="author" content="Coderthemes">
 
-    <link rel="shortcut icon" href="images/favicon.ico">
-
-    <title>Metrico - Responsive Multipurpose Landing Page Template</title>
+    <link rel="shortcut icon" href="https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/logo.jpg">
+    <title>USPMR-Home</title>
 
     <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700' rel='stylesheet' type='text/css'>
@@ -49,7 +48,7 @@
 </section>
 
 
-<section class="section" id="services">
+<section class="section bg-white" id="services">
     <div class="container">
 
         <div class="row">
@@ -218,6 +217,27 @@
 
 %{--</div>--}%
 %{--</section>--}%
+
+
+<section class="section" id="vendors">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h2 class="title">Vendors</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-1"></div>
+                <div class="col-sm-10">
+                    <div class="features-box">
+                       <p>${homeConfig.home.vendors}</p>
+                    </div>
+                </div>
+        </div>
+
+    </div>
+</section>
 
 
 <section class="section bg-white" id="contact">

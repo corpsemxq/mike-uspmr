@@ -478,6 +478,7 @@ iframe {
 
 .home-alt p {
   color: #ffffff; !important;
+  font-family: 'Cinzel', serif;
 }
 
 .home-alt h1 {
@@ -489,6 +490,7 @@ iframe {
 .home-alt h2 {
   color: #ffffff;
   font-size: 48px;
+  font-family: 'Cinzel', serif;
   margin-bottom: 40px;
   line-height: 54px;
 }
@@ -544,7 +546,8 @@ iframe {
 
 .features-box p{
 	line-height: 24px;
-	width: 90%;
+    font-family: 'Cinzel', serif;
+    width: 90%;
 	margin: 0px auto;
 }
 

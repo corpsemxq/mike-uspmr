@@ -3,12 +3,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Responsive bootstrap landing template">
+    <meta name="description" content="USPMR App Page">
     <meta name="author" content="Coderthemes">
 
-    <link rel="shortcut icon" href="images/favicon.ico">
-
-    <title>Metrico - Responsive Multipurpose Landing Page Template</title>
+    <link rel="shortcut icon" href="https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/logo.jpg">
+    <title>USPMR-Application</title>
 
     <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700' rel='stylesheet' type='text/css'>
