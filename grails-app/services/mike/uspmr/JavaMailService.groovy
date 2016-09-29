@@ -103,6 +103,7 @@ class JavaMailService {
             }
             message.setSender(new InternetAddress(mailContent?.fromAddress, false))
             message.setFrom(new InternetAddress(mailContent?.fromAddress, false))
+            message.setReplyTo(new InternetAddress(mailContent.replyto,false))
             message.setSubject(mailContent?.subject)
             message.setContent(mailContent?.body, TEXT_PLAIN)
             log.info "Message is created , now sending email"
@@ -157,7 +158,7 @@ class JavaMailService {
         }
         message.setSender(new InternetAddress(mailContent.fromAddress,false))
         message.setFrom(new InternetAddress(mailContent.fromAddress,false))
-//        message.setReplyTo(new InternetAddress(mailContent.replyto,false))
+        message.setReplyTo(new InternetAddress(mailContent.replyto,false))
         message.setSubject(mailContent.subject)
 
         BodyPart messageBodyPart = new MimeBodyPart()

@@ -100,7 +100,6 @@ environments {
             defaultValue {
                 customerServiceEmail = "info@USPMR.com"
                 receviceMessageEmail = "szczmi01@yahoo.com"
-                noreplyEmail = "noreply@uspmr.com"
                 props = [
                         "mail.smtp.host": "smtp.office365.com",
                         "mail.smtp.port": "587",
@@ -125,11 +124,11 @@ environments {
         mailSender {
             defaultValue {
                 customerServiceEmail = "info@USPMR.com"
-                noreplyEmail = "szczmi01@yahoo.com"
+                receviceMessageEmail = "szczmi01@yahoo.com"
                 props = [
-                        "mail.smtp.host":"smtp.office365.com",
+                        "mail.smtp.host": "smtp.office365.com",
                         "mail.smtp.port": "587",
-                        //                        "username" : "admin@NETORGFT2251579.onmicrosoft.com",
+//                        "username" : "admin@NETORGFT2251579.onmicrosoft.com",
                         "username" : "info@uspmr.com",
                         "password" : '''Empire2016$''',
                         "mail.smtp.auth" : "true",

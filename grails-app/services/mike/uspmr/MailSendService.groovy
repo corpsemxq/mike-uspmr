@@ -17,19 +17,23 @@ class MailSendService {
 
 
     def sendEmailFromContactUs(String name, String email, String message) {
-        Map mailConfig = [:]
-        grailsApplication.config.mailSender.defaultValue.props.each { k, v ->
-            mailConfig."$k"="$v"
-            log.info "Now Using Generic configs for email service"
+        try {
+            Map mailConfig = [:]
+            grailsApplication.config.mailSender.defaultValue.props.each { k, v ->
+                mailConfig."$k" = "$v"
+                log.info "Now Using Generic configs for email service"
+            }
+            def mailBody = [:]
+            mailBody.subject = "This is the contact email from $name ($email) at ${new Date()}"
+            mailBody.toAddress = grailsApplication.config.mailSender.defaultValue.receviceMessageEmail
+            mailBody.fromAddress = grailsApplication.config.mailSender.defaultValue.customerServiceEmail
+            mailBody.replyTo = email
+            mailConfig["mail.smtp.from"] = grailsApplication.config.mailSender.defaultValue.customerServiceEmail
+            mailBody.body = message
+            javaMailService.sendTextEmail(mailConfig, mailBody)
+        } catch (Exception ex) {
+            throw new RuntimeException("The email didn't send successfully. $ex.stackTrace")
         }
-        def mailBody = [:]
-        mailBody.subject = "This is the contact email from $name ($email) at ${new Date()}"
-        mailBody.toAddress = grailsApplication.config.mailSender.defaultValue.receviceMessageEmail
-        mailBody.fromAddress = grailsApplication.config.mailSender.defaultValue.customerServiceEmail
-        mailBody.replyTo = email
-        mailConfig["mail.smtp.from"] = grailsApplication.config.mailSender.defaultValue.customerServiceEmail
-        mailBody.body = message
-        javaMailService.sendTextEmail(mailConfig, mailBody)
 
     }
 

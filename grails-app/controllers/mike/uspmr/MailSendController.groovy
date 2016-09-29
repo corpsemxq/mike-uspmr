@@ -23,7 +23,7 @@ class MailSendController {
     }
 
 
-    def contactEmailSend () {
+    def contactEmailSend() {
         log.info "Getting contact us email from uspmr.com"
 
         try {
@@ -37,7 +37,7 @@ class MailSendController {
         redirect(controller: "page", action: "acknowledgePage")
     }
 
-    def applicationSend(){
+    def applicationSend() {
         log.info "Getting application from uspmr.com"
         def application = applicationService.mappingTheApplicationForm(params as Map)
         def file = fileGenerateService.generateExcelRecord(application)
@@ -48,14 +48,16 @@ class MailSendController {
             mailConfig.fromAddress = grailsApplication.config.mailSender.defaultValue.customerServiceEmail
             mailConfig.replyto = application.businessInfo.contactEmail
             mailConfig.file = file
-            mailConfig.mailSubject = "${application.businessInfo.contactPerson}, ${application.businessInfo.businessName}, ${application.businessInfo.contactEmail}, ${new Date()}"
-            mailConfig.mailText = "This is the application from Name:${application.businessInfo.contactPerson}, Business: ${application.businessInfo.businessName}, please check the attach file"
-            try {
-                mailSendService.sendEmailFromApplication(mailConfig)
+            mailConfig.mailSubject = "Name : ${application.businessInfo.contactPerson}, Company : ${application.businessInfo.businessName}, ${new Date()}"
+            mailConfig.mailText = "This is the application from Name:${application.businessInfo.contactPerson}, Business: ${application.businessInfo.businessName}, please check the attach file" +
+                    "Email : ${application.businessInfo.contactEmail}, created at ${new Date()}"
+            if (mailSendService.sendEmailFromApplication(mailConfig)) {
                 flash.message = "The application sent successfully! Going back to home page! " + "\n" +
-                        "(If can not redirect in 10 seconds, please click 'Back to home page' on the right top)"            } catch (Exception ex){
+                        "(If can not redirect in 10 seconds, please click 'Back to home page' on the right top)"
+            } else {
                 log.error "Application Email sent failed, the error is ${ex.message}"
                 flash.error = "Some internal email server error occured. Please try again later or contact with ${grailsApplication.config.mailSender.defaultValue.customerServiceEmail} to fill the applicatioin"
+
             }
         } else {
             flash.error = "Some internal error occured. Please contact with ${grailsApplication.config.mailSender.defaultValue.customerServiceEmail} to fill the applicatioin"
