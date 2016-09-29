@@ -64,6 +64,7 @@
     <h2 class="text-center">${category}</h2>
     <br/>
 
+    <p class="text-center"><mark>Choose the service you need.</mark></p>
 
     <div class="container">
         <div class="row">

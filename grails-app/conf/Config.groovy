@@ -201,8 +201,8 @@ vendors.'''
 
     service {
         firstLevelCategory = [
-                "Property Preservation Services" :"https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/1_service_test.jpg",
-                "Rehabilitation Services" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/1_service_test.jpg"
+                "Property Preservation Services" :"https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/Rehabilitation.jpg",
+                "Rehabilitation Services" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/propertypreservationphoto.png"
         ]
 
         secondLevelCategory {
@@ -314,18 +314,18 @@ repairs are performed by qualified vendors that have the necessary equipment and
                     "Construction" : """""",
 
 
-                    "Roof Repair/Tarping" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/1_service_test.jpg",
-                    "Pool services" :"https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/1_service_test.jpg",
-                    "Eviction" :"https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/1_service_test.jpg",
-                    "Snow Removal" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/1_service_test.jpg",
-                    "Lawn Services" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/1_service_test.jpg",
-                    "DeWinterization" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/1_service_test.jpg",
-                    "Winterization" :"https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/1_service_test.jpg",
-                    "Mold Remediation" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/1_service_test.jpg",
-                    "FHA Conveyance" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/1_service_test.jpg",
-                    "Lock ups" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/1_service_test.jpg",
-                    "Trash outs" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/1_service_test.jpg",
-                    "Inspections" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/1_service_test.jpg"
+                    "Roof Repair/Tarping" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/ROOF+REPAIR.jpg",
+                    "Pool services" :"https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/POOL+SECURING.jpg",
+                    "Eviction" :"https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/EVICTION.jpg",
+                    "Snow Removal" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/SNOW+REMOVAL.jpg",
+                    "Lawn Services" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/LAWNSERVICE.jpg",
+                    "DeWinterization" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/DEWINT.jpg",
+                    "Winterization" :"https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/WINTERIZATION1.jpg",
+                    "Mold Remediation" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/MOLD.jpg",
+                    "FHA Conveyance" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/FHA.jpg",
+                    "Lock ups" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/LOCK+UPS.jpg",
+                    "Trash outs" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/TRASHOUTS.jpg",
+                    "Inspections" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/INSPECTIONS.jpg"
             ]
 
 
