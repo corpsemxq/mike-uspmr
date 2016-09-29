@@ -99,7 +99,7 @@ environments {
         mailSender {
             defaultValue {
                 customerServiceEmail = "info@USPMR.com"
-                receviceMessageEmail = "szczmi01@yahoo.com"
+                receviceMessageEmail = "maoxingqiang0824@gmail.com"
                 props = [
                         "mail.smtp.host": "smtp.office365.com",
                         "mail.smtp.port": "587",

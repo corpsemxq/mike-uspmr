@@ -44,7 +44,7 @@ class MailSendService {
         try {
             mailContent.toAddress = params.toAddress
             mailContent.fromAddress = params.fromAddress
-            mailContent.replyto = params.replyto
+            mailContent.replyTo = params.replyTo
             if (!params?.mailSubject) {
                 mailContent.subject = "The application is submit at ${new Date()}"
             } else {

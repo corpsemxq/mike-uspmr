@@ -25,7 +25,6 @@ class MailSendController {
 
     def contactEmailSend() {
         log.info "Getting contact us email from uspmr.com"
-
         try {
             mailSendService.sendEmailFromContactUs(params.name, params.email, params.message)
             flash.message = "The contact email sent successfully! Going back to home page! " + "\n" +
@@ -46,7 +45,7 @@ class MailSendController {
             mailConfig.mailConfig = grailsApplication.config.mailSender.defaultValue.props
             mailConfig.toAddress = grailsApplication.config.mailSender.defaultValue.receviceMessageEmail
             mailConfig.fromAddress = grailsApplication.config.mailSender.defaultValue.customerServiceEmail
-            mailConfig.replyto = application.businessInfo.contactEmail
+            mailConfig.replyTo = application.businessInfo.contactEmail
             mailConfig.file = file
             mailConfig.mailSubject = "Name : ${application.businessInfo.contactPerson}, Company : ${application.businessInfo.businessName}, ${new Date()}"
             mailConfig.mailText = "This is the application from Name:${application.businessInfo.contactPerson}, Business: ${application.businessInfo.businessName}, please check the attach file" +
