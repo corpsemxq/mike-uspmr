@@ -124,7 +124,7 @@ environments {
         mailSender {
             defaultValue {
                 customerServiceEmail = "info@USPMR.com"
-                receviceMessageEmail = "szczmi01@yahoo.com"
+                receviceMessageEmail = "noreply@uspmr.com"
                 props = [
                         "mail.smtp.host": "smtp.office365.com",
                         "mail.smtp.port": "587",
@@ -338,6 +338,6 @@ repairs are performed by qualified vendors that have the necessary equipment and
 
 contact {
     email = "info@USPMR.com"
-    phone = "(201)201-2001"
-    address = "123 washington street, Hoboken, NJ, 07030"
+    phone = "(732)991-2708"
+    address = "123 Washington Street, Hoboken, NJ, 07030"
 }
