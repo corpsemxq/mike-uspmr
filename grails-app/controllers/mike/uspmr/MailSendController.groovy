@@ -29,6 +29,7 @@ class MailSendController {
             mailSendService.sendEmailFromContactUs(params.name, params.email, params.message)
             flash.message = "The contact email sent successfully! Going back to home page! " + "\n" +
                     "(If can not redirect in 10 seconds, please click 'Back to home page' on the right top)"
+            mailSendService.sendAutoReplyEmail(params.email)
         } catch (Exception ex) {
             log.error "Contact Email sent failed, the error is ${ex.message}"
             flash.error = "Some internal error occured. Please contact with ${grailsApplication.config.mailSender.defaultValue.customerServiceEmail}"
@@ -53,8 +54,9 @@ class MailSendController {
             if (mailSendService.sendEmailFromApplication(mailConfig)) {
                 flash.message = "The application sent successfully! Going back to home page! " + "\n" +
                         "(If can not redirect in 10 seconds, please click 'Back to home page' on the right top)"
+                mailSendService.sendAutoReplyEmail(application.businessInfo.contactEmail)
             } else {
-                log.error "Application Email sent failed, the error is ${ex.message}"
+                log.error "Application Email sent failed."
                 flash.error = "Some internal email server error occured. Please try again later or contact with ${grailsApplication.config.mailSender.defaultValue.customerServiceEmail} to fill the applicatioin"
 
             }

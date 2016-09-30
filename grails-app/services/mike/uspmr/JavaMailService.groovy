@@ -131,6 +131,8 @@ class JavaMailService {
         mailConfig.each { k,v->
             props.put(k.toString(),v.toString())
         }
+        mailConfig.username = userName
+        mailConfig.password = passWord
         props.put("mail.transport.protocol", "smtp")
         Session emailSession
         if(userName&&passWord) {

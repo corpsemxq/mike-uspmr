@@ -38,6 +38,28 @@ class MailSendService {
     }
 
 
+    def sendAutoReplyEmail(String email) {
+        try {
+            Map mailConfig = [:]
+            grailsApplication.config.mailSender.defaultValue.props.each { k, v ->
+                mailConfig."$k" = "$v"
+                log.info "Now Using Generic configs for email service"
+            }
+            def mailBody = [:]
+            mailBody.subject = "We got your inquire!"
+            mailBody.toAddress = email
+            mailBody.fromAddress = grailsApplication.config.mailSender.defaultValue.customerServiceEmail
+            mailBody.replyTo = email
+            mailConfig["mail.smtp.from"] = grailsApplication.config.mailSender.defaultValue.customerServiceEmail
+            mailBody.body =grailsApplication.config.home.autoReplyEmail
+            javaMailService.sendTextEmail(mailConfig, mailBody)
+        } catch (Exception ex) {
+            throw new RuntimeException("The email didn't send successfully. $ex.stackTrace")
+        }
+
+    }
+
+
     def sendEmailFromApplication(Map params) {
         log.info "sendEmailFromApplication"
         Map mailContent = [:]

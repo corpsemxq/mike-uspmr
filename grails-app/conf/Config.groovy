@@ -98,13 +98,13 @@ environments {
 
         mailSender {
             defaultValue {
-                customerServiceEmail = "info@USPMR.com"
+                customerServiceEmail = "contactweb@uspmr.com"
                 receviceMessageEmail = "maoxingqiang0824@gmail.com"
                 props = [
                         "mail.smtp.host": "smtp.office365.com",
                         "mail.smtp.port": "587",
 //                        "username" : "admin@NETORGFT2251579.onmicrosoft.com",
-                        "username" : "info@uspmr.com",
+                        "username" : "contactweb@uspmr.com",
                         "password" : '''Empire2016$''',
                         "mail.smtp.auth" : "true",
                         "mail.smtp.starttls.enable": "true"
@@ -123,13 +123,13 @@ environments {
 
         mailSender {
             defaultValue {
-                customerServiceEmail = "info@USPMR.com"
-                receviceMessageEmail = "noreply@uspmr.com"
+                customerServiceEmail = "contactweb@uspmr.com"
+                receviceMessageEmail = "contactweb@uspmr.com"
                 props = [
                         "mail.smtp.host": "smtp.office365.com",
                         "mail.smtp.port": "587",
 //                        "username" : "admin@NETORGFT2251579.onmicrosoft.com",
-                        "username" : "info@uspmr.com",
+                        "username" : "contactweb@uspmr.com",
                         "password" : '''Empire2016$''',
                         "mail.smtp.auth" : "true",
                         "mail.smtp.starttls.enable": "true"
@@ -197,7 +197,20 @@ vendors.'''
 
     vendors = '''"A whole is only as good as the sum of its parts" is the motto that we thoroughly hold true at USPMR.  We take great pride in vendor selection and only strive to work with the best.  A crucial aspect to our success is our employees and vendors who remain dedicated in the field, day in and day out.  We are currently recruiting vendors to join our network who have experience in rehabilitation, inspections, and preservation services.  If you are interested in becoming a vendor, please fill out the application that is provided above.  We are looking forward to working with you! '''
 
+    autoReplyEmail = """Hi,
 
+Thank you for reaching out USPMR. We receive your message/application and will contact with you ASAP.
+
+If you have anything urgent, please email info@uspmr.com directly or call 732-991-2708
+
+Best,
+
+USPMR
+info@uspmr.com
+732-991-2708
+WWW.USPMR.COM
+
+"""
 
     service {
         firstLevelCategory = [
@@ -335,6 +348,8 @@ repairs are performed by qualified vendors that have the necessary equipment and
     }
 
 }
+
+
 
 contact {
     email = "info@USPMR.com"
