@@ -201,8 +201,8 @@ vendors.'''
 
     service {
         firstLevelCategory = [
-                "Property Preservation Services" :"https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/Rehabilitation.jpg",
-                "Rehabilitation Services" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/propertypreservationphoto.png"
+                "Property Preservation Services" :"https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/propertypreservationphoto.png",
+                "Rehabilitation Services" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/Rehabilitation.jpg"
         ]
 
         secondLevelCategory {
