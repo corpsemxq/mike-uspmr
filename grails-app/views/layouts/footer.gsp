@@ -32,7 +32,7 @@
                 <div>
                     <h5>Contact Info</h5>
                     <ul class="list-unstyled">
-                        <li><strong class="font-secondary font-14">Address:</strong> ${homeConfig?.contact?.address}</li>
+                        %{--<li><strong class="font-secondary font-14">Address:</strong> ${homeConfig?.contact?.address}</li>--}%
                         <li><strong class="font-secondary font-14">Phone:</strong> ${homeConfig?.contact?.phone} </li>
                         <li><strong class="font-secondary font-14">Email:</strong> <a href="mailto:${homeConfig?.contact?.email}">${homeConfig?.contact?.email}</a></li>
                     </ul>
