@@ -145,7 +145,6 @@ jQuery(function ($) {
         $applicationReferCompanyName: $("#applicationReferCompanyName"),
         $errorApplicationName: $("#err-applicationName"),
         $errorApplicationBusinessName: $("#err-applicationBusinessName"),
-        $errorApplicationCellNumber: $("#err-applicationCellNumber"),
         $errorApplicationEmail: $("#err-applicationEmail"),
         $errorApplicationReferName: $("#err-applicationReferName"),
         $errorApplicationReferCompanyName: $("#err-applicationReferCompanyName"),
@@ -183,17 +182,17 @@ jQuery(function ($) {
                 error = true; // change the error state to true
             }
 
-            var cellNumber = this.$applicationCellNumber.val(); // get the value of the input field
-            if(cellNumber == "" || cellNumber == " " || cellNumber == "Name") {
-                this.$errorApplicationCellNumber.show(500);
-                this.$errorApplicationCellNumber.delay(40000);
-                this.$errorApplicationCellNumber.animate({
-                    height: 'toggle'
-                }, 500, function() {
-                    // Animation complete.
-                });
-                error = true; // change the error state to true
-            }
+            //var cellNumber = this.$applicationCellNumber.val(); // get the value of the input field
+            //if(cellNumber == "" || cellNumber == " " || cellNumber == "Name") {
+            //    this.$errorApplicationCellNumber.show(500);
+            //    this.$errorApplicationCellNumber.delay(40000);
+            //    this.$errorApplicationCellNumber.animate({
+            //        height: 'toggle'
+            //    }, 500, function() {
+            //        // Animation complete.
+            //    });
+            //    error = true; // change the error state to true
+            //}
 
             var referName1 = this.$applicationReferName.val(); // get the value of the input field
             if(referName1 == "" || referName1 == " " || referName1 == "Name") {

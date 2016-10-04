@@ -18,7 +18,7 @@
                 <li><a href="#home" class="scroll">Home</a></li>
                 <li><a href="#services" class="scroll">Services</a></li>
                 <li><a href="#vendors" class="scroll">Vendors</a></li>
-                <li><a href="${createLink(controller: "page", action: "applicationPage")}" class="scroll">Want to be a Vendor?</a></li>
+                <li><a href="${createLink(controller: "page", action: "applicationPage")}" class="scroll">Vendor Application</a></li>
                 <li><a href="#contact" class="scroll">Contact us</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->

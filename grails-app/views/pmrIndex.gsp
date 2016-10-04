@@ -38,8 +38,11 @@
         <div class="row">
             <div class="col-md-8">
                 <div class="home-wrapper">
-                    <h2 class="text-muted">${homeConfig.home.title}</h2>
+                    <br/>
+                    <br/>
+
                     <p>${homeConfig.home.aboutus}</p>
+                    <br/>
                     <a href="#services" class="scroll btn btn-yellow">Get Started</a>
                 </div>
             </div>

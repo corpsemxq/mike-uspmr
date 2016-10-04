@@ -184,15 +184,13 @@ home {
     title = "USPMR"
 
 
-    aboutus = '''United States Property Management & Rehabilitation (USPMR) is a property preservation and rehabilitation servicer
+    aboutus = '''USPMR is a property preservation and rehabilitation servicer established to manage residual inventory as a
 
-established to manage residual inventory as a result of the nation’s largest housing crisis in history.  We are tasked with
+result of the nation’s largest housing crisis in American history.  We are tasked with preserving, inspecting, and repairing properties
 
-preserving, inspecting, and repairing properties for major players in the default mortgage industry.  It is a priority for us
+for major players in the default mortgage industry.  It is a priority to leverage our vast national vendor network
 
-to leverage our vast national vendor network so that we may facilitate a consistent and reliable work flow for our
-
-vendors.'''
+so that we facilitate a consistent and reliable work flow for our vendors.'''
 
 
     vendors = '''"A whole is only as good as the sum of its parts" is the motto that we thoroughly hold true at USPMR.  We take great pride in vendor selection and only strive to work with the best.  A crucial aspect to our success is our employees and vendors who remain dedicated in the field, day in and day out.  We are currently recruiting vendors to join our network who have experience in rehabilitation, inspections, and preservation services.  If you are interested in becoming a vendor, please fill out the application that is provided above.  We are looking forward to working with you! '''
