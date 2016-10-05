@@ -13,7 +13,7 @@
     <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
     <!-- Bootstrap core CSS -->
     <link href="${resource(dir: 'css', file: 'bootstrap.min.css')}" rel="stylesheet">
 
@@ -64,7 +64,7 @@
     <h2 class="text-center">${category}</h2>
     <br/>
 
-    <p class="text-center"><mark>Choose the service you need.</mark></p>
+    %{--<p class="text-center"><mark>Choose the service you need.</mark></p>--}%
 
     <div class="container">
         <div class="row">
@@ -82,8 +82,8 @@
                         <div class="tab-pane" id="${service?.key?.replace(" ","")?.replace('/', '')}">
                             <br/>
 
-                            <div class="col-sm-12 col-sm-offset-3">
-                                <img class="img-rounded" width="50%" src="${servicePic."${service?.key}"}">
+                            <div class="col-sm-12 col-sm-offset-4">
+                                <img class="img-rounded" width="30%" src="${servicePic."${service?.key}"}">
                             </div>
                             <br/>
 
@@ -95,8 +95,8 @@
 
 
                             <div class="col-sm-10 col-sm-offset-1">
-                                <blockquote style="background-color: #ededf5">
-                                    <p>${service?.value}</p>
+                                <blockquote  style="background-color: #ededf5">
+                                    <p class="text-capitalize">${service?.value}</p>
                                 </blockquote>
                             </div>
                             <br/>

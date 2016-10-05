@@ -197,9 +197,9 @@ so that we facilitate a consistent and reliable work flow for our vendors.'''
 
     autoReplyEmail = """Hi,
 
-Thank you for reaching out USPMR. We receive your message/application and will contact with you ASAP.
+Thank you for reaching out to US Property Management & Rehabilitation. We have received your inquiry and will be in contact with you ASAP.
 
-If you have anything urgent, please email info@uspmr.com directly or call 732-991-2708
+If your inquiry is urgent, please email us at info@uspmr.com directly or call 732-991-2708.  We are working hard to service you and we will get back to you soon!
 
 Best,
 
