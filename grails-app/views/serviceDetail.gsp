@@ -96,7 +96,7 @@
 
                             <div class="col-sm-10 col-sm-offset-1">
                                 <blockquote  style="background-color: #ededf5">
-                                    <p class="text-capitalize">${service?.value}</p>
+                                    <p>${service?.value}</p>
                                 </blockquote>
                             </div>
                             <br/>
