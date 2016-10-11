@@ -37,17 +37,37 @@
 <section class="section-lg home-alt home-construction" id="home">
     <div class="container">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-10">
                 <div class="home-wrapper">
-                    <br/>
-                    <br/>
 
-                    <p>${homeConfig.home.aboutus}</p>
+                    <p>${homeConfig.home.aboutus1}</p>
+                    <p>${homeConfig.home.aboutus2}</p>
                     <br/>
-                    <a href="#services" class="scroll btn btn-yellow">Get Started</a>
+                    <a href="#aboutus" class="scroll btn btn-yellow">Continue</a>
                 </div>
             </div>
         </div>
+    </div>
+</section>
+
+
+<section class="section" id="aboutus">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h2 class="title">Housing Market</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+                <div class="features-box">
+                    <p>${homeConfig.home.housingMarket}</p>
+                </div>
+            </div>
+        </div>
+
     </div>
 </section>
 
@@ -235,7 +255,13 @@
             <div class="col-sm-1"></div>
                 <div class="col-sm-10">
                     <div class="features-box">
-                       <p>${homeConfig.home.vendors}</p>
+                       <p>${homeConfig.home.vendors1}</p>
+                        <br/>
+                       <p>${homeConfig.home.vendors2}</p>
+                        <br/>
+                        <p>${homeConfig.home.vendors3}</p>
+                        <br/>
+                        <p>${homeConfig.home.vendors4}</p>
                     </div>
                 </div>
         </div>

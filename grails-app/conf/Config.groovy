@@ -184,16 +184,16 @@ home {
     title = "USPMR"
 
 
-    aboutus = '''USPMR is a property preservation and rehabilitation servicer established to manage residual inventory as a
+    housingMarket = '''Despite an improving housing market, the numbers of distressed properties in the United States remain elevated.  At the height of the great recession, banking institutions foreclosed on 8 million homes in a period of 4 years. Today, the number of vacant properties that exist exceeds 12 million in the market place.  While the rate of foreclosures decreased since 2012, the crisis is far from over.  Nearly 11 percent of homes in America are empty, creating a haven for criminals, an eyesore for neighbors and is a big problem for local governments.'''
+    aboutus1 = '''USPMR is a property preservation and rehabilitation company established to manage the residual inventory derived from our nation's largest housing crisis in history.  Our mission is to keep vacant properties safe, secure and well maintained inside and out for our clients.  Our experienced team of contractors will evaluate and report potential damages or issues before they arise so that they are addressed in a timely and cost effective manner. A result of our work is an increase in the value of assets, decreased risk of further depreciation, and a safer community for our neighbors.'''
+    aboutus2 = '''If you are reading this and feel like you got what it takes to help our mission, please take a look at our vendor section and application for information on joining our network! '''
 
-result of the nation’s largest housing crisis in American history.  We are tasked with preserving, inspecting, and repairing properties
+//    vendors = '''"A whole is only as good as the sum of its parts" is the motto that we thoroughly hold true at USPMR.  We take great pride in vendor selection and only strive to work with the best.  A crucial aspect to our success is our employees and vendors who remain dedicated in the field, day in and day out.  We are currently recruiting vendors to join our network who have experience in rehabilitation, inspections, and preservation services.  If you are interested in becoming a vendor, please fill out the application that is provided above.  We are looking forward to working with you! '''
+    vendors2 = '''Part of USPMR mission is to initiate new vendor relationships at the local level and build strong partnerships within our current network.  Evaluating vendor capabilities, procedural trainings, quality control and compliance are critical to our firm's success. Focusing on quality control is a priority for our viability in this industry. We put as much of a focus on volume as we do with quality control so that we are mitigating losses associated with risky scenarios. With the implementation of policies and procedures such as our vendor scorecard, we can focus on doing outstanding work while mitigating risk that can result in loss.'''
+    vendors3 = '''We are currently recruiting vendors to join our network who have experience in rehabilitation, inspections, and preservation services.  If you are interested in becoming a vendor, please fill out the application that is provided above.  We are looking forward to working with you!'''
+    vendors1 = '''"A whole is only as good as the sum of its parts" is the motto that we thoroughly hold true at USPMR.  We take great pride in vendor selection and only strive to work with the best.  A crucial aspect to our success is our employees and vendors who remain dedicated in the field, day in and day out. '''
+    vendors4 = ''''''
 
-for major players in the default mortgage industry.  It is a priority to leverage our vast national vendor network
-
-so that we facilitate a consistent and reliable work flow for our vendors.'''
-
-
-    vendors = '''"A whole is only as good as the sum of its parts" is the motto that we thoroughly hold true at USPMR.  We take great pride in vendor selection and only strive to work with the best.  A crucial aspect to our success is our employees and vendors who remain dedicated in the field, day in and day out.  We are currently recruiting vendors to join our network who have experience in rehabilitation, inspections, and preservation services.  If you are interested in becoming a vendor, please fill out the application that is provided above.  We are looking forward to working with you! '''
 
     autoReplyEmail = """Hi,
 
@@ -319,10 +319,10 @@ repairs are performed by qualified vendors that have the necessary equipment and
 
             picSrcMap = [
 
-                    "Electrical" : """""",
-                    "Plumbing" : """""",
-                    "HVAC" : """""",
-                    "Construction" : """""",
+                    "Electrical" : """https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/electirc.jpg""",
+                    "Plumbing" : """https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/plumbing1.jpg""",
+                    "HVAC" : """https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/HVAC.jpg""",
+                    "Construction" : """https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/contracting.jpg""",
 
 
                     "Roof Repair/Tarping" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/ROOF+REPAIR.jpg",

@@ -14,6 +14,11 @@ body {
     font-size:20px;
 }
 
+p {
+  text-align: justify;
+
+}
+
 .logo {
 	max-width: 220px;
 }
@@ -187,6 +192,17 @@ a{
 }
 
 #vendors p{
+  font-family: 'Crimson Text', serif;
+  font-size: 20px;
+
+}
+
+#aboutus {
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+
+#aboutus p{
   font-family: 'Crimson Text', serif;
   font-size: 22px;
 
@@ -510,7 +526,7 @@ iframe {
 .home-alt p {
   color: #ffffff; !important;
   font-family: 'Crimson Text', serif;
-  font-size: 23px;
+  font-size: 18px;
 }
 
 .home-alt h1 {
