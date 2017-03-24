@@ -1,6 +1,5 @@
 package mike.uspmr
 
-import com.fasterxml.jackson.databind.ObjectMapper
 
 class MailSendController {
 

@@ -75,6 +75,7 @@ class MailSendService {
             SimpleDateFormat df = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss")
             mailContent.body = params.mailText
             mailContent.file = params.file
+            log.info "Sending ${mailContent}"
             javaMailService.sendExcelNoticeEmail(params.mailConfig, mailContent)
             return true
         } catch (Exception ex) {
