@@ -263,10 +263,14 @@ lockset along with a lockbox with a key. A thorough inspection should be done to
 only the doors are secure but the windows, garages, sheds and other forms of entry are completely
 
 locked.""",
-                    "Trash outs" :
-                            """Vacant properties can be filled with debris, garbage and other contaminating items that need to be removed. Trash outs
 
-are done to completely remove these items from the premises.""",
+
+                     // Mike ask to disable trash out on 6/6/2017
+
+//                    "Trash outs" :
+//                            """Vacant properties can be filled with debris, garbage and other contaminating items that need to be removed. Trash outs
+//
+//are done to completely remove these items from the premises.""",
 
                     "Inspections" :
                             """A complete and thorough inspection of the exterior and interior of the property is a must. By leveraging innovative
