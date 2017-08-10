@@ -55,6 +55,7 @@ grails.project.dependency.resolution = {
         compile 'org.apache.poi:poi-ooxml:3.13'
         compile 'org.apache.poi:ooxml-schemas:1.0'
         compile 'biz.paluch.logging:logstash-gelf:1.6.0'
+        runtime 'mysql:mysql-connector-java:5.1.36'
 
         test "org.grails:grails-datastore-test-support:1.0.2-grails-2.4"
     }

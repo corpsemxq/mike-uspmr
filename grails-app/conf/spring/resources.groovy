@@ -1,4 +1,5 @@
 import mike.uspmr.factory.ConfigFactory
+import mike.uspmr.factory.DataBaseFactory
 
 // Place your Spring DSL code here
 beans = {
@@ -8,4 +9,8 @@ beans = {
     homePageConfig(configFactory: "getHomePageConfig") {}
 //    objectMapperFactory(ObjectMapperFactory)
 //    objectMapper(objectMapperFactory: "getObjectMapper")
+    dataBaseFactory(DataBaseFactory) {
+        grailsApplication = ref("grailsApplication")
+    }
+    dataSource(dataBaseFactory : "getDataSource")
 }

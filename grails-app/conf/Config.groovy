@@ -111,6 +111,14 @@ environments {
                 ]
             }
         }
+        dataSource {
+            dbCreate = "create-drop" // one of 'create', 'create-drop','update'
+            serverName = "aa1d25joyruqnqc.cxrmnbcmpb2y.us-west-2.rds.amazonaws.com"
+            url = "jdbc:mysql://aa1d25joyruqnqc.cxrmnbcmpb2y.us-west-2.rds.amazonaws.com:3306/ebdb?useUnicode=yes&characterEncoding=UTF-8"
+            username = "uspmrtest"
+            password = "uspmrtest"
+            dbName = "ebdb"
+        }
 
     }
     production {

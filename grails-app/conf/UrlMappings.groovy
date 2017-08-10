@@ -12,6 +12,10 @@ class UrlMappings {
         "/mailSend/applicationSend"(controller: "mailSend",action:"applicationSend", namespace: "v1") {}
 
 
+
+        "/test/testSend"(controller: "application",action:"testSend", namespace: "v1") {}
+
+
         "/"(controller: "page", action:  "homePage")
         "/application"(controller: "page", action:  "applicationPage")
         "500"(view:'/error')
