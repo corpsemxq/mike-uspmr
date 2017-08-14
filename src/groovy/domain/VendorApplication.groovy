@@ -1,13 +1,15 @@
 package domain
 
-class VendorApplication {
+import org.mongodb.morphia.annotations.Entity
+import org.mongodb.morphia.annotations.Id
 
-    static constraints = {
-    }
+
+
+class VendorApplication {
 
     String applicationId = UUID.randomUUID().toString()
 
-    List<String> vendorSercices = []
+    List<String> vendorServices = []
 
     def yrsOfExperience
 

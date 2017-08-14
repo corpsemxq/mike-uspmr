@@ -1,20 +1,24 @@
 package mike.uspmr
 
 import domain.VendorApplication
+import domain.app.Application
 import grails.transaction.Transactional
+import org.mongodb.morphia.Datastore
 
 @Transactional
 class ApplicationService {
 
-    def serviceMethod() {
+    static transactional = false
 
-    }
 
+    def grailsApplication
+
+    def datastore
 
     VendorApplication mappingTheApplicationForm(Map applicationForm){
         VendorApplication vendorApplication = new VendorApplication()
 
-        vendorApplication.vendorSercices = applicationForm?.vendorSercices as List
+        vendorApplication.vendorServices = applicationForm?.vendorServices as List
 
         vendorApplication.insuranceDetail.insuranceCompany = applicationForm?.insuranceDetail?.insuranceCompany
         vendorApplication.insuranceDetail.coverageArea = applicationForm?.insuranceDetail?.coverageArea as List
@@ -52,5 +56,9 @@ class ApplicationService {
 
         return vendorApplication
 
+    }
+
+    def saveApplicationToDb(Application application) {
+        datastore.save(application)
     }
 }

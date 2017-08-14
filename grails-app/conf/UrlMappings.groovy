@@ -1,23 +1,25 @@
 class UrlMappings {
 
 	static mappings = {
+
+        "/mailSend/contactEmailSend"(controller: "mailSend",action:"contactEmailSend", namespace: "v1") {}
+
+        "/mailSend/applicationSend"(controller: "mailSend",action:"applicationSend", namespace: "v1") {}
+
+        "/application/testSend"(controller: "application", namespace: "v1") {
+            action = [POST: "testSend"]
+        }
+
+        "/"(controller: "page", action:  "homePage")
+        "/application"(controller: "page", action:  "applicationPage")
+        "/admin"(controller: "page", action:  "adminLoginPage")
+        "500"(view:'/error')
+
         "/$controller/$action?/$id?(.$format)?"{
             constraints {
                 // apply constraints here
             }
         }
 
-        "/mailSend/contactEmailSend"(controller: "mailSend",action:"contactEmailSend", namespace: "v1") {}
-
-        "/mailSend/applicationSend"(controller: "mailSend",action:"applicationSend", namespace: "v1") {}
-
-
-
-        "/test/testSend"(controller: "application",action:"testSend", namespace: "v1") {}
-
-
-        "/"(controller: "page", action:  "homePage")
-        "/application"(controller: "page", action:  "applicationPage")
-        "500"(view:'/error')
-	}
+    }
 }

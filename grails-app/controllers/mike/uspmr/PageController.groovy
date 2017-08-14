@@ -41,4 +41,12 @@ class PageController {
         def homeConfig =  grailsApplication.config
         render(view: '/acknowledgePage', model: [test: "test", homeConfig : homeConfig])
     }
+
+
+    def adminLoginPage() {
+        def usernameErrorMessage = params.usernameErrorMessage ?: null
+        def passwordErrorMessage = params.passwordErrorMessage ?: null
+        def submitErrorMessage = params.submitErrorMessage ?: null
+        render(view: '/user/adminLoginPage', model: [usernameErrorMessage: usernameErrorMessage, passwordErrorMessage : passwordErrorMessage,submitErrorMessage:submitErrorMessage ])
+    }
 }

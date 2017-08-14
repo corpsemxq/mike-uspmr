@@ -280,7 +280,73 @@ jQuery(function ($) {
     };
 
 
+    var LoginFormApp = {
+        $username: $("#username"),
+        $errorUserName: $("#err-username"),
+        $password: $("#password"),
+        $loginBtn: $("#login"),
+        $errorPassword: $("#err-password"),
+        $errorContactMessages: $(".contactError"),
+
+
+        //Validate Contact Us Data
+        validate: function () {
+            var error = false; // we will set this true if the form isn't valid
+
+            var name = this.$username.val(); // get the value of the input field
+            if(name == "" || name == " " || name == "Name") {
+                this.$errorUserName.show(500);
+                this.$errorUserName.delay(4000);
+                this.$errorUserName.animate({
+                    height: 'toggle'
+                }, 500, function() {
+                    // Animation complete.
+                });
+                error = true; // change the error state to true
+            }
+
+            var password = this.$password.val(); // get the value of the input field
+            if(password == "" || password == " " || password == "Name") {
+                this.$errorPassword.show(500);
+                this.$errorPassword.delay(4000);
+                this.$errorPassword.animate({
+                    height: 'toggle'
+                }, 500, function() {
+                    // Animation complete.
+                });
+                error = true; // change the error state to true
+            }
+
+            return error;
+        },
+        //contact form submit handler
+        contactFormSubmit: function (obj) {
+            this.$errorContactMessages.fadeOut('slow'); // reset the error messages (hides them)
+
+            if(this.validate() == false) {
+
+
+                var $this = this;
+                return true;
+            }
+            return false;
+        },
+        bindEvents: function () {
+            //binding submit event
+            this.$loginBtn.on('click', this.contactFormSubmit.bind(this));
+        },
+        init: function () {
+            //initializing the contact form
+            console.log('Contact form is initialized');
+            this.bindEvents();
+            return this;
+        }
+    };
+
+
+
     //Initializing the app
+    LoginFormApp.init({})
     ContactFormApp.init({});
     ApplicationFormApp.init({});
 

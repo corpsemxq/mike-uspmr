@@ -1,23 +1,48 @@
 package mike.uspmr
 
-import javax.sql.DataSource
-import java.sql.Connection
-import java.sql.ResultSet
-import java.sql.SQLException
-import java.sql.Statement
+import domain.VendorApplication
+import domain.app.Application
+import grails.transaction.Transactional
 
+@Transactional
 class ApplicationController {
 
     def index() {}
 
-    static allowedMethods = [testSend: "GET"]
+    static allowedMethods = [testSend: "POST"]
 
-    DataSource dataSource
+    static responseFormats = ['json', 'html']
+
+    static defaultAction = "index"
+
+    def beforeInterceptor = [action: this.&filter]
+
+
+    private filter() {
+        response.setHeader('Access-Control-Allow-Origin', '*')
+        response.setHeader('Access-Control-Allow-Credentials', 'true')
+        response.setHeader('Access-Control-Allow-Headers', 'origin, authorization, accept, content-type, x-requested-with')
+        response.setHeader('Access-Control-Allow-Methods', 'GET, HEAD, POST, PUT, DELETE, TRACE, OPTIONS')
+        response.setHeader('Access-Control-Max-Age', '3600')
+    }
+
+    def applicationService
 
 
     def testSend () {
+        println "sb"
         Application application = new Application()
-        application.save()
+        println application
+        try{
+            applicationService.saveApplicationToDb(application)
+        } catch (Exception e){
+              e.printStackTrace()
+        }
+
+        Map result = [:]
+        result.result = "OK"
+        respond result
+
 //        Connection con = null;
 //        Statement stmt = null;
 //        ResultSet rs = null;

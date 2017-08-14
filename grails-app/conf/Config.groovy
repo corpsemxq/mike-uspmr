@@ -111,13 +111,18 @@ environments {
                 ]
             }
         }
-        dataSource {
-            dbCreate = "create-drop" // one of 'create', 'create-drop','update'
-            serverName = "aa1d25joyruqnqc.cxrmnbcmpb2y.us-west-2.rds.amazonaws.com"
-            url = "jdbc:mysql://aa1d25joyruqnqc.cxrmnbcmpb2y.us-west-2.rds.amazonaws.com:3306/ebdb?useUnicode=yes&characterEncoding=UTF-8"
-            username = "uspmrtest"
-            password = "uspmrtest"
-            dbName = "ebdb"
+        mongo {
+            uspmr {
+                hosts = ['localhost': 27017]
+                db = 'uspmr'
+                sslEnabled = false
+                username = "uspmr"
+                password = "uspmr-mike"
+                authdb = "uspmr"
+                maximumConnectionCount = 100
+                minimumConnectionCount = 10
+                maximumIdleTimeoutInSeconds = 3600
+            }
         }
 
     }
@@ -142,6 +147,19 @@ environments {
                         "mail.smtp.auth" : "true",
                         "mail.smtp.starttls.enable": "true"
                 ]
+            }
+        }
+        mongo {
+            uspmr {
+                hosts = ['localhost': 27017]
+                db = 'uspmr'
+                sslEnabled = false
+                username = "uspmr"
+                password = "uspmr-mike"
+                authdb = "uspmr"
+                maximumConnectionCount = 100
+                minimumConnectionCount = 10
+                maximumIdleTimeoutInSeconds = 3600
             }
         }
     }
