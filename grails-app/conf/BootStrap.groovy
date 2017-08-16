@@ -10,26 +10,26 @@ class BootStrap {
 
 
     def setupStaticData() {
-        Application application = new Application()
-        application.with {
-            yrsOfExperience = 10
-            appType = AppType.VENDOR
-            applicant.with {
-                firstName = "test"
-                lastName = "test"
-                email = "test${application.uuid}@gmail.com".toString()
-                mobile = "2012012201"
-            }
-        }
-        datastore.save(application)
-
-        User user = new User()
-        user.with {
-            username = "uspmr"
-            password = "admin"
-        }
-        user.encodePassword()
-        datastore.save(user)
+//        Application application = new Application()
+//        application.with {
+//            yrsOfExperience = 10
+//            appType = AppType.VENDOR
+//            applicant.with {
+//                firstName = "test"
+//                lastName = "test"
+//                email = "test${application.uuid}@gmail.com".toString()
+//                mobile = "2012012201"
+//            }
+//        }
+//        datastore.save(application)
+//
+//        User user = new User()
+//        user.with {
+//            username = "uspmr"
+//            password = "admin"
+//        }
+//        user.encodePassword()
+//        datastore.save(user)
 
     }
 
