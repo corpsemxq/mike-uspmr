@@ -51,42 +51,90 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="${createLink(controller: "page", action: "homePage")}" class="scroll">Back to home page</a>
+                <li>
+                   Hello Admin! You can <button onclick="window.location.href='${createLink(controller: "page", action: "adminLoginPage")}'" class="btn btn-danger">LOGOUT</button>
                 </li>
+
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
 
 <section>
-
-    <table>
-        <thead>
-        <tr>
-            <th>appId</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Application Type</th>
-            <th>Email</th>
-            <th>Mobile</th>
-            <th>Services</th>
-        </tr>
-        </thead>
-        <tbody>
-        <g:each in="${disciplines}" var="entry">
+    <div class="container">
+        <br/>
+        <br/>
+        <br/>
+        <table class="table table-striped table-bordered">
+            <thead>
             <tr>
-                <td>${entry.key}</td>
-                <g:each in="${entry.value}" var='bimester'>
-                    <td>${bimester}</td>
-                </g:each>
+                <th>appId</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Application Type</th>
+                <th>Email</th>
+                <th>Mobile</th>
+                <th>Services</th>
+                <th></th>
             </tr>
-        </g:each>
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+            <g:each in="${appList}" var="appOne">
+                <tr>
+                    <td>${appOne.uuid}</td>
+                    <td>${appOne.applicant.firstName}</td>
+                    <td>${appOne.applicant.lastName}</td>
+                    <td>${appOne.appType}</td>
+                    <td>${appOne.applicant.email}</td>
+                    <td>${appOne.applicant.mobile}</td>
+                    <td>
+                        <g:each in="${appOne.businessInfo.services}" var='serviceOne'>
+                            <p>${serviceOne}</p>
+                        </g:each>
+                        <g:each in="${appOne.businessInfo.otherServices}" var='otherServiceOne'>
+                            <p>${otherServiceOne}</p>
+                        </g:each>
+                    </td>
+                    <td style="width: 150px;">
+                        <div style="display: inline-block">
+                            <button onclick="window.location.href=''" class="btn btn-success">Achive</button>
+                        </div>
+                        <div style="display: inline-block">
+                            <button onclick="window.location.href=''" class="btn btn-info">Edit</button>
+                        </div>
+                    </td>
+                </tr>
+            </g:each>
+            </tbody>
+        </table>
+        <div>
+            <g:if test="${pageNumber!=1}">
+                <div style="display: inline-block">
+                    <button onclick="window.location.href='${createLink(controller: "admin", action: "index")}'" class="btn btn-primary">Previous Page</button>
+                </div>
+            </g:if>
+            <g:else>
+                <div style="display: inline-block">
+                    <button class="btn">Previous Page</button>
+                </div>
+            </g:else>
+            <div style="display: inline-block">
+                   <p class="d-block">   ${pageNumber}   </p>
+            </div>
+            <g:if test="${pageNumber!=1}">
+                <div style="display: inline-block">
+                    <button onclick="window.location.href='${createLink(controller: "admin", action: "index")}'" class="btn btn-primary">Next Page</button>
+                </div>
+            </g:if>
+            <g:else>
+                <div style="display: inline-block">
+                    <button class="btn">Next Page</button>
+                </div>
+            </g:else>
+        </div>
 </section>
 <br/>
 
-<g:applyLayout name="footer"/>
 
 
 

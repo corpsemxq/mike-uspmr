@@ -25,7 +25,7 @@ class UserController {
         } else {
             log.info "Log in!"
             def homeConfig =  grailsApplication.config
-            render(view: '/pmrIndex', model: [test: "test", homeConfig : homeConfig ])
+            redirect(controller: "admin", action: "index")
 
         }
     }
