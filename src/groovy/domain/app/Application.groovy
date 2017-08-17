@@ -35,6 +35,8 @@ class Application {
 
     List<ContactPerson> references = []
 
+    Boolean active = true
+
     Date dateCreated = new Date()
 
     Date dateUpdated = new Date()

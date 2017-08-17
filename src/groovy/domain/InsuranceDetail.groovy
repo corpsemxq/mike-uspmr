@@ -2,7 +2,7 @@ package domain
 
 class InsuranceDetail {
 
-    List<String> coveageType = []
+    List<String> coverageType = []
 
     String insuranceCompany
 

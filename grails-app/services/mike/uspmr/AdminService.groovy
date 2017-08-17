@@ -19,4 +19,8 @@ class AdminService {
         return datastore.createQuery(Application).asList()
     }
 
+
+    Application findByUUID(String uuid){
+        return datastore.createQuery(Application).field("uuid").equal(uuid).get()
+    }
 }

@@ -5,7 +5,7 @@ import domain.State
 
 class InsuranceDetail {
 
-    List<InsuranceType> coveageType = []
+    List<InsuranceType> coverageType = []
 
     String insuranceCompany
 

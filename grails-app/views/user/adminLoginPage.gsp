@@ -91,7 +91,7 @@
 
                 <div class="form-group">
                     <label class="control-label">Password : </label>
-                    <g:textField style="width: 70%" class="form-control" name="password"
+                    <g:passwordField  style="width: 70%" class="form-control" name="password"
                                  id="password"/>
                 </div>
 
