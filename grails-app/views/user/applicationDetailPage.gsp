@@ -66,7 +66,7 @@
 
                                 <td>
                                     <div>
-                                        <form method="POST" action="/loanApplication/resendOffersEmail">
+                                        <form method="POST" action="">
                                             <input type="hidden" name="id" value="{{{ $loan['uuid'] }}}">
                                             <button type="submit" value="resend" class="btn btn-primary">Edit</button>
                                         </form>

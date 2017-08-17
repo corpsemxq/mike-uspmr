@@ -126,6 +126,46 @@ environments {
         }
 
     }
+
+    test {
+        grails.logging.jul.usebridge = true
+        String homeDir = System.getProperty('user.home')
+        staticProp {
+            homePropLocation = "${homeDir}/prop/homeConfig.groovy"
+        }
+        applicationFileLocation = "${homeDir}/applicationForm"
+
+        mailSender {
+            defaultValue {
+                customerServiceEmail = "contactweb@uspmr.com"
+                receviceMessageEmail = "maoxingqiang0824@gmail.com"
+                props = [
+                        "mail.smtp.host": "smtp.office365.com",
+                        "mail.smtp.port": "587",
+                        //                        "username" : "admin@NETORGFT2251579.onmicrosoft.com",
+                        "username" : "contactweb@uspmr.com",
+                        "password" : '''Empire2016$''',
+                        "mail.smtp.auth" : "true",
+                        "mail.smtp.starttls.enable": "true"
+                ]
+            }
+        }
+        mongo {
+            uspmr {
+                hosts = ['localhost': 27017]
+                db = 'uspmr'
+                sslEnabled = false
+                username = "uspmr"
+                password = "uspmr-mike"
+                authdb = "uspmr"
+                maximumConnectionCount = 100
+                minimumConnectionCount = 10
+                maximumIdleTimeoutInSeconds = 3600
+            }
+        }
+
+    }
+
     production {
         grails.logging.jul.usebridge = false
         String homeDir = System.getProperty('user.home')
