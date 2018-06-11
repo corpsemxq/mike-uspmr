@@ -1,3 +1,5 @@
+import org.apache.log4j.DailyRollingFileAppender
+
 // locations to search for config files that get merged into the main config;
 // config files can be ConfigSlurper scripts, Java properties files, or classes
 // in the classpath in ConfigSlurper format
@@ -143,6 +145,29 @@ environments {
 log4j.main = {
     // Example of changing the log pattern for the default console appender:
 
+    String logDirectory = "${System.getProperty('catalina.base') ?: '.'}/logs"
+    appenders {
+        console name: 'stdout', layout: pattern(conversionPattern: '%d [%t] %-5p %c{2} %x - %m%n')
+        appender new DailyRollingFileAppender(
+                name: 'dailyRollingFileAppender',
+                datePattern: "'.'yyyy-MM-dd",  // See the API for all patterns.
+                fileName: "${logDirectory}/web.log",
+                layout: pattern(conversionPattern: '%d [%t] %-5p %c{2} %x - %m%n')
+        )
+        //        rollingFile name: 'jmsMessageSizeRollingFileAppender',
+        //                    fileName: "${logDirectory}/jmsMessage.log",
+        //                    maxFileSize: "10MB",
+        //                    layout: pattern(conversionPattern: '%d [%t] %-5p %c{2} %x - %m%n'
+        //                    )
+        rollingFile name: 'loggingErrorRollingAppender',
+                fileName: "${logDirectory}/webError.log",
+                maxFileSize: "10MB",
+                layout: pattern(conversionPattern: '%d [%t] %-5p %c{2} %x - %m%n'
+                )
+
+    }
+
+
 
     error  'org.codehaus.groovy.grails.web.servlet',        // controllers
            'org.codehaus.groovy.grails.web.pages',          // GSP
@@ -167,6 +192,63 @@ log4j.main = {
             'org.springframework',
             'org.hibernate',
             'net.sf.ehcache.hibernate'
+
+    environments {
+        development {
+            debug 'grails.app'
+            //            debug 'jmsMessage'
+
+            root {
+                info()
+            }
+        }
+        test {
+            info additivity: false,
+                    jmsMessageSizeRollingFileAppender: 'jmsMessage'
+            info additivity: false,
+                    loggingErrorRollingAppender: 'web.LoggingFilters'
+            /*appenders {
+                appender new biz.paluch.logging.gelf.log4j.GelfLogAppender(
+                        name: 'gelfAppender',
+                        host: 'tcp:100.65.66.73',
+                        port: 12201,
+                        version: 1.1,
+                        originHost: 'illendtest3.cloudapp.net',
+                        extractStackTrace: true,
+                        additionalFields: "runtime=grails,environment=TEST,application=securitybox",
+                        //layout: pattern(conversionPattern: '%d{ABSOLUTE} %5p %c{1} %C %M::: %m%n'),
+                )
+            }*/
+            root {
+                info()
+                info 'dailyRollingFileAppender'
+                //info 'gelfAppender'
+            }
+        }
+
+        production {
+            info additivity: false,
+                    loggingErrorRollingAppender: 'web.LoggingFilters'
+            /*appenders {
+                appender new biz.paluch.logging.gelf.log4j.GelfLogAppender(
+                        name: 'gelfAppender',
+                        host: 'tcp:ilgraylogfarm.cloudapp.net',
+                        port: 12201,
+                        version: 1.1,
+                        originHost: 'gwytomcatsec.cloudapp.net',
+                        extractStackTrace: true,
+                        additionalFields: "runtime=grails,environment=PRODUCTION,application=securitybox",
+                        //layout: pattern(conversionPattern: '%d{ABSOLUTE} %5p %c{1} %C %M::: %m%n'),
+                )
+            }*/
+            root {
+                info()
+                info 'dailyRollingFileAppender'
+                //info 'gelfAppender'
+            }
+        }
+    }
+
 }
 
 
