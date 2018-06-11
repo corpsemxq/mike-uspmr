@@ -43,6 +43,8 @@ web/target
 
 *.idea/
 *.iml
+*.log
+
 
 web/web.iml
 process/gradle/wrapper/gradle-wrapper.properties
