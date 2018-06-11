@@ -145,7 +145,7 @@ environments {
 log4j.main = {
     // Example of changing the log pattern for the default console appender:
 
-    String logDirectory = "${System.getProperty('catalina.base') ?: '.'}/logs"
+    String logDirectory = "/var/logs/tomcat"
     appenders {
         console name: 'stdout', layout: pattern(conversionPattern: '%d [%t] %-5p %c{2} %x - %m%n')
         appender new DailyRollingFileAppender(
