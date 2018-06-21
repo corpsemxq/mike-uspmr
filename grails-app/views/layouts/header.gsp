@@ -8,7 +8,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"><img src="https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/logoTrans.png" class="logo" alt="logo"></a>
+            <a class="navbar-brand" href="#"><img src="http://ec2-54-213-102-145.us-west-2.compute.amazonaws.com:8080/source/logoTrans.png" class="logo" alt="logo"></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->

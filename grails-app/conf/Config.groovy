@@ -262,6 +262,8 @@ log4j.main = {
 
 
 home {
+    String homeDir = System.getProperty('user.home')
+
 
     title = "USPMR"
 
@@ -294,8 +296,11 @@ WWW.USPMR.COM
 
     service {
         firstLevelCategory = [
-                "Property Preservation Services" :"https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/propertypreservationphoto.png",
-                "Rehabilitation Services" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/Rehabilitation.jpg"
+//                "Property Preservation Services" :"https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/propertypreservationphoto.png",
+//                "Rehabilitation Services" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/Rehabilitation.jpg"
+
+                "Property Preservation Services" :"http://ec2-54-213-102-145.us-west-2.compute.amazonaws.com:8080/source/propertypreservationphoto.png",
+                "Rehabilitation Services" : "http://ec2-54-213-102-145.us-west-2.compute.amazonaws.com:8080/source/Rehabilitation.jpg"
         ]
 
         secondLevelCategory {
@@ -399,26 +404,49 @@ repairs are performed by qualified vendors that have the necessary equipment and
             ]
 
 
+//            picSrcMap = [
+//
+//                    "Electrical" : """https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/electirc.jpg""",
+//                    "Plumbing" : """https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/plumbing1.jpg""",
+//                    "HVAC" : """https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/HVAC.jpg""",
+//                    "Construction" : """https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/contracting.jpg""",
+//
+//
+//                    "Roof Repair/Tarping" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/ROOF+REPAIR.jpg",
+//                    "Pool services" :"https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/POOL+SECURING.jpg",
+//                    "Eviction" :"https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/EVICTION.jpg",
+//                    "Snow Removal" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/SNOW+REMOVAL.jpg",
+//                    "Lawn Services" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/LAWNSERVICE.jpg",
+//                    "DeWinterization" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/DEWINT.jpg",
+//                    "Winterization" :"https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/WINTERIZATION1.jpg",
+//                    "Mold Remediation" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/MOLD.jpg",
+//                    "FHA Conveyance" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/FHA.jpg",
+//                    "Lock ups" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/LOCK+UPS.jpg",
+//                    "Trash outs" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/TRASHOUTS.jpg",
+//                    "Inspections" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/INSPECTIONS.jpg"
+//            ]
+
+
             picSrcMap = [
 
-                    "Electrical" : """https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/electirc.jpg""",
-                    "Plumbing" : """https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/plumbing1.jpg""",
-                    "HVAC" : """https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/HVAC.jpg""",
-                    "Construction" : """https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/contracting.jpg""",
+                    "Electrical" : "http://ec2-54-213-102-145.us-west-2.compute.amazonaws.com:8080/source/electirc.jpg",
+                    "Plumbing" : "http://ec2-54-213-102-145.us-west-2.compute.amazonaws.com:8080/source/plumbing1.jpg",
+                    "HVAC" : "http://ec2-54-213-102-145.us-west-2.compute.amazonaws.com:8080/source/HVAC.jpg",
+                    "Construction" : "http://ec2-54-213-102-145.us-west-2.compute.amazonaws.com:8080/source/contracting.jpg",
 
 
-                    "Roof Repair/Tarping" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/ROOF+REPAIR.jpg",
-                    "Pool services" :"https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/POOL+SECURING.jpg",
-                    "Eviction" :"https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/EVICTION.jpg",
-                    "Snow Removal" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/SNOW+REMOVAL.jpg",
-                    "Lawn Services" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/LAWNSERVICE.jpg",
-                    "DeWinterization" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/DEWINT.jpg",
-                    "Winterization" :"https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/WINTERIZATION1.jpg",
-                    "Mold Remediation" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/MOLD.jpg",
-                    "FHA Conveyance" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/FHA.jpg",
-                    "Lock ups" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/LOCK+UPS.jpg",
-                    "Trash outs" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/TRASHOUTS.jpg",
-                    "Inspections" : "https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/INSPECTIONS.jpg"
+                    "Roof Repair/Tarping" : "http://ec2-54-213-102-145.us-west-2.compute.amazonaws.com:8080/source/ROOF%20REPAIR.jpg",
+                    "Pool services" :"http://ec2-54-213-102-145.us-west-2.compute.amazonaws.com:8080/source/POOL%20SECURING.jpg",
+                    "Eviction" :"http://ec2-54-213-102-145.us-west-2.compute.amazonaws.com:8080/source/EVICTION.jpg",
+                    "Snow Removal" : "http://ec2-54-213-102-145.us-west-2.compute.amazonaws.com:8080/source/SNOW%20REMOVAL.jpg",
+                    "Lawn Services" : "http://ec2-54-213-102-145.us-west-2.compute.amazonaws.com:8080/source/LAWNSERVICE.jpg",
+                    "DeWinterization" : "http://ec2-54-213-102-145.us-west-2.compute.amazonaws.com:8080/source/DEWINT.jpg",
+                    "Winterization" :"http://ec2-54-213-102-145.us-west-2.compute.amazonaws.com:8080/source/WINTERIZATION1.jpg",
+                    "Mold Remediation" : "http://ec2-54-213-102-145.us-west-2.compute.amazonaws.com:8080/source/MOLD.jpg",
+                    "FHA Conveyance" : "http://ec2-54-213-102-145.us-west-2.compute.amazonaws.com:8080/source/FHA.jpg",
+                    "Lock ups" : "http://ec2-54-213-102-145.us-west-2.compute.amazonaws.com:8080/source/LOCK%20UPS.jpg",
+                    "Trash outs" : "http://ec2-54-213-102-145.us-west-2.compute.amazonaws.com:8080/source/TRASHOUTS.jpg",
+                    "Inspections" : "http://ec2-54-213-102-145.us-west-2.compute.amazonaws.com:8080/source/INSPECTIONS.jpg"
             ]
 
 
