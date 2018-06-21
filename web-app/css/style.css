@@ -1243,7 +1243,8 @@ textarea.form-control {
 
 /* Home Construction */
 .home-construction {
-  background: url("https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/homeImg2.jpg") ;
+  /*background: url("https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-131173766494/uspmr/homeImg2.jpg") ;*/
+  background: url("http://ec2-54-213-102-145.us-west-2.compute.amazonaws.com:8080/source/homeImg2.jpg") ;
   background-size: cover;
 }
 .feature-icon-const i{
